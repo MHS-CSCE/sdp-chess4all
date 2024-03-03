@@ -1,0 +1,41 @@
+<!-- Hopefully navbar appears on all pages !-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Endgames</title>
+<link rel = "stylesheet" href = "../../style.css">
+<link rel = "preload" href = "../../endgamePageIcons/">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-bar").load("../../nav.html");
+    });
+    </script>
+    <h1>Endgame Study Database</h1>
+    <h2>Queen Endgames</h2>
+
+    <p>Insert some description text</p>
+    <br><br><br>
+
+    <table border = 0>
+        <tr>
+            <th><a href = "../queenEndgameFiles/queenCheckmate.html">Queen vs King Checkmate<br><img src = "../../endgamePageIcons/queenPageIcons/queenCheckmate.png" height = 300 width = 300></a></th>
+            <th><a href = "../queenEndgameFiles/queen+pawn.html">Queen + Pawn vs Queen Endgames<br><img src = "../endgamePageIcons/knightEndgames.png" height = 300 width = 300></a></th>
+        </tr>
+        <tr>
+            <th><a href = "../queenEndgameFiles/queen+twopawns.html"><br>Queen + 2 Pawns vs Queen<img src = "../endgamePageIcons/queenEndgames.png" height = 300 width = 300></a></th>
+            <th><a href = "../queenEndgameFiles/queen+pawns.html"><br>Queen vs Queen With Many Pawns<img src = "../endgamePageIcons/rookEndgames.png" height = 300 width = 300></a></th>
+        </tr>
+    </table>
+</body>
+
+</html>
