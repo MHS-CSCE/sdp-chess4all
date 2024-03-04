@@ -65,6 +65,15 @@ rcorners1 {
   font-size: 20px; 
   text-align: center;
 }
+.overlay-textHeading2 {
+  position: relative;
+  top: -225px;
+  left: 100px;
+  color: #fff; 
+
+  font-size: 20px; 
+  text-align: center;
+}
 
 .overlay-textSubHeading {
   position: relative;
