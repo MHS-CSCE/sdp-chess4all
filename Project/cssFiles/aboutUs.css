@@ -1,0 +1,73 @@
+html {
+    font-family:"Arial", Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: rgb(84, 84, 84);
+}
+
+h1 {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+}
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: rgb(138, 138, 138);
+}
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+    border-radius: 10px;
+    padding: 30px 40px; 
+    border: 2px solid rgb(0, 0, 0);
+    width: 40%;
+    margin-top: 10px;
+}
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('/images/aboutUsIcons/aboutusback.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+}
+.info a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(138, 138, 138);
+}
+.info a:hover {
+    text-decoration: underline;
+}
+th {
+    width: 50%;
+    padding: 50px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b8b8b8;
+    border-radius: 15px;
+}
+li {
+    float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 18px;
+
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #474343;
+}
