@@ -3,39 +3,58 @@ html {
     background-color: #f2f2f2;
     color: rgb(84, 84, 84);
 }
-
 h1 {
-    color: white;
+    color: rgb(143, 143, 143);
     font-family: "Oswald", sans-serif;
     font-size: 50px;
 }
-h2 {
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about_img {
+    flex: 1;
+}
+.aboutimg {
+    flex: 1;
+    overflow: hidden;
+}
+.aboutimg img{
+    width: 80%;
+    height: auto;
+    margin-left: 70px;
+    display: block;
+    transition: 0.5s ease;
+}
+.aboutimg:hover img{
+    transform: scale(1.1);
+}
+.info {
+    width: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 30px 40px; 
+    border: 2px solid rgb(0, 0, 0);
+}
+.info h2 {
     font-family: "Oswald", sans-serif;
     font-size: 30px;
     color: rgb(138, 138, 138);
 }
-.info {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background: transparent;
-    border-radius: 10px;
-    padding: 30px 40px; 
-    border: 2px solid rgb(0, 0, 0);
-    width: 40%;
-    margin-top: 10px;
-}
-.background {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: url('/images/aboutUsIcons/aboutusback.jpg');
-    background-position: center;
-    background-size: cover;
-    margin-top: 10px;
-    height: 200px;
-    width: 100%;
+.info p {
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 .info a {
     text-decoration: none;
