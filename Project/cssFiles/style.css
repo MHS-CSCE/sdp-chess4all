@@ -38,14 +38,17 @@ rcorners1 {
   width: 200px;
   height: 150px;
 }
+table {
+  margin: auto;
+}
 .background img {
   position: relative;
   border-radius: 25px;
   background: #9A9A9A;
-  padding-right: 208px;
-  padding-top: 35px;
-  padding-left: 20px;
-  padding-bottom: 35px;
+  padding-right: 228px;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-bottom: 50px;
   width:210px;
   height: 210px;  
   border: solid 2px transparent;
