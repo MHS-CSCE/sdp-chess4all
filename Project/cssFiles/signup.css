@@ -53,7 +53,7 @@ botton:hover{
     width: 100px;
     border-radius: 15px;
 }
-.clearfix::after{
+.clear::after{
     content: "";
     clear: both;
     display: table;

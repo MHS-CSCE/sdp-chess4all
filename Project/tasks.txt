@@ -1,0 +1,6 @@
+1. check for login before proceeding (login html)
+2. if valid proceed to main page
+3. else incoreect please retry
+4. sign out button
+5. if no acc sign up then re login and then gain access to everything or just sign up then main page
+6. button effects

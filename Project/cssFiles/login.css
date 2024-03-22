@@ -33,11 +33,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus{
     border-radius: 4px;
 }
 button{
-    background-color:black;
-    color: white;
+    background-color:transparent;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
+    border: 2px solid black;
     cursor: pointer;
     width: 20%;
     opacity: 0.9;
@@ -51,10 +51,19 @@ botton:hover{
     border-radius: 15px;
 }
 
-.cancel{
+.proceed{
     float: center;
-    width: 100px;
+    width: 275px;
     border-radius: 15px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 black;
+    -webkit-transition: ease-orgb(255, 199, 234);
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+.proceed:hover {
+    box-shadow: inset 400px 50px 0 0 black;
+    color: white;
 }
 .register_link {
     font-size: 14px;
@@ -70,7 +79,7 @@ botton:hover{
 .register_link p a:hover {
     text-decoration: underline;
 }
-.clearfix::after{
+.clear::after{
     content: "";
     clear: both;
     display: table;

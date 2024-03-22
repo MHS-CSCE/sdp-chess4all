@@ -1,6 +1,7 @@
 function cancel(){
-    location.href = "index.html"
+    location.href = "main.html"
 }
-
-
+function proceed() {
+    location.href = "main.html"
+}
 

@@ -1,70 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-<link rel = "stylesheet" href = "/cssFiles/style.css">
-<link rel = "stylesheet" href = "/cssFiles/nav.css">
-<link rel = "preload" href = "/images/homePageIcons/">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-<body>
-    <div id="nav-bar">
-
-    </div>
-
-    <script>
-    $(function(){
-    $("#nav-bar").load("nav.html");
-    });
-    </script>
-</body> 
-  
-<body>
-    <h1>Welcome to chess4all!</h1>
-  
-
-    <table border = 0>
-      <tr>
-        <th>
-            <a href = "/html/puzzles.html">
-            <div class="background">
-              <img class="background-image" src="/images/homePageIcons/puzzlePieceIcon.png">
-              <div class="overlay"></div>
-            </a>
-              <div class="overlay-textHeading">Puzzles</div>
-            </div>
-        </th>
-        <th>
-          <a href = "/endgameFiles/endgames.html">
-          <div class="background">
-            <img class="background-image" src="/images/homePageIcons/endgameIcon.png">
-            <div class="overlay"></div>
-          </a>
-            <div class="overlay-textHeading">Endgames</div>
-          </div>
-        </th>
-      </tr>
-      <tr>
-        <th>
-          <a href = "/html/masterGames.html">
-            <div class="background">
-              <img src="/images/homePageIcons/masterGamesIcon.png" style="position:relative; top:-30px;">
-          </a>
-              <div class="overlay-textHeading2">Master Games</div>
-            </div>
-          
-          
-        </th>
-          <th>
-              <a href = "aboutUs.html">
-                <div class="background">
-                  <img src="/images/homePageIcons/aboutUsIcon.png" style="position:relative; top:-30px;">
-              </a>
-                  <div class="overlay-textHeading2">About Us</div>
-                </div>      
-          </th>
-      </tr>
-  </table>
-</body>
-
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "/cssFiles/login.css">
+        <link rel = "stylesheet" href = "/cssFiles/nav.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+            <form action="" id="user_login" onsubmit="proceed()">
+                <div class="email_box">
+                    <label for="email">Email</label><br>
+                    <input required type="email" id="email" name="email" placeholder="Enter Email">
+                </div>
+                <div class="psw_box">
+                    <label for="psw">Password</label><br>
+                    <input required type="password" id="psw" name="psw" placeholder="Enter Password">
+                </div>
+                <div class="clear">
+                    <button type="submit" class="proceed">Proceed</button>
+                </div>
+                <div class="register_link">
+                    <p>Don't have an account? <a href="/html/signupPage.html">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <script src="/jsFiles/new.js"></script>
+    </body>
 </html>

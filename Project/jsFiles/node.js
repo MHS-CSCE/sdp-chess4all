@@ -11,6 +11,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 var chess4allDB = firebase.database().ref('chess4all');
+var auth = firebase.auth()
 
 document.getElementById("chess4all").addEventListener("submit", submitForm);
 
@@ -21,6 +22,7 @@ function submitForm(e) {
     var email = document.getElementById('email').value;
     var password = document.getElementById('psw').value;
 
+    auth.createUserWithEmailAndPassword(email, password)
     sendData(name, email, password);
 
     document.querySelector(".alert").style.display = "block";
