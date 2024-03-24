@@ -22,8 +22,21 @@ function submitForm(e) {
     var email = document.getElementById('email').value;
     var password = document.getElementById('psw').value;
 
+    var valid_email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!valid_email.test(email)) {
+        document.querySelector(".alert").innerHTML = "Email adress invalid";
+        document.querySelector(".alert").style.display = "block";
+        return;
+    }
+
+    if (password.length < 7) {
+        document.querySelector(".alert").innerHTML = "Password must be at least 7 characters long.";
+        document.querySelector(".alert").style.display = "block";
+        return;
+    }
+
     auth.createUserWithEmailAndPassword(email, password)
-    
+
     sendData(name, email, password);
 
     document.querySelector(".alert").style.display = "block";
