@@ -23,6 +23,7 @@ function submitForm(e) {
     var password = document.getElementById('psw').value;
 
     auth.createUserWithEmailAndPassword(email, password)
+    
     sendData(name, email, password);
 
     document.querySelector(".alert").style.display = "block";
@@ -32,6 +33,7 @@ function submitForm(e) {
     }, 3000);
 
     document.getElementById("chess4all").reset()
+    window.location.href = "/html/main.html";
 
 }
 
@@ -42,19 +44,4 @@ const sendData = (name, email, password) => {
         email : email,
         password : password,
     })
-}
-
-document.getElementById("user_login").addEventListener("submit", proceed);
-
-function proceed(e) {
-    console.log("tests")
-    e.preventDefault();
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('psw').value;
-
-    auth.signInWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            const user = userCredential.user;
-            console.log(user)
-        })
 }

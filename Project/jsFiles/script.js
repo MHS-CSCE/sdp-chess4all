@@ -1,7 +1,3 @@
 function cancel(){
-    location.href = "main.html"
+    location.href = "/html/index.html"
 }
-function proceed() {
-    location.href = "main.html"
-}
-

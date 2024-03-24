@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <h1>Login</h1>
-            <form action="" id="user_login" onsubmit="proceed()">
+            <form action="" id="user_login">
                 <div class="email_box">
                     <label for="email">Email</label><br>
                     <input required type="email" id="email" name="email" placeholder="Enter Email">
@@ -27,6 +27,7 @@
                 </div>
             </form>
         </div>
-        <script src="/jsFiles/new.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script type="module" src="/jsFiles/login.js" defer></script>
     </body>
 </html>
