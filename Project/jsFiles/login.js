@@ -24,8 +24,6 @@ function submitForm(e) {
     var email = document.getElementById('email').value;
     var password = document.getElementById('psw').value;
 
-    console.log("testssfadklfsajfda")
-
     auth.signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
         var user = userCredential.user;
