@@ -13,6 +13,7 @@ firebase.initializeApp(firebaseConfig);
 var chess4allDB = firebase.database().ref('chess4all');
 const auth = firebase.auth()
 
+
 document.getElementById("user_login").addEventListener("submit", submitForm);
 
 function submitForm(e) {

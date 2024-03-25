@@ -24,3 +24,19 @@ li a {
 li a:hover {
   background-color: #474343;
 }
+
+li button {
+  display: block;
+  font-size: 16px;
+  height: 42px;
+  background-color: #b8b8b8;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 12px 18px;
+  text-decoration: none;
+}
+
+li button:hover {
+  background-color: #474343;
+}
