@@ -29,10 +29,7 @@ function submitForm(e) {
         window.location.href = "/html/main.html";
     })
     .catch((error) => {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.error("Login failed:", errorMessage);
-        document.querySelector(".alert").innerHTML = errorMessage;
+        document.querySelector(".alert").innerHTML = "Email or Password incorrect";
         document.querySelector(".alert").style.display = "block";
     });
 
