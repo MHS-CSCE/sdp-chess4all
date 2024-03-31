@@ -29,7 +29,7 @@ function submitForm(e) {
         window.location.href = "/html/main.html";
     })
     .catch((error) => {
-        document.querySelector(".alert").innerHTML = "Email or Password incorrect";
+        document.querySelector(".alert").innerHTML = "Incorrect email or password";
         document.querySelector(".alert").style.display = "block";
     });
 
