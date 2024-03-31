@@ -29,15 +29,15 @@ function submitForm(e) {
         return;
     }
 
-    if (password.length < 7) {
-        document.querySelector(".alert").innerHTML = "Password must be at least 7 characters long.";
+    if (password.length < 6) {
+        document.querySelector(".alert").innerHTML = "Password must be at least 6 characters long.";
         document.querySelector(".alert").style.display = "block";
         return;
     }
 
     auth.createUserWithEmailAndPassword(email, password)
 
-    sendData(name, email, password);
+    
 
     document.querySelector(".alert").style.display = "block";
 
@@ -48,13 +48,4 @@ function submitForm(e) {
     document.getElementById("chess4all").reset()
     window.location.href = "/html/main.html";
 
-}
-
-const sendData = (name, email, password) => {
-    var newForm = chess4allDB.push();
-    newForm.set({
-        name_ : name,
-        email : email,
-        password : password,
-    })
 }
