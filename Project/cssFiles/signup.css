@@ -5,9 +5,12 @@ html {
 }
 body {
     align-items: center;
-    background: url('/images/homePageIcons/signup_back.jpg');
+    background: url('/images/homePageIcons/signupback.jpeg');
     background-position: center;
     background-size: cover;
+}
+p {
+    color: white;
 }
 h1 {
     text-align: center;
@@ -16,7 +19,7 @@ h1 {
 input[type=text], input[type=password], input[type=email]{
     width: 275px;
     padding: 15px;
-    margin: 5px 0 22px 0;
+    margin: 5px 0 10px 0;
     display: inline-block;
     border: none;
     border-bottom: 2px solid lightgray;
@@ -27,7 +30,7 @@ input[type=text]:focus, input[type=password]:focus,input[type=email]:focus{
     outline: none;
     box-sizing: border-box;
     border: none;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid rgb(255, 0, 140);
     border-radius: 4px;
 }
 button{
@@ -45,25 +48,15 @@ button{
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
 }
-.cancel:hover {
-    opacity:1;
-    box-shadow: inset 150px 0 0 0 black;
-    color: white;
-}
 .signup:hover {
-    opacity:1;
-    box-shadow: inset -150px 0 0 0 black;
+    box-shadow: inset 400px 50px 0 0 black;
     color: white;
 }
 .signup{
     float: center;
-    width: 100px;
+    width: 275px;
     border-radius: 15px;
-}
-.cancel{
-    float: center;
-    width: 100px;
-    border-radius: 15px;
+    cursor: pointer;
 }
 .clear::after{
     content: "";
@@ -84,4 +77,34 @@ form{
     font-weight: 900;
     text-align: center;
     display: none;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
+    background: transparent;
+    margin: 60px auto;
+    width: 420px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid white;
+    backdrop-filter: blur(15px);
+}
+label {
+    color: white;
+}
+.login_link {
+    font-size: 14px;
+    text-align: center;
+    
+}
+.login_link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login_link p a:hover {
+    text-decoration: underline;
 }

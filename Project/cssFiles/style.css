@@ -87,3 +87,13 @@ table {
    transform: scale(1.05); 
    border-color: black;
  }
+.endWelcome{
+  text-align: center;
+  padding: 0 6px 0 6px;
+}
+.endbox {
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: fit-content;
+}

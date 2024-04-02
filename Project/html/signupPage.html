@@ -10,27 +10,30 @@
         <script type="module" src="/jsFiles/signup.js"></script>
     </head>
     <body>
-        <h1>Sign Up</h1>
-        <form action="" id="chess4all">
-            <div class="alert">Thanks for signing up. Your account has been created.</div><br>
-            <div>
-                <label for="name" class="test_name">Name</label><br>
-                <input  required type="text" id="name" name="name" placeholder="Enter Name">
-            </div>
-            <div>
-                <label for="email">Email</label><br>
-                <input required type="email" id="email" name="email" placeholder="name@example.com">
-            </div>    
-            <div>
-                <label for="psw">Password</label><br>
-                <input required type="password" id="psw" name="psw" placeholder="Enter Password">
-            </div>
-            <div class="clear">
-                <button onclick="cancel()" type="button" class="cancel">Back</button>
-                <script src="/jsFiles/script.js"></script>
-                <button type="submit" class="signup">Sign Up</button>
-            </div>
-        </form>
-
+        <div class="container">
+            <h1>Sign Up</h1>
+            <form action="" id="chess4all">
+                <div class="alert">Thanks for signing up. Your account has been created.</div><br>
+                <div>
+                    <label for="name" class="test_name">Name</label><br>
+                    <input  required type="text" id="name" name="name" placeholder="Enter Name">
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input required type="email" id="email" name="email" placeholder="name@example.com">
+                </div>    
+                <div>
+                    <label for="psw">Password</label><br>
+                    <input required type="password" id="psw" name="psw" placeholder="Enter Password">
+                </div>
+                <div class="login_link">
+                    <p>Already have an account? <a href="/html/index.html">Login</a></p>
+                </div>
+                <div class="clear">
+                    <button type="submit" class="signup">Sign Up</button>
+                </div>
+                
+            </form>
+        </div>
     </body>
 </html>

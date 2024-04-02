@@ -45,11 +45,7 @@ button{
 botton:hover{
     opacity:1;
 }
-.login{
-    float: center;
-    width: 100px;
-    border-radius: 15px;
-}
+
 
 .proceed{
     float: center;
