@@ -1,0 +1,45 @@
+<!-- Hopefully navbar appears on all pages !-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Endgames</title>
+<link rel = "stylesheet" href = "../../style.css">
+<link rel = "preload" href = "../../endgamePageIcons/">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-bar").load("../../nav.html");
+    });
+    </script>
+    <h1>Endgame Study Database</h1>
+    <h2>Pawn Endgames</h2>
+
+    <p>Insert some description text</p>
+    <br><br><br>
+
+    <table border = 0>
+        <tr>
+            <th><a href = "../pawnEndgameFiles/king+pawn.html">King + Pawn vs King<br><img src = "../../endgamePageIcons/pawnPageIcons/king+pawn.png" height = 300 width = 300></a></th>
+            <th><a href = "../pawnEndgameFiles/king+twopawns.html">King + 2 Pawns vs King + Pawn Endgames<br><img src = "../../endgamePageIcons/pawnPageIcons/king+twopawns.png" height = 300 width = 300></a></th>
+        </tr>
+        <tr>
+            <th><a href = "../pawnEndgameFiles/pawnrace.html"><br>Pawn Race Endgames<img src = "../../endgamePageIcons/pawnPageIcons/pawnrace.png" height = 300 width = 300></a></th>
+            <th><a href = "../pawnEndgameFiles/pawnbreak.html"><br>Pawn Break Endgames<img src = "../../endgamePageIcons/pawnPageIcons/pawnbreak.png" height = 300 width = 300></a></th>
+        </tr>
+        <tr>
+            <th><a href = "../pawnEndgameFiles/opposition.html"><br>King Opposition Endgames<img src = "../../endgamePageIcons/pawnPageIcons/opposition.png" height = 300 width = 300></a></th>
+            <th><a href = "../pawnEndgameFiles/zugzwang.html"><br>King Zugzwang Endgames<img src = "../../endgamePageIcons/pawnPageIcons/zugzwang.png" height = 300 width = 300></a></th>
+        </tr>
+    </table>
+</body>
+
+</html>

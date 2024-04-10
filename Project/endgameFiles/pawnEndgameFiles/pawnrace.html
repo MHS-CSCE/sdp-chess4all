@@ -5,9 +5,9 @@
 
 <head>
     <title>Endgames</title>
-<link rel = "stylesheet" href = "../../style.css">
-<link rel = "preload" href = "../../endgamePageIcons/">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="preload" href="../../endgamePageIcons/">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -16,53 +16,92 @@
     </div>
 
     <script>
-    $(function(){
-      $("#nav-bar").load("../../nav.html");
-    });
+        $(function () {
+            $("#nav-bar").load("../../nav.html");
+        });
     </script>
     <h1>Endgame Study Database</h1>
     <h2>Pawn Races</h2>
 
-    <p>Pawn Races are a key part of pawn endgames as they occur quite often. Each side has at least one passed pawn that is storming down the board, and one must calculate if they wish to try and defend the pawn from promoting or go forth with pushing their own pawn.</p>
-    <p>It is hard to fully cover this endgame, but there are some general guidelines that should be followed when approaching these positions:</p>
+    <p>Pawn Races are a key part of pawn endgames as they occur quite often. Each side has at least one passed pawn that
+        is storming down the board, and one must calculate if they wish to try and defend the pawn from promoting or go
+        forth with pushing their own pawn.</p>
+    <p>It is hard to fully cover this endgame, but there are some general guidelines that should be followed when
+        approaching these positions:</p>
     <ul>
         <li>If it is possible to promote the pawn(s) before the opponent, push the pawn(s)</li>
         <li>If the pawn(s) can be stopped by the opposing king no matter what, go for your opponent's pawn(s)</li>
-        <li>Try not to play more moves than necessary to cover the opponent's pawn(s) because those extra moves can be used to push your pawn(s)</li>
+        <li>Try not to play more moves than necessary to cover the opponent's pawn(s) because those extra moves can be
+            used to push your pawn(s)</li>
     </ul>
-    <p>This endgame relies entirely on calculation and is a tempo-for-tempo battle. To explore this endgame, we must first understand in which cases the pawn can promote. This concept is known as the "square rule", as shown in this position:</p>
+    <p>This endgame relies entirely on calculation and is a tempo-for-tempo battle. To explore this endgame, we must
+        first understand in which cases the pawn can promote. This concept is known as the "square rule", as shown in
+        this position:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/pawnrace1.png" height = 300 width = 300></center>
-    <p><center><b>Figure 1.0: The Square Rule</b></center></p>
+    <center><img src="../../endgamePageIcons/pawnPageIcons/pawnrace1.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 1.0: The Square Rule</b></center>
+    </p>
     <br>
-    <p>To determine if a passed pawn can be caught by the king, we must consider two things: how long the pawn needs to promote and how far away the opponent's king is. To perform the square rule, we consider how many squares away the pawn is from promotion, and draw a square from the pawn with those dimensions as shown in Figure 1.0. If Black's king is inside this square, then the game is a draw (and vice versa).</p>
-    <p>For example, if it was Black to move, Black could hold the draw by playing either <b>1...Ke4</b> or <b>1...Ke5</b> and entering the box. However, if it was White to move, the position would be winning after <b>1.a5</b> because the box would shrink to a5-a8-d8-d5, which Black's king can no longer enter (White would simply have to push the pawn to win).</p>
+    <p>To determine if a passed pawn can be caught by the king, we must consider two things: how long the pawn needs to
+        promote and how far away the opponent's king is. To perform the square rule, we consider how many squares away
+        the pawn is from promotion, and draw a square from the pawn with those dimensions as shown in Figure 1.0. If
+        Black's king is inside this square, then the game is a draw (and vice versa).</p>
+    <p>For example, if it was Black to move, Black could hold the draw by playing either <b>1...Ke4</b> or
+        <b>1...Ke5</b> and entering the box. However, if it was White to move, the position would be winning after
+        <b>1.a5</b> because the box would shrink to a5-a8-d8-d5, which Black's king can no longer enter (White would
+        simply have to push the pawn to win).</p>
     <br>
-    <p>This rule is very useful in real pawn races, because it helps to identify whether or not your king can catch up to the opponent's pawn, and whether or not their king can catch up to your pawn. Consider the following position:</p>
+    <p>This rule is very useful in real pawn races, because it helps to identify whether or not your king can catch up
+        to the opponent's pawn, and whether or not their king can catch up to your pawn. Consider the following
+        position:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/pawnrace2.png" height = 300 width = 300></center>
-    <p><center><b>Figure 2.0: White to Move</b></center></p>
+    <center><img src="../../endgamePageIcons/pawnPageIcons/pawnrace2.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 2.0: White to Move</b></center>
+    </p>
     <br>
-    <p>This position (White to Move) is a very interesting and typical pawn race. Both sides have a passed pawn on opposite ends of the board. However, there is a key difference: the positions of the kings. Currently, White's king is in a good position to reach the black pawn, while Black's king is slightly farther from the white pawn.</p>
-    <p>Although material is even and Black's pawn is one step closer to promotion compared to White's, White actually wins this endgame with precise play. Let us consider White's options:</p>
+    <p>This position (White to Move) is a very interesting and typical pawn race. Both sides have a passed pawn on
+        opposite ends of the board. However, there is a key difference: the positions of the kings. Currently, White's
+        king is in a good position to reach the black pawn, while Black's king is slightly farther from the white pawn.
+    </p>
+    <p>Although material is even and Black's pawn is one step closer to promotion compared to White's, White actually
+        wins this endgame with precise play. Let us consider White's options:</p>
     <ul>
-        <li><b>1.Kf3?? and 1.Kf2??</b> look logical since it goes for Black's pawn, but the position is now a draw after <b>1...Ke5! 2.a5 2...Kd5!</b>, and Black's king reaches the pawn in time because it is inside the box</li>
-        <li><b>1.Kd4??, 1.Kd3??, and 1.Kd2??</b> actually lose the game for White as Black manages to win after <b>1...h3!</b>, and White's king is no longer in the box</li>
-        <li><b>1.a5! is the only winning move for White, as White has to push the pawn quickly before Black's king can make its way over</b></li>
+        <li><b>1.Kf3?? and 1.Kf2??</b> look logical since it goes for Black's pawn, but the position is now a draw after
+            <b>1...Ke5! 2.a5 2...Kd5!</b>, and Black's king reaches the pawn in time because it is inside the box</li>
+        <li><b>1.Kd4??, 1.Kd3??, and 1.Kd2??</b> actually lose the game for White as Black manages to win after
+            <b>1...h3!</b>, and White's king is no longer in the box</li>
+        <li><b>1.a5! is the only winning move for White, as White has to push the pawn quickly before Black's king can
+                make its way over</b></li>
     </ul>
-    <p>After <b>1.a5</b>, Black cannot reach White's pawn anymore, so the only hope is to rely on the h-pawn, after <b>1...h3 2.Kf3!</b>, we reach this position:</p>
+    <p>After <b>1.a5</b>, Black cannot reach White's pawn anymore, so the only hope is to rely on the h-pawn, after
+        <b>1...h3 2.Kf3!</b>, we reach this position:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/pawnrace3.png" height = 300 width = 300></center>
-    <p><center><b>Figure 2.1: Position after 2.Kf3!</b></center></p>
+    <center><img src="../../endgamePageIcons/pawnPageIcons/pawnrace3.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 2.1: Position after 2.Kf3!</b></center>
+    </p>
     <br>
     <p>Black has two options here:</p>
     <ul>
-        <li><b>2...h2</b> is the most intuitive move, directly pushing the pawn for promotion, but White has <b>2.Kg2!</b>, not rushing to push the pawn but covering Black's pawn first. Now, White simply has to push the pawn all the way down the board to win (note: White cannot take the h2 pawn as it is a waste of a tempo and Black's king will catch up to the a-pawn)</li>
-        <li><b>2...Ke5</b> is a more tricky move for White to address, because the game will end in a draw if White continues going for the pawn with <b>3.Kg3?</b>, as Black's king enters the square after <b>3...Kd5!</b>. Thus, after <b>2...Ke5</b>, White must play <b>3.a6!</b>, continuing to push the pawn and winning after <b>3...Kd6 4.a7 h2 5.Kg2!</b>, with unstoppable promotion on the next move</li>
+        <li><b>2...h2</b> is the most intuitive move, directly pushing the pawn for promotion, but White has
+            <b>2.Kg2!</b>, not rushing to push the pawn but covering Black's pawn first. Now, White simply has to push
+            the pawn all the way down the board to win (note: White cannot take the h2 pawn as it is a waste of a tempo
+            and Black's king will catch up to the a-pawn)</li>
+        <li><b>2...Ke5</b> is a more tricky move for White to address, because the game will end in a draw if White
+            continues going for the pawn with <b>3.Kg3?</b>, as Black's king enters the square after <b>3...Kd5!</b>.
+            Thus, after <b>2...Ke5</b>, White must play <b>3.a6!</b>, continuing to push the pawn and winning after
+            <b>3...Kd6 4.a7 h2 5.Kg2!</b>, with unstoppable promotion on the next move</li>
     </ul>
     <p>Thus, White wins the pawn race and the game.</p>
     <br>
-    <p>As can be seen from these examples, pawn races require much calculation and depend heavily on tempo-by-tempo play. One small mistep can easily turn a winning position into a drawn one. However, there are some tricks that we can take away from this section. When calculating that your king can cover the pawn and your pawn is one move ahead, the strategy is to continuously push the pawn down the board if they move their king. If they push their pawn, then you move your king down to stay in the square, and then continue pushing your pawn. By doing this, you do not waste any unnecessary tempi and can win the game.</p>
+    <p>As can be seen from these examples, pawn races require much calculation and depend heavily on tempo-by-tempo
+        play. One small mistep can easily turn a winning position into a drawn one. However, there are some tricks that
+        we can take away from this section. When calculating that your king can cover the pawn and your pawn is one move
+        ahead, the strategy is to continuously push the pawn down the board if they move their king. If they push their
+        pawn, then you move your king down to stay in the square, and then continue pushing your pawn. By doing this,
+        you do not waste any unnecessary tempi and can win the game.</p>
     <br>
     <p>That is all for pawn races, and we will discuss (xx concept) in the next section.</p>
 </body>

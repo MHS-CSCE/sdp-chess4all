@@ -5,9 +5,8 @@
 
 <head>
     <title>Endgames</title>
-<link rel = "stylesheet" href = "../../style.css">
-<link rel = "preload" href = "../../endgamePageIcons/">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="/cssFiles/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -16,29 +15,41 @@
     </div>
 
     <script>
-    $(function(){
-      $("#nav-bar").load("../../nav.html");
-    });
+        $(function () {
+            $("#nav-bar").load("../../nav.html");
+        });
     </script>
     <h1>Endgame Study Database</h1>
     <h2>King + Pawn vs King</h2>
 
-    <p>The King + Pawn vs King Endgame is an endgame that every chess player must understand. It is full of intricacies, as the position of the pawn or king can be the difference between a winning and drawn endgame. It is also the foundation for all other endgames, as many of them will have trades that lead to a pawn endgame. This section will explore the keys to recognize which endgames are won and which are drawn.</p>
+    <p>The King + Pawn vs King Endgame is an endgame that every chess player must understand. It is full of intricacies,
+        as the position of the pawn or king can be the difference between a winning and drawn endgame. It is also the
+        foundation for all other endgames, as many of them will have trades that lead to a pawn endgame. This section
+        will explore the keys to recognize which endgames are won and which are drawn.</p>
     <br>
-    <p>Firstly, if the pawn is on the a- or h-file, the position is a draw as long as the king can reach the corresponding corner. For example, if white has a pawn on the a-file, the position is always a draw if black has their king on a8 or b8 (they will simply shuffle the king back and forth between a8 & b8 and white has no way to break through).</p>
+    <p>Firstly, if the pawn is on the a- or h-file, the position is a draw as long as the king can reach the
+        corresponding corner. For example, if white has a pawn on the a-file, the position is always a draw if black has
+        their king on a8 or b8 (they will simply shuffle the king back and forth between a8 & b8 and white has no way to
+        break through).</p>
     <br>
-    <p>Thus, this section will consider endgames where the pawns are not on the edge of the board. Whether or not the pawn endgame is winning or drawn depends on the following factors:</p>
+    <p>Thus, this section will consider endgames where the pawns are not on the edge of the board. Whether or not the
+        pawn endgame is winning or drawn depends on the following factors:</p>
     <ol>
         <li>White or Black to Move</li><br>
         <li>King Being Ahead or Behind of the Pawn</li><br>
         <li>How Far the Pawn is Advanced</li><br>
     </ol>
-    <p>Each one of these will affect the nature of the position. To begin the studies of this endgame, let us consider the following position:</p>
+    <p>Each one of these will affect the nature of the position. To begin the studies of this endgame, let us consider
+        the following position:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/king+pawn1.png" height = 300 width = 300></center>
-    <p><center><b>Figure 1.0: White vs Black to Move</b></center></p>
+    <center><img src="/images/endgamePageIcons/pawnPageIcons/king+pawn1.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 1.0: White vs Black to Move</b></center>
+    </p>
     <br>
-    <p>In this position, the pawn is very highly advanced and the kings are to the side of the pawn. White is very close to promoting the pawn, but whether or not it is possible depends on a very key factor. If it is White to move, the position is a <b>Draw</b>; if it is Black to move, <b>White Wins</b>.</p>
+    <p>In this position, the pawn is very highly advanced and the kings are to the side of the pawn. White is very close
+        to promoting the pawn, but whether or not it is possible depends on a very key factor. If it is White to move,
+        the position is a <b>Draw</b>; if it is Black to move, <b>White Wins</b>.</p>
     <br>
     <p>First, consider it being Black to move: Black must either play <b>1...Kd8</b> or <b>1...Kf8</b>.</p>
     <ul>
@@ -46,53 +57,83 @@
         <li><b>1...Kd8</b> will result in <b>2.d7 Kc7 3.Ke7</b>, with unstoppable promotion on the next move</li>
     </ul>
     <p>Thus, <b>White Wins</b>.</p><br>
-    
-    <p>Now, consider it being White to move: white must either push the pawn or move the king. If white plays <b>1.d7+</b>, then the game quickly ends in a draw after either <b>1...Kd8 2.Kd6</b> (stalemate) or <b>1...Kd8 2.Kd5 Kxd7</b> (insufficient material). If white moves the king instead, <b>1.Ke5</b> for example, then the game will progress with <b>1...Kd7 2.Kd5</b>. The resulting position is crucial:</p>
+
+    <p>Now, consider it being White to move: white must either push the pawn or move the king. If white plays
+        <b>1.d7+</b>, then the game quickly ends in a draw after either <b>1...Kd8 2.Kd6</b> (stalemate) or <b>1...Kd8
+            2.Kd5 Kxd7</b> (insufficient material). If white moves the king instead, <b>1.Ke5</b> for example, then the
+        game will progress with <b>1...Kd7 2.Kd5</b>. The resulting position is crucial:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/king+pawn2.png" height = 300 width = 300></center>
-    <p><center><b>Figure 1.1: Position after 2.Kd5</b></center></p>
+    <center><img src="/images/endgamePageIcons/pawnPageIcons/king+pawn2.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 1.1: Position after 2.Kd5</b></center>
+    </p>
     <br>
     <p>Now, Black has three legal moves: one of them draws and the other two lose:</p>
     <ul>
-        <li><b>2...Ke8??</b> loses after <b>3.Ke6!</b>, reaching Figure 1.0 except with it being <b>Black</b> to move, meaning that <b>White Wins</b></li>
-        <li><b>2...Kc8??</b> loses after <b>3.Kc6!</b>, reaching Figure 1.0 except on the other side of the pawn with it being <b>Black</b> to move, meaning that <b>White Wins</b></li>
-        <li><b>2...Kd8!</b> draws after white plays <b>3.Kc6</b> or <b>3.Ke6</b> as black simply replies with <b>3...Kc8</b> or <b>3...Ke8</b> respectively, returning back to Figure 1.0 with it still being <b>White</b> to move</li>
+        <li><b>2...Ke8??</b> loses after <b>3.Ke6!</b>, reaching Figure 1.0 except with it being <b>Black</b> to move,
+            meaning that <b>White Wins</b></li>
+        <li><b>2...Kc8??</b> loses after <b>3.Kc6!</b>, reaching Figure 1.0 except on the other side of the pawn with it
+            being <b>Black</b> to move, meaning that <b>White Wins</b></li>
+        <li><b>2...Kd8!</b> draws after white plays <b>3.Kc6</b> or <b>3.Ke6</b> as black simply replies with
+            <b>3...Kc8</b> or <b>3...Ke8</b> respectively, returning back to Figure 1.0 with it still being <b>White</b>
+            to move</li>
     </ul>
     <p>Thus, this endgame is a <b>Draw</b>.</p>
     <br>
-    <p>This endgame, except for showing that White or Black to move affects the result of the game, also illustrates an important concept. When the two kings and the pawn are lined up with the pawn in between them, Black should move their king directly down and follow the king in whichever direction they end up choosing, as shown with <b>2...Kd8!</b> in the earlier position.</p>
-    <p>As can be seen, we always wish to follow the opponent's king and not be followed by their king. This concept is called opposition, and is explored more in depth in <a href = "king+opposition.html">this section</a>.</p>
+    <p>This endgame, except for showing that White or Black to move affects the result of the game, also illustrates an
+        important concept. When the two kings and the pawn are lined up with the pawn in between them, Black should move
+        their king directly down and follow the king in whichever direction they end up choosing, as shown with
+        <b>2...Kd8!</b> in the earlier position.</p>
+    <p>As can be seen, we always wish to follow the opponent's king and not be followed by their king. This concept is
+        called opposition, and is explored more in depth in <a href="king+opposition.html">this section</a>.</p>
     <br>
     <p>After finishing the analysis of the first position, let us consider a new position:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/king+pawn3.png" height = 300 width = 300></center>
-    <p><center><b>Figure 2.0: White vs Black to Move</b></center></p>
+    <center><img src="/images/endgamePageIcons/pawnPageIcons/king+pawn3.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 2.0: White vs Black to Move</b></center>
+    </p>
     <br>
-    <p>This position is fundamentally different from the previous puzzle due to the position of the king. Instead of being behind the pawn, it is now in front of the pawn. Although the technique is different from before, the result still differs based on White vs Black to move. If it is White to move, the position is a <b>Draw</b>; if it is Black to move, <b>White Wins</b>.</p>
+    <p>This position is fundamentally different from the previous puzzle due to the position of the king. Instead of
+        being behind the pawn, it is now in front of the pawn. Although the technique is different from before, the
+        result still differs based on White vs Black to move. If it is White to move, the position is a <b>Draw</b>; if
+        it is Black to move, <b>White Wins</b>.</p>
     <br>
-    <p>First, consider it being White to move. White has a few options but all of them result in an easy draw for Black:</p>
+    <p>First, consider it being White to move. White has a few options but all of them result in an easy draw for Black:
+    </p>
     <ul>
-        <li><b>1.Kc4?</b> and <b>1.Ke4?</b> both make no sense due to <b>1...Kc6</b> and <b>1...Ke6</b> respectively, which will just result in a position with the king being behind the pawn and far from promotion, which we learned is a draw from the previous position (see Figure 1.0).</li>
+        <li><b>1.Kc4?</b> and <b>1.Ke4?</b> both make no sense due to <b>1...Kc6</b> and <b>1...Ke6</b> respectively,
+            which will just result in a position with the king being behind the pawn and far from promotion, which we
+            learned is a draw from the previous position (see Figure 1.0).</li>
         <li><b>1.Kc5 Kc7 2.d5 Kd7 3.d6 Kd8!</b> will result in a draw (see Figure 1.1)</li>
         <li><b>1.Ke5 Ke7 2.d5 Kd7 3.d6 Kd8!</b> will also be a draw</li>
     </ul>
     <p>Thus, this endgame is a <b>Draw</b>.</p>
 
-    <p>Notice that Black is always able to stay opposite to White's king (more on this topic, opposition, <a href = "king+opposition.html">here</a>), which prevents White from ever entering with their king.</p>
+    <p>Notice that Black is always able to stay opposite to White's king (more on this topic, opposition, <a
+            href="king+opposition.html">here</a>), which prevents White from ever entering with their king.</p>
     <br>
     <p>Now, consider it being Black to move. Black has a variety of moves possible:</p>
     <ul>
-        <li><b>1...Kc8?</b> leads to a very quick loss after <b>2.Kc6 Kd8 (2...Kb8 3.d5 Kc8 4.d6</b> transposes to the main line) <b>3.d5 Kc8 4.d6</b>, which results in the same losing position in Figure 1.0 with Black to move</li>
+        <li><b>1...Kc8?</b> leads to a very quick loss after <b>2.Kc6 Kd8 (2...Kb8 3.d5 Kc8 4.d6</b> transposes to the
+            main line) <b>3.d5 Kc8 4.d6</b>, which results in the same losing position in Figure 1.0 with Black to move
+        </li>
         <li><b>1...Ke8?</b> results in the same downfall as <b>1...Kc8?</b> after <b>2.Ke6</b></li>
         <li><b>1...Kd8</b> will lead to <b>2.Kd6</b> (Figure 2.1)</li>
-        <li><b>1...Kc7</b> is more resilient, but still leads to Figure 2.1 after <b>2.Ke6 Kd8 (2...Kc6 3.d5+ Kc7 4.Ke7</b>, with d6-d7-d8=Q being unstoppable) <b>3.Kd6</b></li>
+        <li><b>1...Kc7</b> is more resilient, but still leads to Figure 2.1 after <b>2.Ke6 Kd8 (2...Kc6 3.d5+ Kc7
+                4.Ke7</b>, with d6-d7-d8=Q being unstoppable) <b>3.Kd6</b></li>
         <li><b>1...Ke7</b> is the same as <b>1...Kc7</b> after <b>2.Kc6</b></li>
     </ul>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/king+pawn4.png" height = 300 width = 300></center>
-    <p><center><b>Figure 2.1: Position after 2.Kd6</b></center></p>
+    <center><img src="/images/endgamePageIcons/pawnPageIcons/king+pawn4.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 2.1: Position after 2.Kd6</b></center>
+    </p>
     <br>
-    <p>This position is a crucial position to understand in king + pawn endgames. No matter if it is White or Black to move, this position is winning for White, so the side with the extra pawn should always try to obtain this position. It is currently Black to move in this variation, but we will also consider White to move afterwards for study purposes.</p>
+    <p>This position is a crucial position to understand in king + pawn endgames. No matter if it is White or Black to
+        move, this position is winning for White, so the side with the extra pawn should always try to obtain this
+        position. It is currently Black to move in this variation, but we will also consider White to move afterwards
+        for study purposes.</p>
     <p>Black only has two choices here:</p>
     <ul>
         <li><b>1...Kc8</b> loses to <b>2.Ke7 Kc7 3.d5</b>, with d6-d7-d8=Q being unstoppable</li>
@@ -100,14 +141,21 @@
     </ul>
     <p>Thus, <b>White Wins</b>.</p>
     <br>
-    <p>However, this position is even a win if it is White to move. Considering this position on its own, it is winning after <b>1.Kc6 Kc8 (1...Ke7 2.d5 Kd8 3.Kd6</b> wins (see Figure 1.0)) <b>2.d5 Kd8 3.Kd6! (3.d6?? Kc8!</b> is a draw), which wins according to Figure 1.0.</p>
+    <p>However, this position is even a win if it is White to move. Considering this position on its own, it is winning
+        after <b>1.Kc6 Kc8 (1...Ke7 2.d5 Kd8 3.Kd6</b> wins (see Figure 1.0)) <b>2.d5 Kd8 3.Kd6! (3.d6?? Kc8!</b> is a
+        draw), which wins according to Figure 1.0.</p>
     <br>
-    <p>From these two examples, we can come up with a conclusion for king + pawn vs king endgames. Most (if not all) of these endgames will end up in some form of this position:</p>
+    <p>From these two examples, we can come up with a conclusion for king + pawn vs king endgames. Most (if not all) of
+        these endgames will end up in some form of this position:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/king+pawn5.png" height = 300 width = 300></center>
-    <p><center><b>Figure 3.0: A Typical Type of Position</b></center></p>
+    <center><img src="/images/endgamePageIcons/pawnPageIcons/king+pawn5.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 3.0: A Typical Type of Position</b></center>
+    </p>
     <br>
-    <p>In this position, the key for White is for the king to gain access to one of the three highlighted squares. If this can be done, the endgame is winning for White. On the other hand, if Black can successfully stop White from getting their king to one of the highlighted squares, then the endgame is drawn.</p>
+    <p>In this position, the key for White is for the king to gain access to one of the three highlighted squares. If
+        this can be done, the endgame is winning for White. On the other hand, if Black can successfully stop White from
+        getting their king to one of the highlighted squares, then the endgame is drawn.</p>
     <br>
     <p>That is all for this endgame, and more pawn endgames will be discussed in the following sections.</p>
 </body>
