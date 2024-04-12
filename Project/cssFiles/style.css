@@ -97,3 +97,6 @@ table {
   border-radius: 15px;
   width: fit-content;
 }
+.default {
+  background: none;
+}

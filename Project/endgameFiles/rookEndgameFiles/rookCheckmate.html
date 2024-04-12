@@ -5,67 +5,109 @@
 
 <head>
     <title>Endgames</title>
-<link rel = "stylesheet" href = "/cssFiles/style.css">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="/cssFiles/style.css">
+    <link rel="stylesheet" href="/cssFiles/nav.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <div id="navbar">
+    <div id="nav-bar">
 
     </div>
 
     <script>
-    $(function(){
-      $("#nav-bar").load("../../nav.html");
-    });
+        $(function () {
+            $("#nav-bar").load("../../html/nav.html");
+        });
     </script>
-    <h1>Endgame Study Database</h1>
-    <h2><center>Rook Checkmate</center></h2>
+</body>
 
-    <p>The Rook Checkmate, similar to the Queen Checkmate, is a very fundamental endgame to know. Although the rook is significantly less powerful than the queen, it is still strong enough to deliver a checkmate by itself (as opposed to the knight and the bishop). Although there are multiple ways in which this can be done, we will teach a simple and easy-to-understand way to do it.</p>
+<body>
+    <h1>Endgame Study Database</h1>
+    <h2>
+        <center>Rook Checkmate</center>
+    </h2>
+
+    <p>The Rook Checkmate, similar to the Queen Checkmate, is a very fundamental endgame to know. Although the rook is
+        significantly less powerful than the queen, it is still strong enough to deliver a checkmate by itself (as
+        opposed to the knight and the bishop). Although there are multiple ways in which this can be done, we will teach
+        a simple and easy-to-understand way to do it.</p>
     <br>
-    <p>Similar to the queen checkmate, the initial position does not really matter for the rook checkmate, and it is just a matter of following the right strategy to win.</p>
+    <p>Similar to the queen checkmate, the initial position does not really matter for the rook checkmate, and it is
+        just a matter of following the right strategy to win.</p>
     <br>
     <p>To accomplish this checkmate, we will wish to achieve the following steps:</p>
     <ol>
-        <li>When it is your move, place your rook as close to the opposing king as possible while still being defended by your king to create a box</li><br>
-        <li>Wherever the king moves, make the same move with your rook if it is still defended by the king; otherwise, shuffle your king (more on this later). This will shrink the box</li><br>
-        <li>Eventually, the opponent's king will be forced into a corner, and we wish to move the rook to be a "knight move" away from the corner of the opponent's king</li><br>
-        <li>Maneuver your king so that it occupies the other square that is a "knight move" away from the corner of the opponent's king</li>
-        <li>Once the king gets to the ideal square, it will be the opponent's turn to move. If their king moves into the corner, then there is immediate checkmate with the rook; otherwise, a waiting move must be made with the rook before delivering checkmate on the next move</li><br>
+        <li>When it is your move, place your rook as close to the opposing king as possible while still being defended
+            by your king to create a box</li><br>
+        <li>Wherever the king moves, make the same move with your rook if it is still defended by the king; otherwise,
+            shuffle your king (more on this later). This will shrink the box</li><br>
+        <li>Eventually, the opponent's king will be forced into a corner, and we wish to move the rook to be a "knight
+            move" away from the corner of the opponent's king</li><br>
+        <li>Maneuver your king so that it occupies the other square that is a "knight move" away from the corner of the
+            opponent's king</li>
+        <li>Once the king gets to the ideal square, it will be the opponent's turn to move. If their king moves into the
+            corner, then there is immediate checkmate with the rook; otherwise, a waiting move must be made with the
+            rook before delivering checkmate on the next move</li><br>
     </ol>
     <br>
-    <p>These steps are relatively abstract, and the "waiting moves" may be hard to understand for now, so let us consider an in-game scenario:</p>
+    <p>These steps are relatively abstract, and the "waiting moves" may be hard to understand for now, so let us
+        consider an in-game scenario:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/rookPageIcons/rookCheckmate1.png" height = 300 width = 300></center>
-    <p><b><center>Figure 1.0: White to Move</center></b></p>
+    <center><img src="../../endgamePageIcons/rookPageIcons/rookCheckmate1.png" height=300 width=300></center>
+    <p><b>
+            <center>Figure 1.0: White to Move</center>
+        </b></p>
     <br>
     <p>In this position, White is a rook up, so we simply need to follow the steps listed above.</p>
-    <p>First, we should establish the box for the Black king. The most simple way to do this in this position is to play <b>1.Rg4</b>, boxing in the king on the left side of the baord. After this, we should follow the second step and slowly close up the box until the king is stuck in the a8 corner.</p>
-    <p>If Black moves their king up or to the left, they will be going towards the a8 corner, so White simply needs to follow the king with the rook to close up the box. Thus, Black's most resilient attempt would be to avoid going towards the a8 corner, which means Black should play <b>1...Ke5</b>.</p>
-    <p>White continues closing up the box with <b>2.Rf4 Kd5 3.Re4</b>. However, after <b>3...Kc5</b>, White can no longer continue closing the box with the rook, so we must move our king closer with <b>4.Ke3 Kd5 5.Kd3</b>:</p>
+    <p>First, we should establish the box for the Black king. The most simple way to do this in this position is to play
+        <b>1.Rg4</b>, boxing in the king on the left side of the baord. After this, we should follow the second step and
+        slowly close up the box until the king is stuck in the a8 corner.</p>
+    <p>If Black moves their king up or to the left, they will be going towards the a8 corner, so White simply needs to
+        follow the king with the rook to close up the box. Thus, Black's most resilient attempt would be to avoid going
+        towards the a8 corner, which means Black should play <b>1...Ke5</b>.</p>
+    <p>White continues closing up the box with <b>2.Rf4 Kd5 3.Re4</b>. However, after <b>3...Kc5</b>, White can no
+        longer continue closing the box with the rook, so we must move our king closer with <b>4.Ke3 Kd5 5.Kd3</b>:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/rookPageIcons/rookCheckmate2.png" height = 300 width = 300></center>
-    <p><b><center>Figure 1.1: Position after 5.Kd3</center></b></p>
-    <br>    
+    <center><img src="../../endgamePageIcons/rookPageIcons/rookCheckmate2.png" height=300 width=300></center>
+    <p><b>
+            <center>Figure 1.1: Position after 5.Kd3</center>
+        </b></p>
+    <br>
     <p>We now have control over the d4 and c4 squares to further close up the box.</p>
-    <p>White continues with their strategy, and the game may continue with <b>5...Kc5 6.Rd4 Kb5 7.Rc4 Ka5 8.Kc3 Kb6</b>, reaching the following position:</p>
+    <p>White continues with their strategy, and the game may continue with <b>5...Kc5 6.Rd4 Kb5 7.Rc4 Ka5 8.Kc3 Kb6</b>,
+        reaching the following position:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/rookPageIcons/rookCheckmate3.png" height = 300 width = 300></center>
-    <p><b><center>Figure 1.2: Position after 8...Kb6</center></b></p>
+    <center><img src="../../endgamePageIcons/rookPageIcons/rookCheckmate3.png" height=300 width=300></center>
+    <p><b>
+            <center>Figure 1.2: Position after 8...Kb6</center>
+        </b></p>
     <br>
-    <p>We may notice here that if we play 9.Kb3 Kb5, our position is hard to progress and we may need to do some maneuvering. However, since Black's king has moved backwards, we are not restricted to closing the box with the rook, but can also do so with the king with <b>9.Kb4! Ka6 10.Rc6+ Ka7</b>. Black is trying again to be tricky with their king, but we can keep opposition with <b>11.Kc5! Kb7 12.Kb5! Ka7 13.Rc7! Ka8</b>:</p>
+    <p>We may notice here that if we play 9.Kb3 Kb5, our position is hard to progress and we may need to do some
+        maneuvering. However, since Black's king has moved backwards, we are not restricted to closing the box with the
+        rook, but can also do so with the king with <b>9.Kb4! Ka6 10.Rc6+ Ka7</b>. Black is trying again to be tricky
+        with their king, but we can keep opposition with <b>11.Kc5! Kb7 12.Kb5! Ka7 13.Rc7! Ka8</b>:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/rookPageIcons/rookCheckmate4.png" height = 300 width = 300></center>
-    <p><b><center>Figure 1.3: Position after 13...Ka8</center></b></p>
+    <center><img src="../../endgamePageIcons/rookPageIcons/rookCheckmate4.png" height=300 width=300></center>
+    <p><b>
+            <center>Figure 1.3: Position after 13...Ka8</center>
+        </b></p>
     <br>
-    <p>We have obtained the ideal position with the rook a "knight move" away from the king's corner. We can now place the king on the other square a "knight move" away from a8 by playing <b>14.Kb6</b>. Black only has one legal move with <b>14...Kb8</b>. Now, since it is our move, we are forced to play a waiting move while keeping the box, which we can do with <b>15.Rc6!</b>. Note that any other move such as 15.Rc5, 15.Rc4, 15.Rc3, 15.Rc2, 15.Rc1 also accomplish the task as Black is forced to play <b>15...Ka8</b>:</p>
+    <p>We have obtained the ideal position with the rook a "knight move" away from the king's corner. We can now place
+        the king on the other square a "knight move" away from a8 by playing <b>14.Kb6</b>. Black only has one legal
+        move with <b>14...Kb8</b>. Now, since it is our move, we are forced to play a waiting move while keeping the
+        box, which we can do with <b>15.Rc6!</b>. Note that any other move such as 15.Rc5, 15.Rc4, 15.Rc3, 15.Rc2,
+        15.Rc1 also accomplish the task as Black is forced to play <b>15...Ka8</b>:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/rookPageIcons/rookCheckmate5.png" height = 300 width = 300></center>
-    <p><b><center>Figure 1.4: Position after 15...Ka8</center></b></p>
+    <center><img src="../../endgamePageIcons/rookPageIcons/rookCheckmate5.png" height=300 width=300></center>
+    <p><b>
+            <center>Figure 1.4: Position after 15...Ka8</center>
+        </b></p>
     <br>
-    <p>After accomplishing all the steps, the final checkmate may be delivered with <b>16.Rc8#</b>, and the game is over!</p>
-    <p>That will be all on the Rook Checkmate. In the following sections, we will consider more complex rook endgames.</p>
+    <p>After accomplishing all the steps, the final checkmate may be delivered with <b>16.Rc8#</b>, and the game is
+        over!</p>
+    <p>That will be all on the Rook Checkmate. In the following sections, we will consider more complex rook endgames.
+    </p>
     <br>
     <!--> insert links to go to next page </!-->
 

@@ -5,20 +5,24 @@
 
 <head>
     <title>Endgames</title>
-    <link rel="stylesheet" href="/cssFiles/style.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <<link rel="stylesheet" href="/cssFiles/style.css">
+        <link rel="stylesheet" href="/cssFiles/nav.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <div id="navbar">
+    <div id="nav-bar">
 
     </div>
 
     <script>
         $(function () {
-            $("#nav-bar").load("../../nav.html");
+            $("#nav-bar").load("../../html/nav.html");
         });
     </script>
+</body>
+
+<body>
     <h1>Endgame Study Database</h1>
     <h2>King + Pawn vs King</h2>
 
@@ -61,7 +65,8 @@
     <p>Now, consider it being White to move: white must either push the pawn or move the king. If white plays
         <b>1.d7+</b>, then the game quickly ends in a draw after either <b>1...Kd8 2.Kd6</b> (stalemate) or <b>1...Kd8
             2.Kd5 Kxd7</b> (insufficient material). If white moves the king instead, <b>1.Ke5</b> for example, then the
-        game will progress with <b>1...Kd7 2.Kd5</b>. The resulting position is crucial:</p>
+        game will progress with <b>1...Kd7 2.Kd5</b>. The resulting position is crucial:
+    </p>
     <br>
     <center><img src="/images/endgamePageIcons/pawnPageIcons/king+pawn2.png" height=300 width=300></center>
     <p>
@@ -76,14 +81,16 @@
             being <b>Black</b> to move, meaning that <b>White Wins</b></li>
         <li><b>2...Kd8!</b> draws after white plays <b>3.Kc6</b> or <b>3.Ke6</b> as black simply replies with
             <b>3...Kc8</b> or <b>3...Ke8</b> respectively, returning back to Figure 1.0 with it still being <b>White</b>
-            to move</li>
+            to move
+        </li>
     </ul>
     <p>Thus, this endgame is a <b>Draw</b>.</p>
     <br>
     <p>This endgame, except for showing that White or Black to move affects the result of the game, also illustrates an
         important concept. When the two kings and the pawn are lined up with the pawn in between them, Black should move
         their king directly down and follow the king in whichever direction they end up choosing, as shown with
-        <b>2...Kd8!</b> in the earlier position.</p>
+        <b>2...Kd8!</b> in the earlier position.
+    </p>
     <p>As can be seen, we always wish to follow the opponent's king and not be followed by their king. This concept is
         called opposition, and is explored more in depth in <a href="king+opposition.html">this section</a>.</p>
     <br>

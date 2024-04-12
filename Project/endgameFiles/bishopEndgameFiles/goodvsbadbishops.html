@@ -5,66 +5,112 @@
 
 <head>
     <title>Endgames</title>
-<link rel = "stylesheet" href = "/cssFiles/style.css">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="/cssFiles/style.css">
+    <link rel="stylesheet" href="/cssFiles/nav.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <div id="navbar">
+    <div id="nav-bar">
 
     </div>
 
     <script>
-    $(function(){
-      $("#nav-bar").load("../../nav.html");
-    });
+        $(function () {
+            $("#nav-bar").load("../../html/nav.html");
+        });
     </script>
-    <h1>Endgame Study Database</h1>
-    <h2><center>Good vs Bad Bishops</center></h2>
+</body>
 
-    <p>Good vs Bad bishops is a very important concept, and is even more significant in endgames, as the difference in strength between the bishops is more evident. Although material will most likely be equal, the side with the good bishop should always try to push for the win through strong maneuvering to find breakthroughs.</p>
-    <p>Firstly, we should define what a good bishop is. A good bishop is typically a bishop that has lots of activity, and in an endgame, it is a bishop that is not blocked by its own pawns. This normally means that the bishop is of an opposite color compared to its pawn chain. On the other hand, a bad bishop is one that is heavily blocked by its own pawns, limiting its own mobility.</p>
+<body>
+    <h1>Endgame Study Database</h1>
+    <h2>
+        <center>Good vs Bad Bishops</center>
+    </h2>
+
+    <p>Good vs Bad bishops is a very important concept, and is even more significant in endgames, as the difference in
+        strength between the bishops is more evident. Although material will most likely be equal, the side with the
+        good bishop should always try to push for the win through strong maneuvering to find breakthroughs.</p>
+    <p>Firstly, we should define what a good bishop is. A good bishop is typically a bishop that has lots of activity,
+        and in an endgame, it is a bishop that is not blocked by its own pawns. This normally means that the bishop is
+        of an opposite color compared to its pawn chain. On the other hand, a bad bishop is one that is heavily blocked
+        by its own pawns, limiting its own mobility.</p>
     <p>In these endgames, the side with the good bishop should try to do the following things:</p>
     <ul>
-        <li>If possible, activate the king as much as possible (if Black's pieces are all stuck in place, make a waiting move with the bishop to allow the king to continue advancing)</li><br>
+        <li>If possible, activate the king as much as possible (if Black's pieces are all stuck in place, make a waiting
+            move with the bishop to allow the king to continue advancing)</li><br>
         <li>Use the bishop to control and threaten the opponent's pawns, keeping their bad bishop tied down</li><br>
-        <li>If possible, look for possible ways to break through with the pawns or the bishop (look out for bishop sacs!)</li><br>
+        <li>If possible, look for possible ways to break through with the pawns or the bishop (look out for bishop
+            sacs!)</li><br>
     </ul>
-    <p>There are many possible types of good vs bad bishop endgames, and it is impossible to explore all of them. However, this section will provide some positions that show some key ideas of this endgame. First, consider the following position:</p>
+    <p>There are many possible types of good vs bad bishop endgames, and it is impossible to explore all of them.
+        However, this section will provide some positions that show some key ideas of this endgame. First, consider the
+        following position:</p>
     <br>
-    <center><img src = "/images/endgamePageIcons/bishopPageIcons/goodvsbadbishops1.png" height = 300 width = 300></center>
-    <p><b><center>Figure 1.0: White to Move</center></b></p>
+    <center><img src="/images/endgamePageIcons/bishopPageIcons/goodvsbadbishops1.png" height=300 width=300></center>
+    <p><b>
+            <center>Figure 1.0: White to Move</center>
+        </b></p>
     <br>
-    <p>When looking at this position, both sides have a dark-squared bishop. However, it is clear that White has the good bishop because all of their pawns are on light squares, while Black's bishop is blocked by all of its dark-squared pawns. Thus, White is the one that should be pushing for the win here.</p>
-    <p>Although White has multiple winning moves, let us play the most forcing lines with <b>1.Bd2!</b>, threatening Bxh6! to try and promote the g6 pawn. Now, Black has two main options to try and defend against this threat:</p>
+    <p>When looking at this position, both sides have a dark-squared bishop. However, it is clear that White has the
+        good bishop because all of their pawns are on light squares, while Black's bishop is blocked by all of its
+        dark-squared pawns. Thus, White is the one that should be pushing for the win here.</p>
+    <p>Although White has multiple winning moves, let us play the most forcing lines with <b>1.Bd2!</b>, threatening
+        Bxh6! to try and promote the g6 pawn. Now, Black has two main options to try and defend against this threat:</p>
     <ul>
-        <li><b>1...Ke7?</b> is losing very quickly after <b>2.Kd5!</b>, with the White king playing Kc6-Kb7 and taking all of Black's queenside pawns</li><br>
-        <li><b>1...Bf8</b> is more resilient to defend the g7 square, but White follows up with <b>2.Kd5!</b>, getting to the following position:</li><br>
+        <li><b>1...Ke7?</b> is losing very quickly after <b>2.Kd5!</b>, with the White king playing Kc6-Kb7 and taking
+            all of Black's queenside pawns</li><br>
+        <li><b>1...Bf8</b> is more resilient to defend the g7 square, but White follows up with <b>2.Kd5!</b>, getting
+            to the following position:</li><br>
     </ul>
     <br>
-    <center><img src = "/images/endgamePageIcons/bishopPageIcons/goodvsbadbishops2.png" height = 300 width = 300></center>
-    <p><b><center>Figure 1.1: Position after 2.Kd5!</center></b></p>
+    <center><img src="/images/endgamePageIcons/bishopPageIcons/goodvsbadbishops2.png" height=300 width=300></center>
+    <p><b>
+            <center>Figure 1.1: Position after 2.Kd5!</center>
+        </b></p>
     <br>
-    <p>Notice that Black is now in zugzwang! Black is forced to move the king, with <b>2...Kd8 3.Kc6 Kc8</b> being the most resilient option by keeping opposition. However, White wins the game after <b>4.Be3!</b>, threatening Bxb6 followed by a7, so Black is forced to play <b>4...Bc5</b>, and White wins easily after <b>5.Bxh6! Bf8</b> (5...gxh6? 6.g7!)<b> 6.Be3 Bc5 7.Bxc5 bxc5 8.Kxc5</b>, with h6 and g7 coming next.</p>
-    <p>From this endgame, we can see the importance of the good bishop and how to maneuver it to win games. The threat of bishop sacs are also very important because it keeps the opponent's bishop tied down and permanently stuck in place.</p>
+    <p>Notice that Black is now in zugzwang! Black is forced to move the king, with <b>2...Kd8 3.Kc6 Kc8</b> being the
+        most resilient option by keeping opposition. However, White wins the game after <b>4.Be3!</b>, threatening Bxb6
+        followed by a7, so Black is forced to play <b>4...Bc5</b>, and White wins easily after <b>5.Bxh6! Bf8</b>
+        (5...gxh6? 6.g7!)<b> 6.Be3 Bc5 7.Bxc5 bxc5 8.Kxc5</b>, with h6 and g7 coming next.</p>
+    <p>From this endgame, we can see the importance of the good bishop and how to maneuver it to win games. The threat
+        of bishop sacs are also very important because it keeps the opponent's bishop tied down and permanently stuck in
+        place.</p>
     <br>
     <p>To further understand how to win with the good bishop, let us consider another example:</p>
     <br>
-    <center><img src = "/images/endgamePageIcons/bishopPageIcons/goodvsbadbishops3.png" height = 300 width = 300></center>
-    <p><b><center>Figure 2.0: White to Move</center></b></p>
+    <center><img src="/images/endgamePageIcons/bishopPageIcons/goodvsbadbishops3.png" height=300 width=300></center>
+    <p><b>
+            <center>Figure 2.0: White to Move</center>
+        </b></p>
     <br>
-    <p>We have a similar setup in this position compared to the previous one. White has the good bishop, and is looking to press for the win. First, White should once again improve their king position and start with <b>1.Kd4 Bd7 2.Ke5</b>.</p>
-    <p>The key to this position is that White always has the underlying threat of Ba6, which Black only has Bc8 to reply with, so Black's bishop is permanently stuck on the c8-e6 diagonal. Thus, White has infinite waiting moves with the bishop to allow the king to infiltrate into Black's position. Black may follow up with <b>2...Be6 3.Ba6 Bc8 4.Bc4 Bd7</b>:</p>
+    <p>We have a similar setup in this position compared to the previous one. White has the good bishop, and is looking
+        to press for the win. First, White should once again improve their king position and start with <b>1.Kd4 Bd7
+            2.Ke5</b>.</p>
+    <p>The key to this position is that White always has the underlying threat of Ba6, which Black only has Bc8 to reply
+        with, so Black's bishop is permanently stuck on the c8-e6 diagonal. Thus, White has infinite waiting moves with
+        the bishop to allow the king to infiltrate into Black's position. Black may follow up with <b>2...Be6 3.Ba6 Bc8
+            4.Bc4 Bd7</b>:</p>
     <br>
-    <center><img src = "/images/endgamePageIcons/bishopPageIcons/goodvsbadbishops4.png" height = 300 width = 300></center>
-    <p><b><center>Figure 2.1: Position after 4...Bd7</center></b></p>
+    <center><img src="/images/endgamePageIcons/bishopPageIcons/goodvsbadbishops4.png" height=300 width=300></center>
+    <p><b>
+            <center>Figure 2.1: Position after 4...Bd7</center>
+        </b></p>
     <br>
-    <p>It looks as if White cannot break through anymore, as Black is simply covering all the key entry squares and defending the queenside very well. However, White has the beautiful tactical shot <b>5.Bf7!!</b>, sacrificing the bishop in order to infiltrate with the king. Since Black will lose the g6 pawn if they don't take the bishop, <b>5...Kxf7</b> is forced, allowing <b>6.Kd6 Ke8 7.Kc7</b>, and Black will lose the b7 pawn.</p>
-    <p>A possible continuation would be <b>7...Ke7 8.Kxb7 Kd8 9.Ka7 Bc8 10.b7 Bxb7 11.Kxb7 Kd7 12.Kb6</b>, where White will manage to win the b6 pawn and the game along with it.</p>
+    <p>It looks as if White cannot break through anymore, as Black is simply covering all the key entry squares and
+        defending the queenside very well. However, White has the beautiful tactical shot <b>5.Bf7!!</b>, sacrificing
+        the bishop in order to infiltrate with the king. Since Black will lose the g6 pawn if they don't take the
+        bishop, <b>5...Kxf7</b> is forced, allowing <b>6.Kd6 Ke8 7.Kc7</b>, and Black will lose the b7 pawn.</p>
+    <p>A possible continuation would be <b>7...Ke7 8.Kxb7 Kd8 9.Ka7 Bc8 10.b7 Bxb7 11.Kxb7 Kd7 12.Kb6</b>, where White
+        will manage to win the b6 pawn and the game along with it.</p>
     <br>
-    <p>These examples have showcased the strength of the good bishop and how to play the endgame against a bad one. The side with the good bishop essentially has infinite waiting moves that they can make, allowing for possibilities of king infiltrations. The key to winning with the good bishop is to not be afraid of sacrificing the bishop, as those breakthroughs often win the game immediately if calculated correctly.</p>
+    <p>These examples have showcased the strength of the good bishop and how to play the endgame against a bad one. The
+        side with the good bishop essentially has infinite waiting moves that they can make, allowing for possibilities
+        of king infiltrations. The key to winning with the good bishop is to not be afraid of sacrificing the bishop, as
+        those breakthroughs often win the game immediately if calculated correctly.</p>
     <br>
-    <p>That will be all on the 2 Bishops Checkmate. In the following section, we will consider more complex bishop endgames.</p>
+    <p>That will be all on the 2 Bishops Checkmate. In the following section, we will consider more complex bishop
+        endgames.</p>
     <br>
     <!--> insert links to go to next page </!-->
 

@@ -5,75 +5,120 @@
 
 <head>
     <title>Endgames</title>
-<link rel = "stylesheet" href = "../../style.css">
-<link rel = "preload" href = "../../endgamePageIcons/">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="/cssFiles/style.css">
+    <link rel="stylesheet" href="/cssFiles/nav.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <div id="navbar">
+    <div id="nav-bar">
 
     </div>
 
     <script>
-    $(function(){
-      $("#nav-bar").load("../../nav.html");
-    });
+        $(function () {
+            $("#nav-bar").load("../../html/nav.html");
+        });
     </script>
+</body>
+
+<body>
     <h1>Endgame Study Database</h1>
     <h2>Zugzwang</h2>
 
-    <p>In endgames, zugzwang is a very elegant concept that can help win games if done correctly. It is a relatively more advanced element of the endgame, so understanding it can give you an edge over your opponent. In simple terms, the word <i>zugzwang</i> means to force your opponent to make a move in a situation where they have no good moves. This is especially crucial in endgames, because this can lead to your opponent being forced to make a move that causes the game to end decisively in your favor.</p>
-    <p>In king and pawn endgames, while we must be aware of potential zugzwang opportunities against our opponent, we need to also be cautious of their zugzwangs against us. Otherwise, we may fall into a zugzwang while trying to zugzwang our opponent, which would be quite tragic.</p>
+    <p>In endgames, zugzwang is a very elegant concept that can help win games if done correctly. It is a relatively
+        more advanced element of the endgame, so understanding it can give you an edge over your opponent. In simple
+        terms, the word <i>zugzwang</i> means to force your opponent to make a move in a situation where they have no
+        good moves. This is especially crucial in endgames, because this can lead to your opponent being forced to make
+        a move that causes the game to end decisively in your favor.</p>
+    <p>In king and pawn endgames, while we must be aware of potential zugzwang opportunities against our opponent, we
+        need to also be cautious of their zugzwangs against us. Otherwise, we may fall into a zugzwang while trying to
+        zugzwang our opponent, which would be quite tragic.</p>
     <br>
     <p>To better understand how a zugzwang works, let us consider the following position:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/zugzwang1.png" height = 300 width = 300></center>
-    <p><center><b>Figure 1.0: White to Move</b></center></p>
+    <center><img src="/images/endgamePageIcons/pawnPageIcons/zugzwang1.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 1.0: White to Move</b></center>
+    </p>
     <br>
-    <p>This position is a very simple instance of how zugzwang can be used to win the game. To win, White must find a way to eliminate the e5 pawn while having the king in a good enough position to allow the pawn to promote. White has a few options in this position:</p>
-    <ul>
-        <li><b>1.Kd7??, 1.Kd8??, 1.Ke8??, 1.Kf8??, 1.Kf7??</b> all lose instantly to <b>1...Kd4</b>, which picks up the e4 pawn and wins the game for Black</li>
-        <li><b>1.Kf6?</b> looks extremely logical and seems to win the game, but Black holds the draw after <b>1...Kd6! 2.Kf5 Kd7! 3.Kxe5 Ke7!</b>, and Black gets the opposition and holds the draw. For more details on opposition, check <a href = "opposition.html">this section</a></li>
-        <li><b>1.Ke6!</b> is the only winning move because it covers the d6 square, preventing Black from going Kd6. Black is now forced to play <b>1...Kd4</b>, as <b>1...Kc6?</b> loses easily after <b>2.Kxe5 Kd7 3.Kf6!</b>. Thus, Black must play <b>1...Kd4</b>, which is met by <b>2.Kf5!!</b>, reaching the following position:</li>
+    <p>This position is a very simple instance of how zugzwang can be used to win the game. To win, White must find a
+        way to eliminate the e5 pawn while having the king in a good enough position to allow the pawn to promote. White
+        has a few options in this position:</p>
+    <ul class="default">
+        <li><b>1.Kd7??, 1.Kd8??, 1.Ke8??, 1.Kf8??, 1.Kf7??</b> all lose instantly to <b>1...Kd4</b>, which picks up the
+            e4 pawn and wins the game for Black</li><br>
+        <p><b>1.Kf6?</b> looks extremely logical and seems to win the game, but Black holds the draw after <b>1...Kd6!
+                2.Kf5 Kd7! 3.Kxe5 Ke7!</b>, and Black gets the opposition and holds the draw. For more details on
+            opposition, check <a href="opposition.html">this section</a></p>
+        <li><b>1.Ke6!</b> is the only winning move because it covers the d6 square, preventing Black from going Kd6.
+            Black is now forced to play <b>1...Kd4</b>, as <b>1...Kc6?</b> loses easily after <b>2.Kxe5 Kd7 3.Kf6!</b>.
+            Thus, Black must play <b>1...Kd4</b>, which is met by <b>2.Kf5!!</b>, reaching the following position:</li>
     </ul>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/zugzwang2.png" height = 300 width = 300></center>
-    <p><center><b>Figure 1.1: Position after 2.Kf5!!</b></center></p>
+    <center><img src="/images/endgamePageIcons/pawnPageIcons/zugzwang2.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 1.1: Position after 2.Kf5!!</b></center>
+    </p>
     <br>
-    <p>Notice how Black is now in zugzwang! Black's pawn cannot move, and Black's king has nowhere to move where it can defend the e5 pawn at the same time. Black is forced to move the king, <b>2...Kc5</b> for example, and White wins the pawn endgame easily after <b>3.Kxe5</b></p>
-    <p>This is the most typical example of a zugzwang with the kings on opposite sides of the pawn as shown in Figure 1.1. In this scenario, the king that steps into the corresponding square first (in this case, the d4 or f5 square) will lose the zugzwang after the opponent puts their king in the other square.</p>
+    <p>Notice how Black is now in zugzwang! Black's pawn cannot move, and Black's king has nowhere to move where it can
+        defend the e5 pawn at the same time. Black is forced to move the king, <b>2...Kc5</b> for example, and White
+        wins the pawn endgame easily after <b>3.Kxe5</b></p>
+    <p>This is the most typical example of a zugzwang with the kings on opposite sides of the pawn as shown in Figure
+        1.1. In this scenario, the king that steps into the corresponding square first (in this case, the d4 or f5
+        square) will lose the zugzwang after the opponent puts their king in the other square.</p>
     <p>Let us consider another position to further understand this concept:</p>
     <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/zugzwang3.png" height = 300 width = 300></center>
-    <p><center><b>Figure 2.0: White to Move</b></center></p>
+    <center><img src="/images/endgamePageIcons/pawnPageIcons/zugzwang3.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 2.0: White to Move</b></center>
+    </p>
     <br>
-    <p>Notice how this position is the exact same position as Figure 1.0, except the White king is now on g5 instead of e7. This makes a crucial difference because White can no longer play 1.Ke6 and win the game. This position is now a draw, but not without its subtleties. Let us consider a few potential variations:</p>
+    <p>Notice how this position is the exact same position as Figure 1.0, except the White king is now on g5 instead of
+        e7. This makes a crucial difference because White can no longer play 1.Ke6 and win the game. This position is
+        now a draw, but not without its subtleties. Let us consider a few potential variations:</p>
     <ul>
         <li><b>1.Kf6 Kd6</b> would result in the same drawn variation as before (see <b>1.Kf6</b> in Figure 1.0)</li>
-        <li><b>1.Kf5??</b> would actually lose the game for White, as Black manages to get the zugzwang after <b>1...Kd4!!</b>, which wins the game</li>
-        <li><b>1.Kg6!?</b> would be an interesting option to trick Black, because if Black plays <b>1...Kd4??</b>, White would manage to play <b>2.Kf5!!</b> and win. Furthermore, <b>1...Kc4??</b> would also lose after <b>2.Kf6!</b>, forcing <b>2...Kd4 3.Kf5!!</b>, which gets zugzwang once again. However, instead of those moves, Black can simply play <b>1...Kc6</b> to keep the opposition and hold the draw</li>
-    </ul>
-    <p>Thus, this endgame is a draw, and shows the importance of king position in endgames. It also shows the subtleties of the zugzwang, as both sides can easily fall into it if not careful.</p>
-    <p>Let us look at one final position for zugzwangs:</p>
-    <br>
-    <center><img src = "../../endgamePageIcons/pawnPageIcons/zugzwang4.png" height = 300 width = 300></center>
-    <p><center><b>Figure 3.0: White to Move</b></center></p>
-    <br>
-    <p>Notice how this position is different in nature compared to the previous two due to the pawns being advanced one extra square for White. This completely changes the nature of the position, so let us consider White's options:</p>
-    <ul>
-        <li><b>1.Ke6??</b> would still lose due to zugzwang after <b>1...Kc5!!</b></li>
-        <li><b>1.Ke4?</b> would manage to hold the game for White after <b>1...Kc5 2.Ke3 Kxd5 3.Kd3</b>, but White has better in the original position</li>
-        <li><b>1.Kf6!</b> actually manages to win for White as Black has no good moves remaining. The possible variations are as follows:
-        <ul>
-            <li><b>1...Kc5?? 2.Ke6!!</b> wins for White</li>
-            <li><b>1...Kb5 2.Ke7 Kc5 3.Ke6!!</b> wins for White</li>
-            <li><b>1...Kb7 2.Ke7 Kc7 3.Ke6 Kc8 4.Kxd6 Kd8 5.Kc6 Kc8 6.d6 Kd8 7.d7 Ke7 8.Kc7</b> wins for White</li>
-            <li><b>1...Kc7 Ke7</b> follows the same variation as <b>1...Kb7</b> (proceeds the same after 3.Ke6 in the previous line)</li>
-        </ul>
+        <li><b>1.Kf5??</b> would actually lose the game for White, as Black manages to get the zugzwang after
+            <b>1...Kd4!!</b>, which wins the game
+        </li>
+        <li><b>1.Kg6!?</b> would be an interesting option to trick Black, because if Black plays <b>1...Kd4??</b>, White
+            would manage to play <b>2.Kf5!!</b> and win. Furthermore, <b>1...Kc4??</b> would also lose after
+            <b>2.Kf6!</b>, forcing <b>2...Kd4 3.Kf5!!</b>, which gets zugzwang once again. However, instead of those
+            moves, Black can simply play <b>1...Kc6</b> to keep the opposition and hold the draw
         </li>
     </ul>
-    <p>Thus, White manages to win this endgame due to superior pawn position. The most crucial factor to zugzwang endgames is to recognize when and how to maneuver your king to force your opponent into a zugzwang position with their king. Pawn and king position are also crucial to determine whether or not the endgame is actually winning, shown through the three positions.</p>
+    <p>Thus, this endgame is a draw, and shows the importance of king position in endgames. It also shows the subtleties
+        of the zugzwang, as both sides can easily fall into it if not careful.</p>
+    <p>Let us look at one final position for zugzwangs:</p>
+    <br>
+    <center><img src="/images/endgamePageIcons/pawnPageIcons/zugzwang4.png" height=300 width=300></center>
+    <p>
+        <center><b>Figure 3.0: White to Move</b></center>
+    </p>
+    <br>
+    <p>Notice how this position is different in nature compared to the previous two due to the pawns being advanced one
+        extra square for White. This completely changes the nature of the position, so let us consider White's options:
+    </p>
+    <ul>
+        <li><b>1.Ke6??</b> would still lose due to zugzwang after <b>1...Kc5!!</b></li>
+        <li><b>1.Ke4?</b> would manage to hold the game for White after <b>1...Kc5 2.Ke3 Kxd5 3.Kd3</b>, but White has
+            better in the original position</li>
+        <li><b>1.Kf6!</b> actually manages to win for White as Black has no good moves remaining. The possible
+            variations are as follows:
+            <ul>
+                <li><b>1...Kc5?? 2.Ke6!!</b> wins for White</li>
+                <li><b>1...Kb5 2.Ke7 Kc5 3.Ke6!!</b> wins for White</li>
+                <li><b>1...Kb7 2.Ke7 Kc7 3.Ke6 Kc8 4.Kxd6 Kd8 5.Kc6 Kc8 6.d6 Kd8 7.d7 Ke7 8.Kc7</b> wins for White</li>
+                <li><b>1...Kc7 Ke7</b> follows the same variation as <b>1...Kb7</b> (proceeds the same after 3.Ke6 in
+                    the previous line)</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Thus, White manages to win this endgame due to superior pawn position. The most crucial factor to zugzwang
+        endgames is to recognize when and how to maneuver your king to force your opponent into a zugzwang position with
+        their king. Pawn and king position are also crucial to determine whether or not the endgame is actually winning,
+        shown through the three positions.</p>
     <br>
     <p>That is all for zugzwangs, and we will discuss (xx concept) in the next section.</p>
 </body>
