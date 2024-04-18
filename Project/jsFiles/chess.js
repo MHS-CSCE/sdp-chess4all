@@ -5,7 +5,7 @@ function insertImage() {
     document.querySelectorAll('.box').forEach(image => {
 
         if (image.innerText.length !== 0) {
-                image.innerHTML = `${image.innerText} <img class='allimg' src="../images/pieceIcons/${image.innerText}.png" alt="">`
+                image.innerHTML = `${image.innerText} <img class='allimg' src="/images/pieceIcons/${image.innerText}.png" alt="">`
                 image.style.cursor = 'pointer'
         }
     })
