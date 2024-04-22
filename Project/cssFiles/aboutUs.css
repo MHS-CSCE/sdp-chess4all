@@ -20,29 +20,33 @@ h1 {
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
-.about_img {
-    flex: 1;
+.icons {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
-.aboutimg {
-    flex: 1;
+.m_icon,
+.e_icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     overflow: hidden;
 }
-.aboutimg img{
-    width: 80%;
-    max-width: 700px;
+
+.m_icon img,
+.e_icon img {
+    width: 100%;
     height: auto;
-    margin-left: 400px;
     display: block;
-    transition: 0.5s ease;
 }
-.aboutimg:hover img{
-    transform: scale(1.1);
-}
+
+
 .info {
-    width: auto;
+    width: calc(50%-10px);
     border-radius: 10px;
     margin-right: 20px;
     padding: 30px 40px; 

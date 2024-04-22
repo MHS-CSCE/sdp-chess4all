@@ -11,10 +11,10 @@ for (i = 0; i < 8; i++) {
     insertPieces(i, piecearray)
 }
 
-function insertPieces(i) {
-    row = 100 * (8 - i)
-    for (x = 0; x < 8; x++) {
-        document.getElementById("b" + row + x).innerHTML = piecearray[x]
+function insertPieces(i, piecearray) {
+    row = 10*(8-i)
+    for (x = 1; x < 9; x++) {
+        document.getElementById("b" + String(row) + String(x)).innerHTML = piecearray[x-1]
     }
 }
 

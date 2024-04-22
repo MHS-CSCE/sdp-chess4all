@@ -599,10 +599,10 @@ document.querySelectorAll('.box').forEach(item => {
 
                             
                             if(document.getElementById("b205").innerText == "" && document.getElementById("b405").innerText == "Wpawn"){
-                                //alert("correct");
+                                alert("correct");
                             }
                             else{
-                                //alert("incorrect");
+                                alert("incorrect");
                             }
                         }
 
