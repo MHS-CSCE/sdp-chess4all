@@ -8,6 +8,13 @@ h1 {
     font-family: "Oswald", sans-serif;
     font-size: 50px;
 }
+body {
+    width: 100%;
+    height: 100%;
+    background: url('/images/aboutUsIcons/aboutus_background.png');
+    background-position: center;
+    background-size: cover;
+}
 .heading {
     width: 90%;
     display: flex;
@@ -68,30 +75,4 @@ h1 {
 }
 .info a:hover {
     text-decoration: underline;
-}
-th {
-    width: 50%;
-    padding: 50px;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #b8b8b8;
-    border-radius: 15px;
-}
-li {
-    float: left;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 12px 18px;
-
-  text-decoration: none;
-}
-li a:hover {
-  background-color: #474343;
 }
