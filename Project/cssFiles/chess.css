@@ -1,3 +1,6 @@
+html {
+    font-family: "Oswald", sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +16,7 @@ h1 {
     margin: 10px;
 }
 
-ul {
+#grid ul {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -22,7 +25,7 @@ ul {
     display: flex;
 }
 
-li {
+#grid li {
     list-style: none;
     display: grid;
     place-items: center;
@@ -77,4 +80,50 @@ li {
         margin-right: auto;
         text-align: center;
     }
+}
+
+
+
+#nav-bar th {
+    width: 50%;
+    padding: 50px;
+}
+#nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b8b8b8;
+    border-radius: 15px;
+}
+#nav-bar li {
+    float: left;
+}
+#nav-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 18px;
+
+  text-decoration: none;
+}
+#nav-bar li a:hover {
+  background-color: #474343;
+}
+
+#nav-bar li button {
+  display: block;
+  font-size: 16px;
+  height: 42px;
+  background-color: #b8b8b8;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 12px 18px;
+  text-decoration: none;
+}
+
+#nav-bar li button:hover {
+  background-color: #474343;
+  cursor: pointer;
 }

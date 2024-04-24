@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../cssFiles/chess.css">
+    <link rel="stylesheet" href="/cssFiles/chess.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Master Games</title>
 </head>
+<body id="nav">
+<div id="nav-bar">
 
-<body>
+</div>
+
+<script>
+  $(function () {
+    $("#nav-bar").load("nav.html");
+  });
+</script>
+</body>
+<body id="body">
 
     <center>
         <h1>Chess</h1>
@@ -20,7 +31,7 @@
     </center>
 
     <center>
-        <ul>
+        <ul id="grid">
             <div class="divv" id="row8">
                 <li class="box" id="b801">Brook</li>
                 <li class="box" id="b802">Bknight</li>
@@ -104,8 +115,8 @@
             </div>
         </ul>
     </center>
-    <script src="../jsFiles/chess.js"></script>
-    <script src="../jsFiles/puzzleSet.js"></script>
+    <script src="/jsFiles/chess.js"></script>
+    <script src="/jsFiles/puzzleSet.js"></script>
     <button onClick = "insertPieces()">Load Puzzle</button>
 </body>
 
