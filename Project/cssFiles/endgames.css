@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+}
+h1 {
+    text-align: center;
+}
+th, td {
+  margin: auto;
+  padding: 0.588vw;
+}
+table {
+  margin: auto;
+  border-collapse: collapse;
+  
+}
+.background img {
+  position: relative;
+  border-radius: 25px;
+  background: #9A9A9A;
+  padding-right: 14vw;
+  padding-top: 1.9vw;
+  padding-left: 1vw;
+  padding-bottom: 2vw;
+  width: 10vw;
+  height: 10vw;  
+  border: solid 2px transparent;
+  transition: all 0.2s ease;
+}
+
+.background .overlay {
+  width: 100%;
+  position: relative;
+}
+.overlay-textHeading {
+  position: relative;
+  top: -8.13vw;
+  left: 4.81vw;
+  color: white; 
+
+  font-size: 1.96vw; 
+  text-align: center;
+}
+.overlay-textHeading2 {
+  position: relative;
+  top: -11.13vw;
+  left: 4.25vw;
+  color: white; 
+
+  font-size:1.96vw; 
+  text-align: center;
+}
+.overlay-textHeading3 {
+    position: relative;
+    top: -14vw;
+    left: 4.25vw;
+    color: white; 
+  
+    font-size:1.96vw; 
+    text-align: center;
+}
+
+
+.overlay-textSubHeading {
+  position: relative;
+  top: -18.15vw;
+  left: 9.81vw;
+  color: #fff; 
+  font-weight: normal;
+  font-size: 1.67vw; 
+  text-align: center;
+}
+ .background img:hover {
+   transform: scale(1.05); 
+   border-color: black;
+ }
+.endWelcome{
+  text-align: center;
+  padding: 0 6px 0 6px;
+}
+.endbox {
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: fit-content;
+}
+.default {
+  background: none;
+}

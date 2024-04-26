@@ -5,9 +5,8 @@
 
 <head>
     <title>Endgames</title>
-<link rel = "stylesheet" href = "/cssFiles/style.css">
+<link rel = "stylesheet" href = "/cssFiles/endgames.css">
 <link rel = "stylesheet" href = "/cssFiles/nav.css">
-<link rel = "preload" href = "/images/endgamePageIcons/">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
@@ -30,20 +29,65 @@
     
     <br><br><br>
 
-    <table border = 0>
+    <table border="0" cellpadding="0" cellspacing="0">
         <tr>
-            <th><a href = "/endgameFiles/queenEndgameFiles/queenEndgames.html">Queen Endgames<br><img src = "/images/endgamePageIcons/queenPageIcons/queenEndgames.png" height = 300 width = 300></a></th>
-            <th><a href = "/endgameFiles/rookEndgameFiles/rookEndgames.html">Rook Endgames<br><img src = "/images/endgamePageIcons/rookPageIcons/rookEndgames.png" height = 300 width = 300></a></th>
-        </tr>
-        <tr>
-            <th><a href = "/endgameFiles/bishopEndgameFiles/bishopEndgames.html">Bishop Endgames<br><img src = "/images/endgamePageIcons/bishopPageIcons/bishopEndgames.png" height = 300 width = 300></a></th>
-            <th><a href = "/endgameFiles/knightEndgameFiles/knightEndgames.html">Knight Endgames<br><img src = "/images/endgamePageIcons/knightPageIcons/knightEndgames.png" height = 300 width = 300></a></th>
-        </tr>
-        <tr>
-            <th><a href = "/endgameFiles/pawnEndgameFiles/pawnEndgames.html">Pawn Endgames<br><img src = "/images/endgamePageIcons/pawnPageIcons/pawnEndgames.png" height = 300 width = 300></a></th>
-            <th><a href = "/endgameFiles/materialImbalanceEndgameFiles/materialImbalanceEndgames.html">Material Imbalance Endgames<br><img src = "/images/endgamePageIcons/materialImbalancePageIcons/materialImbalanceEndgames.png" height = 300 width = 300></a></th>
-        </tr>
-    </table>
+          <td>
+            <a href="/endgameFiles/queenEndgameFiles/queenEndgames.html">
+              <div class="background">
+                <img class="background-image" src="/images/endgamePageIcons/queenPageIcons/queenEndgames.png">
+                <div class="overlay"></div>
+            </a>
+            <div class="overlay-textHeading">Queen </div>
+      </div>
+        </td>
+      <td>
+        <a href="/endgameFiles/rookEndgameFiles/rookEndgames.html">
+          <div class="background">
+            <img class="background-image" src="/images/endgamePageIcons/rookPageIcons/rookEndgames.png">
+            <div class="overlay"></div>
+        </a>
+        <div class="overlay-textHeading">Rook </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="/endgameFiles/bishopEndgameFiles/bishopEndgames.html">
+          <div class="background">
+            <img src="/images/endgamePageIcons/bishopPageIcons/bishopEndgames.png" style="position:relative; top:-2.94vw;">
+        </a>
+          <div class="overlay-textHeading2">Bishop</div>
+          </div>
+      </td>
+        <td>
+          <a href="/endgameFiles/knightEndgameFiles/knightEndgames.html">
+            <div class="background">
+              <img src="/images/endgamePageIcons/knightPageIcons/knightEndgames.png" style="position:relative; top:-2.94vw;">
+          </a>
+          <div class="overlay-textHeading2">Knight</div>
+          </div>
+        </th>
+      </tr>
+      <tr>
+      <td>
+        <a href="/endgameFiles/pawnEndgameFiles/pawnEndgames.html">
+          <div class="background">
+            <img src="/images/endgamePageIcons/pawnPageIcons/pawnEndgames.png" style="position:relative; top:-5.9vw;">
+        </a>
+          <div class="overlay-textHeading3">Pawn</div>
+          </div>
+      </td>
+        <td>
+          <a href="/endgameFiles/materialImbalanceEndgameFiles/materialImbalanceEndgames.html">
+            <div class="background">
+              <img src="/images/endgamePageIcons/materialImbalancePageIcons/materialImbalanceEndgames.png" style="position:relative; top:-5.9vw;">
+          </a>
+          <div class="overlay-textHeading3">Imbalance</div>
+          </div>
+        </th>
+      </tr>
+        </div>
+  </table>
 </body>
 
 </html>

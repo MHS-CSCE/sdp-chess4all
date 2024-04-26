@@ -1,102 +1,79 @@
 html {
-    height: 100%;
-    width: 100%;
-    font-family: "Oswald", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
 }
 h1 {
-    text-align: center;
-}
-th {
-    width: 50%;
-    padding: 50px;
-}
-ol {
-  list-style-type: decimal;
-  list-style-position: inside;
-}
-
-ul {
-  list-style-type: none;
-  list-style-position: inside;
-  overflow: hidden;
-}
-li {
-    float: left;
-}
-li a {
-  display: block;
-  color: white;
   text-align: center;
-  padding: 12px 18px;
-
-  text-decoration: none;
 }
-li a:hover {
-  background-color: #474343;
+th, td {
+padding: 0.588vw;
+border: 2px solid black;
 }
 table {
-  margin: auto;
+margin: auto;
+border-collapse: collapse;
+border: 2px solid black;
+
 }
 .background img {
-  position: relative;
-  border-radius: 25px;
-  background: #9A9A9A;
-  padding-right: 228px;
-  padding-top: 50px;
-  padding-left: 40px;
-  padding-bottom: 50px;
-  width:210px;
-  height: 210px;  
-  border: solid 2px transparent;
-  transition: all 0.2s ease;
+border-radius: 25px;
+background: #9A9A9A;
+padding-right: 23vw;
+padding-top: 5.3vw;
+padding-left: 3.92vw;
+padding-bottom: 5.3vw;
+max-width:10vw;
+max-height: 10vw;  
+border: solid 2px transparent;
+transition: all 0.2s ease;
 }
-
 .background .overlay {
-  width: 100%;
-  position: relative;
+width: 100%;
+position: relative;
 }
 .overlay-textHeading {
-  position: relative;
-  top: -195px;
-  left: 100px;
-  color: #fff; 
+position: relative;
+top: -11.13vw;
+left: 5.81vw;
+color: #fff; 
 
-  font-size: 20px; 
-  text-align: center;
+font-size: 1.96vw; 
+text-align: center;
 }
 .overlay-textHeading2 {
-  position: relative;
-  top: -225px;
-  left: 100px;
-  color: #fff; 
+position: relative;
+top: -11.13vw;
+left: 6.81vw;
+color: #fff; 
 
-  font-size: 20px; 
-  text-align: center;
+font-size:1.96vw; 
+text-align: center;
 }
 
 .overlay-textSubHeading {
-  position: relative;
-  top: -185px;
-  left: 100px;
-  color: #fff; 
-  font-weight: normal;
-  font-size: 17px; 
-  text-align: center;
+position: relative;
+top: -18.15vw;
+left: 9.81vw;
+color: #fff; 
+font-weight: normal;
+font-size: 1.67vw; 
+text-align: center;
 }
- .background img:hover {
-   transform: scale(1.05); 
-   border-color: black;
- }
+.background img:hover {
+ transform: scale(1.05); 
+ border-color: black;
+}
 .endWelcome{
-  text-align: center;
-  padding: 0 6px 0 6px;
+text-align: center;
+padding: 0 6px 0 6px;
 }
 .endbox {
-  margin: auto;
-  border: 2px solid black;
-  border-radius: 15px;
-  width: fit-content;
+margin: auto;
+border: 2px solid black;
+border-radius: 15px;
+width: fit-content;
 }
 .default {
-  background: none;
+background: none;
 }
