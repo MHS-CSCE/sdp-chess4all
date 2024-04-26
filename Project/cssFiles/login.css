@@ -68,7 +68,7 @@ botton:hover{
 
 }
 .register_link p a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 600;
 }
@@ -105,7 +105,7 @@ label {
     color: white;
 }
 p {
-    color: black;
+    color: white;
 }
 .alert {
     width: 400px;
