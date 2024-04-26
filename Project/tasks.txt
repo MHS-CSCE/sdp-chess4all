@@ -1,6 +1,5 @@
 Not done:
-8. implement css on main page
-9. implement css on endgames page
+8. rewrite css on main page
 10. fix about us page
 11. fix nav bar on mastergames page
 
@@ -14,3 +13,4 @@ Completed:
 6. [done] button effects
 7. [done] fix sign up error
 3. [done] [need to display message] - else incoreect please retry (when logging in)
+9. [done] implement css on endgames page
