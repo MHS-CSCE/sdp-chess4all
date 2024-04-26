@@ -8,12 +8,10 @@ h1 {
 }
 th, td {
 padding: 0.588vw;
-border: 2px solid black;
 }
 table {
 margin: auto;
 border-collapse: collapse;
-border: 2px solid black;
 
 }
 .background img {
