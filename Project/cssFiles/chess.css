@@ -25,6 +25,13 @@ h1 {
     display: flex;
 }
 
+.button-container {
+    display: flex;
+    padding: 10px;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
 #grid li {
     list-style: none;
     display: grid;
@@ -41,7 +48,6 @@ h1 {
 #tog {
     margin: 10px 0px;
 }
-
 
 .allimg {
     width: 100%;
@@ -81,7 +87,6 @@ h1 {
         text-align: center;
     }
 }
-
 
 
 #nav-bar th {

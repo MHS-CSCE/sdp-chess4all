@@ -26,31 +26,32 @@
         <h1>Chess</h1>
     </center>
     <center>
-        <h2 id = "tog">White's Turn</h2>
+        <h2 id = "tog"></h2>
         <h3 id = "answer"></h3>
+        <br>
     </center>
 
     <center>
         <ul id="grid">
             <div class="divv" id="row8">
-                <li class="box" id="b801">Brook</li>
-                <li class="box" id="b802">Bknight</li>
-                <li class="box" id="b803">Bbishop</li>
-                <li class="box" id="b804">Bqueen</li>
-                <li class="box" id="b805">Bking</li>
-                <li class="box" id="b806">Bbishop</li>
-                <li class="box" id="b807">Bknight</li>
-                <li class="box" id="b808">Brook</li>
+                <li class="box" id="b801"></li>
+                <li class="box" id="b802"></li>
+                <li class="box" id="b803"></li>
+                <li class="box" id="b804"></li>
+                <li class="box" id="b805"></li>
+                <li class="box" id="b806"></li>
+                <li class="box" id="b807"></li>
+                <li class="box" id="b808"></li>
             </div>
             <div class="divv" id="row7">
-                <li class="box" id="b701">Bpawn</li>
-                <li class="box" id="b702">Bpawn</li>
-                <li class="box" id="b703">Bpawn</li>
-                <li class="box" id="b704">Bpawn</li>
-                <li class="box" id="b705">Bpawn</li>
-                <li class="box" id="b706">Bpawn</li>
-                <li class="box" id="b707">Bpawn</li>
-                <li class="box" id="b708">Bpawn</li>
+                <li class="box" id="b701"></li>
+                <li class="box" id="b702"></li>
+                <li class="box" id="b703"></li>
+                <li class="box" id="b704"></li>
+                <li class="box" id="b705"></li>
+                <li class="box" id="b706"></li>
+                <li class="box" id="b707"></li>
+                <li class="box" id="b708"></li>
             </div>
             <div class="divv" id="row6">
                 <li class="box" id="b601"></li>
@@ -94,30 +95,34 @@
             </div>
 
             <div class="divv" id="row2">
-                <li class="box Wpawn" id="b201">Wpawn</li>
-                <li class="box Wpawn" id="b202">Wpawn</li>
-                <li class="box Wpawn" id="b203">Wpawn</li>
-                <li class="box Wpawn" id="b204">Wpawn</li>
-                <li class="box Wpawn" id="b205">Wpawn</li>
-                <li class="box Wpawn" id="b206">Wpawn</li>
-                <li class="box Wpawn" id="b207">Wpawn</li>
-                <li class="box Wpawn" id="b208">Wpawn</li>
+                <li class="box Wpawn" id="b201"></li>
+                <li class="box Wpawn" id="b202"></li>
+                <li class="box Wpawn" id="b203"></li>
+                <li class="box Wpawn" id="b204"></li>
+                <li class="box Wpawn" id="b205"></li>
+                <li class="box Wpawn" id="b206"></li>
+                <li class="box Wpawn" id="b207"></li>
+                <li class="box Wpawn" id="b208"></li>
             </div>
             <div class="divv" id="row1">
-                <li class="box" id="b101">Wrook</li>
-                <li class="box" id="b102">Wknight</li>
-                <li class="box" id="b103">Wbishop</li>
-                <li class="box" id="b104">Wqueen</li>
-                <li class="box" id="b105">Wking</li>
-                <li class="box" id="b106">Wbishop</li>
-                <li class="box" id="b107">Wknight</li>
-                <li class="box" id="b108">Wrook</li>
+                <li class="box" id="b101"></li>
+                <li class="box" id="b102"></li>
+                <li class="box" id="b103"></li>
+                <li class="box" id="b104"></li>
+                <li class="box" id="b105"></li>
+                <li class="box" id="b106"></li>
+                <li class="box" id="b107"></li>
+                <li class="box" id="b108"></li>
             </div>
         </ul>
     </center>
     <script src="/jsFiles/chess.js"></script>
     <script src="/jsFiles/puzzleSet.js"></script>
-    <button onClick = "insertPieces()">Load Puzzle</button>
+    <div class = "button-container">
+        <button onClick = "resetPieces()" id = "resetPuzzle">Retry</button>
+        <button onClick = "insertPieces()" id = "loadPuzzle">Next Puzzle</button>
+    </div>  
+    
 </body>
 
 </html>
