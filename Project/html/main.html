@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/cssFiles/nav.css">
   <link rel="preload" href="/images/homePageIcons/">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <title>Home</title>
 </head>
 
 <body>
@@ -25,48 +26,44 @@
 
 
   <table border="0" cellpadding="0" cellspacing="0">
-    <div class="container">
-      <tr>
-        <th>
-          <a href="/html/puzzles.html">
-            <div class="background">
-              <img class="background-image" src="/images/homePageIcons/puzzlePieceIcon.png">
-              <div class="overlay"></div>
-          </a>
-          <div class="overlay-textHeading">Puzzles</div>
-    </div>
-    </th>
-    <th>
-      <a href="endgames.html">
-        <div class="background">
-          <img class="background-image" src="/images/homePageIcons/endgameIcon.png">
-          <div class="overlay"></div>
-      </a>
-      <div class="overlay-textHeading2">Endgames</div>
-      </div>
-    </th>
+    <tr>
+      <td>
+        <a href="/html/puzzles.html">
+          <div class="background">
+            <img class="background-image" src="/images/homePageIcons/puzzlePieceIcon.png">
+            <div class="overlay"></div>
+          </div>
+          <div id="link" class="overlay-textHeading">Puzzles</div>
+        </a>
+      </td>
+      <td>
+        <a href="endgames.html">
+          <div class="background">
+            <img class="background-image" src="/images/homePageIcons/endgameIcon.png">
+            <div class="overlay"></div>
+          </div>
+          <div id="link" class="overlay-textHeading">Endgames</div>
+        </a>
+      </td>
     </tr>
     <tr>
-      <th>
+      <td>
         <a href="/html/masterGames.html">
           <div class="background">
             <img src="/images/homePageIcons/masterGamesIcon.png" style="position:relative; top:-30px;">
+          </div>
+          <div id="link" class="overlay-textHeading2">Master Games</div>
         </a>
-        <div class="overlay-textHeading2">Master Games</div>
-        </div>
-
-
-      </th>
-      <th>
+      </td>
+      <td>
         <a href="aboutUs.html">
           <div class="background">
             <img src="/images/homePageIcons/aboutUsIcon.png" style="position:relative; top:-30px;">
+          </div>
+          <div id="link"class="overlay-textHeading2">About Us</div>
         </a>
-        <div class="overlay-textHeading2">About Us</div>
-        </div>
-      </th>
+      </td>
     </tr>
-    </div>
   </table>
 </body>
 

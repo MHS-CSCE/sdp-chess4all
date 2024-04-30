@@ -6,21 +6,27 @@ html {
 h1 {
   text-align: center;
 }
-th, td {
-padding: 0.588vw;
+td {
+margin: auto;
+padding: 0.45vw;
+padding-bottom: 0;
+padding-top: 0;
 }
 table {
 margin: auto;
 border-collapse: collapse;
-
+}
+a {
+  text-decoration: none;
 }
 .background img {
+position: relative;
 border-radius: 25px;
 background: #9A9A9A;
-padding-right: 23vw;
-padding-top: 5.3vw;
+padding-right: 21vw;
+padding-top: 4.8vw;
 padding-left: 3.92vw;
-padding-bottom: 5.3vw;
+padding-bottom: 4.8vw;
 max-width:10vw;
 max-height: 10vw;  
 border: solid 2px transparent;
