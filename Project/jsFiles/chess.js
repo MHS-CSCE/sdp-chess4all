@@ -1,11 +1,10 @@
 // Inserting the Images
-
 function insertImage() {
 
     document.querySelectorAll('.box').forEach(image => {
 
         if (image.innerText.length !== 0) {
-                image.innerHTML = `${image.innerText} <img class='allimg' src="/images/pieceIcons/${image.innerText}.png" alt="">`
+                image.innerHTML = `${image.innerText} <img class='allimg' src="../images/pieceIcons/${image.innerText}.png" alt="">`
                 image.style.cursor = 'pointer'
         }
     })
@@ -512,16 +511,18 @@ document.querySelectorAll('.box').forEach(item => {
         // Toggling the turn
 
         if (tog % 2 !== 0) {
-            document.getElementById('tog').innerText = "White's Turn"
+            document.getElementById('tog').innerText = "White to Move"
             whosTurn('W')
         }
         if (tog % 2 == 0) {
-            document.getElementById('tog').innerText = "Black's Turn"
+            document.getElementById('tog').innerText = "Black to Move"
             whosTurn('B')
         }
-
+        
+        
         reddish()
 
+        
         // winning()
 
         numOfKings = 0
@@ -550,36 +551,37 @@ document.querySelectorAll('.box').forEach(item => {
 })
 
 // Moving the element
+
 document.querySelectorAll('.box').forEach(item => {
-
+    
     item.addEventListener('click', function () {
-
+        
         if (item.style.backgroundColor == 'pink') {
-
+            turn = document.getElementById("tog").innerText
+            console.log(turn)
+            
             pinkId = item.id
             pinkText = item.innerText
 
             document.querySelectorAll('.box').forEach(item2 => {
-
                 item2.addEventListener('click', function () {
-
-                    getId = item2.id
-                    arr = Array.from(getId)
-                    arr.shift()
-                    aside = eval(arr.pop())
-                    arr.push('0')
-                    aup = eval(arr.join(''))
-                    a = aside + aup
-
-                    if (item2.style.backgroundColor == 'green' && item2.innerText.length == 0) {
-
+                getId = item2.id
+                arr = Array.from(getId)
+                arr.shift()
+                aside = eval(arr.pop())
+                arr.push('0')
+                column = aside
+                aup = eval(arr.join(''))
+                value = aup + column
+                //console.log(aup, value)
+                //console.log(item2.style.backgroundColor, item2.innerText.length)
+                    
+                    if (item2.style.backgroundColor == "green") {
                         if (pinkText == `Wpawn` && aup == 800) {
-
-                            document.getElementById(`b${a}`).innerText = 'Wqueen'
+                            document.getElementById("b" + String(value)).innerText = 'Wqueen'
                             document.getElementById(pinkId).innerText = ''
                             coloring()
                             insertImage()
-
                         }
                         else if (pinkText == `Bpawn` && aup == 100) {
 
@@ -587,25 +589,14 @@ document.querySelectorAll('.box').forEach(item => {
                             document.getElementById(pinkId).innerText = ''
                             coloring()
                             insertImage()
-
                         }
                         else {
                             document.getElementById(pinkId).innerText = ''
                             item2.innerText = pinkText
                             coloring()
                             insertImage()
-
-                            //Completing Puzzle
-
-                            
-                            if(document.getElementById("b205").innerText == "" && document.getElementById("b405").innerText == "Wpawn"){
-                                alert("correct");
-                            }
-                            else{
-                                alert("incorrect");
-                            }
                         }
-
+                        
                     }
 
                     else if (item2.style.backgroundColor == 'aqua') {
@@ -619,7 +610,6 @@ document.querySelectorAll('.box').forEach(item => {
                             whiteCastleChance=false
                             coloring()
                             insertImage()
-
                         }
                         else if(item2.id=='b107'){
                             document.getElementById('b105').innerText = ''
@@ -630,7 +620,6 @@ document.querySelectorAll('.box').forEach(item => {
                             whiteCastleChance=false
                             coloring()
                             insertImage()
-
                         }
                         else if(item2.id=='b803'){
                             document.getElementById('b801').innerText = ''
@@ -642,7 +631,6 @@ document.querySelectorAll('.box').forEach(item => {
                             blackCastleChance=false
                             coloring()
                             insertImage()
-
                         }
                         else if(item2.id=='b807'){
                             document.getElementById('b805').innerText = ''
@@ -653,15 +641,18 @@ document.querySelectorAll('.box').forEach(item => {
                             blackCastleChance=false
                             coloring()
                             insertImage()
-
                         }
+                        
                     }
-
+                    if (turn != document.getElementById("tog").innerText) {
+                        checkAnswer()
+                    }
                 })
+                
             })
-
+            
         }
-
+        
     })
 
 })
