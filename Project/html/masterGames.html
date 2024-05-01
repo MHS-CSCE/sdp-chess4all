@@ -9,25 +9,26 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Master Games</title>
 </head>
+
 <body id="nav">
-<div id="nav-bar">
+    <div id="nav-bar">
 
-</div>
+    </div>
 
-<script>
-  $(function () {
-    $("#nav-bar").load("nav.html");
-  });
-</script>
+    <script>
+        $(function () {
+            $("#nav-bar").load("nav.html");
+        });
+    </script>
 </body>
-<body>
+
+<body id="body">
+
     <center>
-        <h1>Chess</h1>
-    </center>
-    <center>
-        <h2 id = "tog"></h2>
-        <h3 id = "answer"></h3>
+        <h1>Puzzles</h1>
         <br>
+        <br>
+        <h3 id="tog"></h3>
     </center>
 
     <center>
@@ -115,13 +116,19 @@
             </div>
         </ul>
     </center>
-    <script src="/jsFiles/chess.js"></script>
-    <script src="/jsFiles/puzzleSet.js"></script>
-    <div class = "button-container">
-        <button onClick = "resetPieces()" id = "resetPuzzle">Retry</button>
-        <button onClick = "insertPieces()" id = "loadPuzzle">Next Puzzle</button>
-    </div>  
-    
+    <script src="../jsFiles/chess.js"></script>
+    <script src="../jsFiles/puzzleSet.js"></script>
+    <br>
+    <h3 id="answer"></h3>
+    <br>
+    <h3 id="solution"></h3>
+    <br>
+    <div class="button-container">
+        <button onClick="resetPieces()" id="resetPuzzle">Retry</button>
+        <button onClick="insertPieces()" id="loadPuzzle">Next Puzzle</button>
+        <button onClick="showSolution()" id="showSolution">Show Solution</button>
+    </div>
+
 </body>
 
 </html>
