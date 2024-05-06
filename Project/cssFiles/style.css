@@ -19,6 +19,16 @@ border-collapse: collapse;
 a {
   text-decoration: none;
 }
+.text_description{
+  text-align: center;
+  padding: 0 6px 0 6px;
+}
+.description {
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 68%;
+}
 .background {
 position: relative;
 border-radius: 25px;
