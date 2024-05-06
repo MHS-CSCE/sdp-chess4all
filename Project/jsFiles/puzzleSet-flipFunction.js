@@ -1,11 +1,11 @@
 const array0 = [["Brook", "Bknight", "Bbishop", "Bqueen", "Bking", "Bbishop", "Bknight", "Brook"], ["Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn"], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn"], ["Wrook", "Wknight", "Wbishop", "Wqueen", "Wking", "Wbishop", "Wknight", "Wrook"], "White"]
 
-const array1 = [["Brook", "Brook", "Brook", "Bqueen", "Bking", "Brook", "Brook", "Brook"], ["Brook", "Brook", "Brook", "Brook", "Brook", "Brook", "Brook", "Brook"], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["Wrook", "Wrook", "Wrook", "Wrook", "Wrook", "Wrook", "Wrook", "Wrook"], ["Wrook", "Wrook", "Wrook", "Wqueen", "Wking", "Wrook", "Wrook", "Wrook"], "Black"]
+const array1 = [["Brook", "Bknight", "Bbishop", "Bqueen", "Bking", "Bbishop", "Bknight", "Brook"], ["Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn"], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn"], ["Wrook", "Wknight", "Wbishop", "Wqueen", "Wking", "Wbishop", "Wknight", "Wrook"], "Black"]
 
 var piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8
 
 puzzlearray = [array0, array1]
-answerarray = [["b205", "b405"], ["b708", "b208"]]
+answerarray = [["b205", "b405"], ["b204", "b404"]]
 
 piecearray = [piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8]
 
@@ -14,15 +14,43 @@ var counter = -1
 document.getElementById("answer").style.visibility = "collapse"
 document.getElementById("solution").style.visibility = "collapse"
 
+flipBoard = false
+
+function flipBoard(flipBoard) {
+    if (flipBoard == true) {
+        turn = 1
+        return turn
+    }
+    else {
+        turn = 0
+        return turn
+    }
+}
+
 function insertPieces() {
     counter++
     console.log(counter)
-    for (i = 0; i < 8; i++) {
-        row = 10*(8-i)
-        for (j = 0; j < 8; j++) {
-            piecearray[j] = puzzlearray[counter][i][j]
-            document.getElementById("b" + String(row) + String(j+1)).innerHTML = piecearray[j]
+    console.log(puzzlearray[counter][8])
+    if (puzzlearray[counter][8] == "White") {
+        for (i = 0; i < 8; i++) {
+            row = 10*(8-i)
+            for (j = 0; j < 8; j++) {
+                piecearray[j] = puzzlearray[counter][i][j]
+                document.getElementById("b" + String(row) + String(j+1)).innerHTML = piecearray[j]
+            }
         }
+        flipBoard = false
+    }
+    else {
+        console.log("Hello")
+        for (i = 7; i > -1; i--) {
+            row = 10*(8-i)
+            for (j = 0; j < 8; j++) {
+                piecearray[j] = puzzlearray[counter][7-i][j]
+                document.getElementById("b" + String(row) + String(j+1)).innerHTML = piecearray[j]
+            }
+        }
+        flipBoard = true
     }
     insertImage()
     document.getElementById("tog").innerHTML = puzzlearray[counter][8] + " to Move"
@@ -115,10 +143,14 @@ function showSolution() {
 
     columnArray = ["a", "b", "c", "d", "e", "f", "g", "h"]
 
-    columnNotation = columnArray[Number(pieceColumn)-1]
-    console.log(columnNotation)
-    rowNotation = pieceRow
-    console.log(rowNotation)
+    if (puzzlearray[counter][8] == "White") {
+        columnNotation = columnArray[Number(pieceColumn)-1]
+        rowNotation = pieceRow
+    }
+    else {
+        columnNotation = columnArray[8-Number(pieceColumn)]
+        rowNotation = 8-pieceRow
+    }
 
     completeNotation = pieceNotation + pieceCaptureNotation + String(columnNotation) + String(rowNotation)
 
@@ -149,15 +181,3 @@ function unfreeze() {
         }
     }
 }
-
-
-
-//Completing Puzzle
-
-/*if(document.getElementById("b205").innerText == "" && document.getElementById("b405").innerText == "Wpawn"){
-    alert("correct");
-}
-else{
-    alert("incorrect");
-}
-*/
