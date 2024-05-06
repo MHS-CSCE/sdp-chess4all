@@ -27,12 +27,6 @@ h1 {
     display: flex;
 }
 
-.button-container {
-    display: flex;
-    padding: 10px;
-    column-gap: 10px;
-    justify-content: space-between;
-}
 #buttons {
     display: flex;
     align-items: center;
