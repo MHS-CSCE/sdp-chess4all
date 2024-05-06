@@ -5,17 +5,19 @@ html {
     margin: 0;
     padding: 0;
 }
-
-body {
-    display: grid;
-    place-items: center;
-    overflow-x: hidden;
+h1, h2, h3 {
+    text-align: center;
 }
 
 h1 {
     margin: 10px;
 }
-
+#grid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20%;
+}
 #grid ul {
     display: grid;
     grid-template-columns: 1fr;
@@ -31,7 +33,13 @@ h1 {
     column-gap: 10px;
     justify-content: space-between;
 }
-
+#buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+    
+}
 #grid li {
     list-style: none;
     display: grid;
@@ -88,7 +96,11 @@ h1 {
     }
 }
 
-
+#nav-bar {
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
 #nav-bar th {
     width: 50%;
     padding: 50px;
@@ -131,4 +143,45 @@ h1 {
 #nav-bar li button:hover {
   background-color: #474343;
   cursor: pointer;
+}
+
+#resetPuzzle {
+    margin-bottom: 20%;
+    position: relative;
+    background-color: #878787; 
+    border-radius: 13px;
+    border: none;
+    color: white;
+    padding: 7px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+}
+#loadPuzzle {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    position: relative;
+    background-color: #878787; 
+    border-radius: 13px;
+    border: none;
+    color: white;
+    padding: 7px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+}
+#showSolution {
+    margin-top: 20%;
+    position: relative;
+    background-color: #878787; 
+    border-radius: 13px;
+    border: none;
+    color: white;
+    padding: 7px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
 }

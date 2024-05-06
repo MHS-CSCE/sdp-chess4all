@@ -19,7 +19,7 @@ border-collapse: collapse;
 a {
   text-decoration: none;
 }
-.background img {
+.background {
 position: relative;
 border-radius: 25px;
 background: #9A9A9A;
@@ -31,6 +31,9 @@ max-width:10vw;
 max-height: 10vw;  
 border: solid 2px transparent;
 transition: all 0.2s ease;
+}
+img {
+  width:130%;
 }
 .background .overlay {
 width: 100%;
@@ -64,7 +67,7 @@ font-weight: normal;
 font-size: 1.67vw; 
 text-align: center;
 }
-.background img:hover {
+.background:hover {
  transform: scale(1.05); 
  border-color: black;
 }
