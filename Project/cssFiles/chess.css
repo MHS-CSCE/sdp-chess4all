@@ -5,18 +5,27 @@ html {
     margin: 0;
     padding: 0;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     text-align: center;
 }
 
 h1 {
-    margin: 10px;
+    margin-top: 2%;
+}
+h4 {
+    margin-bottom: 10%;
+    font-size: 25px;
+}
+.content {
+    display: flex;
+    flex-direction: row;
 }
 #grid {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 20%;
+    margin-top: 1%;
 }
 #grid ul {
     display: grid;
@@ -31,7 +40,8 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    float: right;
+    margin-top: 4%;
+    margin-left: 10%;
     
 }
 #grid li {
