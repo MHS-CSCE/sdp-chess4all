@@ -92,6 +92,7 @@ function reddish() {
 tog = 1
 whiteCastleChance=true
 blackCastleChance=true
+flip = false
 
 // Function to display the available paths for all pieces
 function whosTurn(toggle, a, aup, aside, item, flip) {
@@ -159,28 +160,27 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         }
     }
     else {
+        console.log("xd")
         if (item.innerText == `${toggle}pawn`) {
             item.style.backgroundColor = 'pink'
 
             if (tog % 2 !== 0 && aup < 800) {
 
-                if (aup == 700 && document.getElementById(`b${a - 100}`).innerText.length == 0) {
-                    document.getElementById(`b${a - 100}`).style.backgroundColor = 'green'
-                    if (aup == 700 && document.getElementById(`b${a - 200}`).innerText.length == 0) {
-                        document.getElementById(`b${a - 200}`).style.backgroundColor = 'green'
+                    if (aup == 700 && document.getElementById(`b${a - 100}`).innerText.length == 0) {
+                        document.getElementById(`b${a - 100}`).style.backgroundColor = 'green'
+                        if (aup == 700 && document.getElementById(`b${a - 200}`).innerText.length == 0) {
+                            document.getElementById(`b${a - 200}`).style.backgroundColor = 'green'
+                        }
                     }
-                }
 
-                if (aup !== 700 && document.getElementById(`b${a - 100}`).innerText.length == 0) {
-                    document.getElementById(`b${a - 100}`).style.backgroundColor = 'green'
-                }
-
-                if (aside < 8 && document.getElementById(`b${a - 100 - 1}`).innerText.length !== 0) {
-                    document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'green'
-                }
-
-                if (aside > 1 && document.getElementById(`b${a - 100 + 1}`).innerText.length !== 0) {
-                    document.getElementById(`b${a - 100 + 1}`).style.backgroundColor = 'green'
+                    if (aup !== 700 && document.getElementById(`b${a - 100}`).innerText.length == 0) {
+                        document.getElementById(`b${a - 100}`).style.backgroundColor = 'green'
+                    }
+                    if (aside < 8 && document.getElementById(`b${a - 100 + 1}`).innerText.length !== 0) {
+                        document.getElementById(`b${a - 100 + 1}`).style.backgroundColor = 'green'
+                    }
+                    if (aside > 1 && document.getElementById(`b${a - 100 - 1}`).innerText.length !== 0) {
+                        document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'green'
 
                 }
                 // if (aup == 800) {
@@ -200,21 +200,23 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
             if (tog % 2 == 0 && aup > 100) {
 
-                if (aup == 200 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                    document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
-                    if (aup == 200 && document.getElementById(`b${a + 200}`).innerText.length == 0) {
-                        document.getElementById(`b${a + 200}`).style.backgroundColor = 'green'
+                    if (aup == 200 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
+                        document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                        if (aup == 200 && document.getElementById(`b${a + 200}`).innerText.length == 0) {
+                            document.getElementById(`b${a + 200}`).style.backgroundColor = 'green'
+                        }
                     }
-                }
 
-                if (aup !== 200 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                    document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
-                }
-                if (aside < 8 && document.getElementById(`b${a + 100 - 1}`).innerText.length !== 0) {
-                    document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'green'
-                }
-                if (aside > 1 && document.getElementById(`b${a + 100 + 1}`).innerText.length !== 0) {
-                    document.getElementById(`b${a + 100 + 1}`).style.backgroundColor = 'green'
+                    if (aup !== 200 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
+                        document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                    }
+
+                    if (aside < 8 && document.getElementById(`b${a + 100 + 1}`).innerText.length !== 0) {
+                        document.getElementById(`b${a + 100 + 1}`).style.backgroundColor = 'green'
+                    }
+
+                    if (aside > 1 && document.getElementById(`b${a + 100 - 1}`).innerText.length !== 0) {
+                        document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'green'
                 }
             }
         }
@@ -536,7 +538,7 @@ function setMove() {
 document.querySelectorAll('.box').forEach(item => {
 
     item.addEventListener('click', function () {
-
+        unfreeze()
         // To delete the opposite element
 
         if (item.style.backgroundColor == 'green' && item.innerText.length == 0) {
@@ -570,7 +572,7 @@ document.querySelectorAll('.box').forEach(item => {
         arr.push('0')
         aup = eval(arr.join(''))
         a = aside + aup
-        turn = flipBoard()
+        turn = flipBoard(flip)
         console.log(turn)
         // Toggling the turn
 
@@ -622,7 +624,7 @@ document.querySelectorAll('.box').forEach(item => {
 
         if (item.style.backgroundColor == 'pink') {
             turn = document.getElementById("tog").innerText
-            console.log(turn)
+            //console.log(turn)
 
             pinkId = item.id
             pinkText = item.innerText
