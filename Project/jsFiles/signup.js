@@ -1,3 +1,4 @@
+//database information
 const firebaseConfig = {
     apiKey: "AIzaSyCuYNWHfDwVF537e_e0HBi5viQUQe-gE7Q",
     authDomain: "chess4all-e7766.firebaseapp.com",
@@ -7,13 +8,12 @@ const firebaseConfig = {
     messagingSenderId: "600603932859",
     appId: "1:600603932859:web:b6606cc0ef9bb70504d19e"
 };
-//initializes the firebase database
+//initialize the firebase database (finds the right one)
 firebase.initializeApp(firebaseConfig);
 //variable for the authentication function
 const auth = firebase.auth()
 //event listener to know when form is submitted and runs submitForm function
 document.getElementById("chess4all").addEventListener("submit", submitForm);
-
 function submitForm(e) {
     //prevents the default submitting of the form
     e.preventDefault();

@@ -1,3 +1,4 @@
+//database information
 const firebaseConfig = {
     apiKey: "AIzaSyCuYNWHfDwVF537e_e0HBi5viQUQe-gE7Q",
     authDomain: "chess4all-e7766.firebaseapp.com",
@@ -7,7 +8,7 @@ const firebaseConfig = {
     messagingSenderId: "600603932859",
     appId: "1:600603932859:web:b6606cc0ef9bb70504d19e"
 };
-//initialize the firebase database
+//initialize the firebase database (finds the right one)
 firebase.initializeApp(firebaseConfig);
 //variable for the firebase authentication function (built in)
 const auth = firebase.auth()
