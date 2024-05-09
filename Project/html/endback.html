@@ -1,0 +1,89 @@
+<!-- Hopefully navbar appears on all pages !-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Endgames</title>
+<link rel = "stylesheet" href = "/cssFiles/endgames.css">
+<link rel = "stylesheet" href = "/cssFiles/nav.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="nav-bar">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-bar").load("nav.html");
+    });
+    </script>
+</body>
+<body class="everything">
+    <h1>Endgame Study Database</h1>
+      <p class="description">Welcome the endgame database. In this database there are different endgame situations to choose from and will guide you through them and teach you how to win the game</p>
+    
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+            <a href="/endgameFiles/queenEndgameFiles/queenEndgames.html">
+              <div class="background">
+                <img class="background-image" src="/images/endgamePageIcons/queenPageIcons/queenEndgames.png">
+                <div class="overlay"></div>
+            </a>
+            <div class="overlay-textHeading">Queen</div>
+      </div>
+        </td>
+      <td>
+        <a href="/endgameFiles/rookEndgameFiles/rookEndgames.html">
+          <div class="background">
+            <img class="background-image" src="/images/endgamePageIcons/rookPageIcons/rookEndgames.png">
+            <div class="overlay"></div>
+        </a>
+        <div class="overlay-textHeading">Rook</div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="/endgameFiles/bishopEndgameFiles/bishopEndgames.html">
+          <div class="background">
+            <img src="/images/endgamePageIcons/bishopPageIcons/bishopEndgames.png" style="position:relative; top:-2.94vw;">
+        </a>
+          <div class="overlay-textHeading2">Bishop</div>
+          </div>
+      </td>
+        <td>
+          <a href="/endgameFiles/knightEndgameFiles/knightEndgames.html">
+            <div class="background">
+              <img src="/images/endgamePageIcons/knightPageIcons/knightEndgames.png" style="position:relative; top:-2.94vw;">
+          </a>
+          <div class="overlay-textHeading2">Knight</div>
+          </div>
+        </th>
+      </tr>
+      <tr>
+      <td>
+        <a href="/endgameFiles/pawnEndgameFiles/pawnEndgames.html">
+          <div class="background">
+            <img src="/images/endgamePageIcons/pawnPageIcons/pawnEndgames.png" style="position:relative; top:-5.9vw;">
+        </a>
+          <div class="overlay-textHeading3">Pawn</div>
+          </div>
+      </td>
+        <td>
+          <a href="/endgameFiles/materialImbalanceEndgameFiles/materialImbalanceEndgames.html">
+            <div class="background">
+              <img src="/images/endgamePageIcons/materialImbalancePageIcons/materialImbalanceEndgames.png" style="position:relative; top:-5.9vw;">
+          </a>
+          <div class="overlay-textHeading3">Imbalance</div>
+          </div>
+        </th>
+      </tr>
+        </div>
+  </table>
+</body>
+
+</html>
