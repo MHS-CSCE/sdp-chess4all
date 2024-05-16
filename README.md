@@ -1,6 +1,6 @@
-Name
+chess4all
 
-One sentence description of the program
+A website for chess enthusiasts to study and improve their skills, with endgame study files, interactive puzzles, and a collection of masters' games
 
 Features
 
