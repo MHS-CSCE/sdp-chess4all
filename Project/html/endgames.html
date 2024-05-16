@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/cssFiles/endgames.css">
   <link rel="stylesheet" href="/cssFiles/nav.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="/jsFiles/endgames.js"></script>
 </head>
 
 <body>
@@ -31,9 +32,16 @@
     <tr>
       <td>
         <div class="overlay-textHeading">Queen</div>
-        <a href="/endgameFiles/queenEndgameFiles/queenEndgames.html">
-          <div class="background">
+        
+        <a stophref="/endgameFiles/queenEndgameFiles/queenEndgames.html">
+          <div onclick="expand()" class="background">
             <img class="background-image" src="/images/endgamePageIcons/queenPageIcons/queenEndgames.png">
+            <div id="test1" class="dropdown-content">
+              <a rel="noopener" target="_blank" href="/endgameFiles/queenEndgameFiles/queenCheckmate.html">Q + pawn</a>
+              <a rel="noopener" target="_blank" href="/endgameFiles/queenEndgameFiles/queen+pawn.html">Q + pawn</a>
+              <a rel="noopener" target="_blank" href="/endgameFiles/queenEndgameFiles/queen+pawns.html">q + pawns</a>
+              <a rel="noopener" target="_blank" href="/endgameFiles/queenEndgameFiles/queen+twopawns.html">q + 2 pawns</a>
+            </div>
           </div>
         </a>
       </td>
@@ -52,7 +60,7 @@
         <div class="overlay-textHeading2">Bishop</div>
         <a href="/endgameFiles/bishopEndgameFiles/bishopEndgames.html">
           <div class="background">
-            <img src="/images/endgamePageIcons/bishopPageIcons/bishopEndgames.png">
+            <img class="background-image" src="/images/endgamePageIcons/bishopPageIcons/bishopEndgames.png">
           </div>
         </a>
         </div>
@@ -61,7 +69,7 @@
         <div class="overlay-textHeading2">Knight</div>
         <a href="/endgameFiles/knightEndgameFiles/knightEndgames.html">
           <div class="background">
-            <img src="/images/endgamePageIcons/knightPageIcons/knightEndgames.png">
+            <img class="background-image" src="/images/endgamePageIcons/knightPageIcons/knightEndgames.png">
           </div>
         </a>
         </div>
@@ -72,7 +80,7 @@
         <div class="overlay-textHeading3">Pawn</div>
         <a href="/endgameFiles/pawnEndgameFiles/pawnEndgames.html">
           <div class="background">
-            <img src="/images/endgamePageIcons/pawnPageIcons/pawnEndgames.png">
+            <img class="background-image" src="/images/endgamePageIcons/pawnPageIcons/pawnEndgames.png">
           </div>
         </a>
         </div>
@@ -81,7 +89,7 @@
         <div class="overlay-textHeading3">Imbalance</div>
         <a href="/endgameFiles/materialImbalanceEndgameFiles/materialImbalanceEndgames.html">
           <div class="background">
-            <img src="/images/endgamePageIcons/materialImbalancePageIcons/materialImbalanceEndgames.png">
+            <img class="background-image" src="/images/endgamePageIcons/materialImbalancePageIcons/materialImbalanceEndgames.png">
           </div>
         </a>
         </div>

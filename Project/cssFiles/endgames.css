@@ -1,22 +1,28 @@
 html {
-    height: 100%;
-    width: 100%;
-    font-family: "Oswald", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
 }
+
 h1 {
-    text-align: center;
+  text-align: center;
 }
-th, td {
+
+th,
+td {
   margin: auto;
   padding: 0 0.5vw 0 0.5vw;
 }
+
 table {
   margin: auto;
   border-collapse: collapse;
-  
+
 }
+
 .background {
   position: relative;
+  display: inline-block;
   border-radius: 25px;
   background: #9A9A9A;
   padding-right: 14vw;
@@ -24,28 +30,31 @@ table {
   padding-left: 1vw;
   padding-bottom: 4.5vw;
   width: 10vw;
-  height: 10vw;  
+  height: 10vw;
   border: solid 2px transparent;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
 }
-img {
-  width:130%;
+
+.background-image {
+  width: 130%;
 }
 
 .background .overlay {
   width: 100%;
   position: relative;
 }
+
 .overlay-textHeading {
   position: relative;
   top: 5.13vw;
   left: 5.2vw;
-  color: white; 
+  color: white;
   z-index: 2;
 
-  font-size: 1.96vw; 
+  font-size: 1.96vw;
   text-align: center;
 }
+
 .overlay-textHeading2 {
   position: relative;
   top: 5.13vw;
@@ -53,18 +62,19 @@ img {
   color: white;
   z-index: 2;
 
-  font-size:1.96vw; 
+  font-size: 1.96vw;
   text-align: center;
 }
+
 .overlay-textHeading3 {
-    position: relative;
-    top: 5vw;
-    left: 4.25vw;
-    color: white; 
-    z-index: 2;
-  
-    font-size:1.96vw; 
-    text-align: center;
+  position: relative;
+  top: 5vw;
+  left: 4.25vw;
+  color: white;
+  z-index: 2;
+
+  font-size: 1.96vw;
+  text-align: center;
 }
 
 
@@ -72,25 +82,39 @@ img {
   position: relative;
   top: -18.15vw;
   left: 9.81vw;
-  color: #fff; 
+  color: #fff;
   font-weight: normal;
-  font-size: 1.67vw; 
+  font-size: 1.67vw;
   text-align: center;
 }
- .background:hover {
-   height: 20vw;
-   border-color: black;
- }
-.description{
-    text-align: center;
-    padding: 1% 0 1% 0;
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid black;
-    border-radius: 15px;
-    width: 68%;
+
+.background:active{
+  height: 20vw;
+  border-color: black;
 }
-.default {
-  background: none;
+
+
+
+.description {
+  text-align: center;
+  padding: 1% 1% 1% 1%;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: fit-content;
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: aquamarine;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.background:active .dropdown-content{
+  display: block;
+}
+
+.show {display:block;}
