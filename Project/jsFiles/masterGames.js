@@ -19,6 +19,7 @@ var piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8
 const gameArray = [game1, game2]
 const informationArray = [information1, information2]
 piecearray = [piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8]
+const capturedPieces = []
 
 function freeze() {
     for (i = 0; i < 8; i++) {
@@ -30,60 +31,73 @@ function freeze() {
 }
 
 function nextMove() {
-    pieceType = document.getElementById(gameArray[gameCounter][moveCounter][0]).innerText
-    //casework for castling
-    if (pieceType == "Wking" && gameArray[gameCounter][moveCounter][0] == "b105") {
-        if (gameArray[gameCounter][moveCounter][1] == "b107") {
-            document.getElementById("b107").innerText = "Wking"
-            document.getElementById("b105").innerText = ""
-            document.getElementById("b108").innerText = ""
-            document.getElementById("b106").innerText = "Wrook"
+    if (moveCounter !== gameArray[gameCounter].length) {
+        pieceType = document.getElementById(gameArray[gameCounter][moveCounter][0]).innerText
+        pieceType2 = document.getElementById(gameArray[gameCounter][moveCounter][1]).innerText
+        capturedPieces.push(pieceType2)
+        //casework for castling
+        if (pieceType == "Wking" && gameArray[gameCounter][moveCounter][0] == "b105") {
+            if (gameArray[gameCounter][moveCounter][1] == "b107") {
+                document.getElementById("b107").innerText = "Wking"
+                document.getElementById("b105").innerText = ""
+                document.getElementById("b108").innerText = ""
+                document.getElementById("b106").innerText = "Wrook"
+            }
+            else if (gameArray[gameCounter][moveCounter][1] == "b103") {
+                document.getElementById("b103").innerText = "Wking"
+                document.getElementById("b105").innerText = ""
+                document.getElementById("b101").innerText = ""
+                document.getElementById("b104").innerText = "Wrook"
+            }
         }
-        else if (gameArray[gameCounter][moveCounter][1] == "b103") {
-            document.getElementById("b103").innerText = "Wking"
-            document.getElementById("b105").innerText = ""
-            document.getElementById("b101").innerText = ""
-            document.getElementById("b104").innerText = "Wrook"
+        else if (pieceType == "Bking" && gameArray[gameCounter][moveCounter][0] == "b805") {
+            if (gameArray[gameCounter][moveCounter][1] == "b807") {
+                document.getElementById("b807").innerText = "Bking"
+                document.getElementById("b805").innerText = ""
+                document.getElementById("b808").innerText = ""
+                document.getElementById("b806").innerText = "Brook"
+            }
+            else if (gameArray[gameCounter][moveCounter][1] == "b803") {
+                document.getElementById("b803").innerText = "Bking"
+                document.getElementById("b805").innerText = ""
+                document.getElementById("b801").innerText = ""
+                document.getElementById("b804").innerText = "Brook"
+            }
         }
+        else {
+            document.getElementById(gameArray[gameCounter][moveCounter][1]).innerText = pieceType
+            document.getElementById(gameArray[gameCounter][moveCounter][0]).innerText = ""
+        }
+        if (moveCounter + 1 == gameArray[gameCounter].length) {
+            document.getElementById("conclusion").innerText = informationArray[gameCounter][3]
+        }
+        insertImage()
+        moveCounter++
     }
-    else if (pieceType == "Bking" && gameArray[gameCounter][moveCounter][0] == "b805") {
-        if (gameArray[gameCounter][moveCounter][1] == "b807") {
-            document.getElementById("b807").innerText = "Bking"
-            document.getElementById("b805").innerText = ""
-            document.getElementById("b808").innerText = ""
-            document.getElementById("b806").innerText = "Brook"
-        }
-        else if (gameArray[gameCounter][moveCounter][1] == "b803") {
-            document.getElementById("b803").innerText = "Bking"
-            document.getElementById("b805").innerText = ""
-            document.getElementById("b801").innerText = ""
-            document.getElementById("b804").innerText = "Brook"
-        }
-    }
-    else {
-        document.getElementById(gameArray[gameCounter][moveCounter][1]).innerText = pieceType
-        document.getElementById(gameArray[gameCounter][moveCounter][0]).innerText = ""
-    }
-    if (moveCounter + 1 == gameArray[gameCounter].length) {
+    if (moveCounter == gameArray[gameCounter].length) {
         document.getElementById("conclusion").innerText = informationArray[gameCounter][3]
     }
-    insertImage()
-    moveCounter++
 }
 
 function previousMove() {
-    pieceType = document.getElementById(gameArray[gameCounter][moveCounter-1][1]).innerText
-    document.getElementById(gameArray[gameCounter][moveCounter-1][0]).innerText = pieceType
-    document.getElementById(gameArray[gameCounter][moveCounter-1][1]).innerText = ""
-    insertImage()
-    moveCounter--
+    if (moveCounter !== 0) {
+        pieceType = document.getElementById(gameArray[gameCounter][moveCounter-1][1]).innerText
+        pieceType2 = capturedPieces[moveCounter-1]
+        document.getElementById(gameArray[gameCounter][moveCounter-1][0]).innerText = pieceType
+        document.getElementById(gameArray[gameCounter][moveCounter-1][1]).innerText = pieceType2
+        insertImage()
+        moveCounter--
+    }
+    if (moveCounter == gameArray[gameCounter].length - 1) {
+        document.getElementById("conclusion").innerText = ""
+    }
 }
 
 function firstMove() {
     for (i = moveCounter; i > -1; i--) {
         previousMove()
-        i--
     }
+    document.getElementById("conclusion").innerText = ""
 }
 
 function lastMove() {
