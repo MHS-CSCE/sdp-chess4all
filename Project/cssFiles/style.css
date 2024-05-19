@@ -42,9 +42,6 @@ max-height: 10vw;
 border: solid 2px transparent;
 transition: all 0.2s ease;
 }
-img {
-  width:130%;
-}
 .background .overlay {
 width: 100%;
 position: relative;
