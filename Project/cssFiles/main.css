@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+td {
+margin: auto;
+padding: 0.45vw;
+padding-bottom: 0;
+padding-top: 0;
+}
+table {
+margin: auto;
+border-collapse: collapse;
+}
+a {
+  text-decoration: none;
+}
+.text_description{
+  text-align: center;
+  padding: 0 6px 0 6px;
+}
+.description {
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 68%;
+}
+.background {
+position: relative;
+border-radius: 25px;
+background: #9A9A9A;
+padding-right: 21vw;
+padding-top: 4.8vw;
+padding-left: 3.92vw;
+padding-bottom: 4.8vw;
+max-width:10vw;
+max-height: 10vw;  
+border: solid 2px transparent;
+transition: all 0.2s ease;
+}
+img {
+  width:130%;
+}
+.background .overlay {
+width: 100%;
+position: relative;
+}
+.overlay-textHeading {
+position: relative;
+top: -11.13vw;
+left: 5.81vw;
+color: #fff; 
+
+font-size: 1.96vw; 
+text-align: center;
+}
+.overlay-textHeading2 {
+position: relative;
+top: -11.13vw;
+left: 6.81vw;
+color: #fff; 
+
+font-size:1.96vw; 
+text-align: center;
+}
+
+.overlay-textSubHeading {
+position: relative;
+top: -18.15vw;
+left: 9.81vw;
+color: #fff; 
+font-weight: normal;
+font-size: 1.67vw; 
+text-align: center;
+}
+.background:hover {
+ transform: scale(1.05); 
+ border-color: black;
+}
+.endWelcome{
+text-align: center;
+padding: 0 6px 0 6px;
+}
+.endbox {
+margin: auto;
+border: 2px solid black;
+border-radius: 15px;
+width: fit-content;
+}
+.default {
+background: none;
+}
