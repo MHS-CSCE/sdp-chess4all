@@ -23,8 +23,8 @@
 </body>
 
 <body class="body">
-    <h1><center>Puzzles</center></h1>
-    <p class="description">Welcome to the puzzles. There are different puzzles that will test the knowledge that you have gained through by studying.</p>
+    <h1><center>Master Games</center></h1>
+    <p class="description">Welcome to the Master Games. Here are a collection of famous and instructive games that you can go through.</p>
     <br><br>
     <div class="content">
         <ul id="grid">
@@ -111,7 +111,15 @@
         </ul>
         <br>
         <br>
-        <div id="buttons">
+        <div id="buttons" class="buttons">
+            <h4 id="select">Select Game</h4>
+            <select id="gameList" onChange="selectGame()">
+                <option id="initial" value="0">Select</option>
+                <option id="Game1" value="1"></option>
+                <option id="Game2" value="2"></option>
+                <option id="Game3" value="3"></option>
+            </select>
+            <br>
             <h4 id="players"></h4>
             <h4 id="details"></h4>
             <h4 id="result"></h4>
@@ -123,7 +131,6 @@
             <br>
             <h4 id="conclusion"></h4>
             <br>
-            <!--> Create browse games button with a dropdown like the endgames, make all games in the dropdown menu clickable </!-->
         </div>
         <script src="/jsFiles/chess.js"></script>
         <script src="/jsFiles/puzzleSet.js"></script>
