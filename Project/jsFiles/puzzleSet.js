@@ -4,9 +4,11 @@ const array1 = [["Brook", "Bknight", "Bbishop", "Bqueen", "Bking", "Bbishop", "B
 
 const array2 = [["", "", "Wqueen", "", "", "", "", "", ""], ["", "", "", "", "", "", "Bpawn", ""], ["", "", "", "", "Bpawn", "", "", "Bking"], ["", "", "Wbishop", "", "", "", "", "Bpawn"], ["", "", "", "", "", "Wking", "", ""], ["", "", "", "", "", "Wpawn", "", ""], ["Wpawn", "", "", "", "", "", "", ""], ["", "", "", "", "Bqueen", "", "", ""], "Black"]
 
+const array3 = [[]]
+
 var piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8
 
-puzzlearray = [array0, array1, array2]
+puzzlearray = [array0, array1, array2, array3]
 answerarray = [["b205", "b405"], ["b204", "b404"], ["b202", "b402"]]
 
 piecearray = [piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8]
@@ -15,6 +17,8 @@ var counter = -1
 
 document.getElementById("answer").style.visibility = "collapse"
 document.getElementById("solution").style.visibility = "collapse"
+document.getElementById("resetPuzzle").style.visibility = "hidden"
+document.getElementById("showSolution").style.visibility = "hidden"
 
 function flipBoard(flip) {
     if (flip == true) {
@@ -29,37 +33,51 @@ function flipBoard(flip) {
 
 function insertPieces() {
     counter++
-    if (puzzlearray[counter][8] == "White") {
-        for (i = 0; i < 8; i++) {
-            row = 10*(8-i)
-            for (j = 0; j < 8; j++) {
-                piecearray[j] = puzzlearray[counter][i][j]
-                document.getElementById("b" + String(row) + String(j+1)).innerHTML = piecearray[j]
+    document.getElementById("loadPuzzle").innerText = "Next Puzzle"
+    if (counter + 1 !== puzzlearray.length) {
+        if (puzzlearray[counter][8] == "White") {
+            for (i = 0; i < 8; i++) {
+                row = 10*(8-i)
+                for (j = 0; j < 8; j++) {
+                    piecearray[j] = puzzlearray[counter][i][j]
+                    document.getElementById("b" + String(row) + String(j+1)).innerHTML = piecearray[j]
+                }
             }
+            flip = false
         }
-        flip = false
+        else {
+            for (i = 0; i < 8; i++) {
+                row = 10*(i+1)
+                for (j = 0; j < 8; j++) {
+                    piecearray[j] = puzzlearray[counter][i][7-j]
+                    document.getElementById("b" + String(row) + String(j+1)).innerHTML = piecearray[j]
+                }
+            }
+            flip = true
+        }
+        insertImage()
+        document.getElementById("tog").innerHTML = puzzlearray[counter][8] + " to Move"
+        document.getElementById("answer").innerHTML = ""
+        document.getElementById("solution").innerHTML = ""
+        document.getElementById("loadPuzzle").style.visibility = "hidden"
+        document.getElementById("resetPuzzle").style.visibility = "hidden"
+        document.getElementById("showSolution").style.visibility = "hidden"
+        document.getElementById("showSolution").innerHTML = "Show Solution"
+        pieceType = document.getElementById(answerarray[counter][0]).innerText
+        pieceType2 = document.getElementById(answerarray[counter][1]).innerText
+        unfreezePieces()
+        setMove()
     }
     else {
-        for (i = 7; i > -1; i--) {
-            row = 10*(8-i)
-            for (j = 0; j < 8; j++) {
-                piecearray[7-j] = puzzlearray[counter][7-i][7-j]
-                document.getElementById("b" + String(row) + String(j+1)).innerHTML = piecearray[7-j]
-            }
-        }
-        flip = true
-    }
-    insertImage()
-    document.getElementById("tog").innerHTML = puzzlearray[counter][8] + " to Move"
-    document.getElementById("answer").innerHTML = ""
-    document.getElementById("solution").innerHTML = ""
-    document.getElementById("loadPuzzle").style.visibility = "hidden"
-    document.getElementById("resetPuzzle").style.visibility = "hidden"
-    document.getElementById("showSolution").style.visibility = "hidden"
-    pieceType = document.getElementById(answerarray[counter][0]).innerText
-    pieceType2 = document.getElementById(answerarray[counter][1]).innerText
-    unfreezePieces()
-    setMove()
+        clearBoard()
+        document.getElementById("tog").innerHTML = ""
+        document.getElementById("answer").innerHTML = ""
+        document.getElementById("solution").innerHTML = ""
+        document.getElementById("loadPuzzle").style.visibility = "hidden"
+        document.getElementById("resetPuzzle").style.visibility = "hidden"
+        document.getElementById("showSolution").style.visibility = "hidden"
+        document.getElementById("finish").innerHTML = "<br>You have completed <br> all the puzzles!"
+    }   
 }
 
 function checkAnswer() {
@@ -76,8 +94,8 @@ function checkAnswer() {
         document.getElementById("tog").innerHTML = ""
     }
     document.getElementById("loadPuzzle").style.visibility = "visible"
-    document.getElementById("resetPuzzle").style.visibility = "visible"
     document.getElementById("showSolution").style.visibility = "visible"
+    document.getElementById("resetPuzzle").style.visibility = "visible"       
     freeze()
 }
 
@@ -94,10 +112,10 @@ function resetPieces() {
         flip = false
     }
     else {
-        for (i = 7; i > -1; i--) {
-            row = 10*(8-i)
+        for (i = 0; i < 8; i++) {
+            row = 10*(i+1)
             for (j = 0; j < 8; j++) {
-                piecearray[j] = puzzlearray[counter][7-i][j]
+                piecearray[j] = puzzlearray[counter][i][7-j]
                 document.getElementById("b" + String(row) + String(j+1)).innerHTML = piecearray[j]
             }
         }
@@ -110,6 +128,7 @@ function resetPieces() {
     document.getElementById("loadPuzzle").style.visibility = "hidden"
     document.getElementById("resetPuzzle").style.visibility = "hidden"
     document.getElementById("showSolution").style.visibility = "hidden"
+    document.getElementById("showSolution").innerHTML = "Show Solution"
     //console.log(puzzlearray[counter][8])
     pieceType = document.getElementById(answerarray[counter][0]).innerText
     pieceType2 = document.getElementById(answerarray[counter][1]).innerText
@@ -199,6 +218,15 @@ function unfreezePieces() {
             if (document.getElementById("b" + String(row) + String(j+1)).innerText.length !== 0) {
                 document.getElementById("b" + String(row) + String(j+1)).style.pointerEvents = "auto"
             }
+        }
+    }
+}
+
+function clearBoard() {
+    for (i = 0; i < 8; i++) {
+        row = 10*(8-i)
+        for (j = 0; j < 8; j++) {
+            document.getElementById("b" + String(row) + String(j+1)).innerText = ""
         }
     }
 }
