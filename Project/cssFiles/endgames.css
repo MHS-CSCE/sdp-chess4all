@@ -32,7 +32,7 @@ table {
   width: 10vw;
   height: 10vw;
   border: solid 2px transparent;
-  transition: all 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .background-image {
