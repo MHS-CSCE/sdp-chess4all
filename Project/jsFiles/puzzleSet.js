@@ -34,7 +34,7 @@ function flipBoard(flip) {
 function insertPieces() {
     counter++
     document.getElementById("loadPuzzle").innerText = "Next Puzzle"
-    if (counter + 1 !== puzzlearray.length) {
+    if (counter !== puzzlearray.length) {
         if (puzzlearray[counter][8] == "White") {
             for (i = 0; i < 8; i++) {
                 row = 10*(8-i)
