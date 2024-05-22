@@ -1,15 +1,13 @@
-const array0 = [["Brook", "Bknight", "Bbishop", "Bqueen", "Bking", "Bbishop", "Bknight", "Brook"], ["Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn"], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn"], ["Wrook", "Wknight", "Wbishop", "Wqueen", "Wking", "Wbishop", "Wknight", "Wrook"], "White"]
+const array0 = [["Brook", "", "Bbishop", "Bqueen", "Bking", "Bbishop", "", "Brook"], ["", "Bpawn", "Bpawn", "Bpawn", "", "", "", "Bpawn"], ["", "", "", "", "", "Bpawn", "", "Wqueen"], ["", "Bpawn", "", "Wknight", "", "", "", ""], ["", "", "", "", "Wpawn", "", "", ""], ["", "", "", "", "", "", "", ""], ["Wpawn", "Wpawn", "Wpawn", "", "", "Wpawn", "Wpawn", "Wpawn"], ["Wrook", "", "", "", "Wking", "", "", "Wrook"], "White"]
 
-const array1 = [["Brook", "Bknight", "Bbishop", "Bqueen", "Bking", "Bbishop", "Bknight", "Brook"], ["Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn", "Bpawn"], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["", "", "", "", "", "", "", ""], ["Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn", "Wpawn"], ["Wrook", "Wknight", "Wbishop", "Wqueen", "Wking", "Wbishop", "Wknight", "Wrook"], "Black"]
+const array1 = [["", "", "", "", "", "", "", "Brook"], ["Bpawn", "", "", "", "", "Bking", "Bpawn", ""], ["", "Bbishop", "", "", "", "Bknight", "", ""], ["", "", "", "", "", "Wqueen", "Bpawn", ""], ["", "", "", "", "", "", "", ""], ["", "", "Wpawn", "", "", "", "", "Brook"], ["Wpawn", "Wpawn", "", "Wpawn", "Wpawn", "Wpawn", "", ""], ["Wrook", "", "Wbishop", "", "", "Wrook", "Wking", ""], "Black"]
 
 const array2 = [["", "", "Wqueen", "", "", "", "", "", ""], ["", "", "", "", "", "", "Bpawn", ""], ["", "", "", "", "Bpawn", "", "", "Bking"], ["", "", "Wbishop", "", "", "", "", "Bpawn"], ["", "", "", "", "", "Wking", "", ""], ["", "", "", "", "", "Wpawn", "", ""], ["Wpawn", "", "", "", "", "", "", ""], ["", "", "", "", "Bqueen", "", "", ""], "Black"]
 
-const array3 = [["Brook", "", "Bbishop", "Bqueen", "Bking", "Bbishop", "", "Brook"], ["", "Bpawn", "Bpawn", "Bpawn", "", "", "", "Bpawn"], ["", "", "", "", "", "Bpawn", "", "Wqueen"], ["", "Bpawn", "", "Wknight", "", "", "", ""], ["", "", "", "", "Wpawn", "", "", ""], ["", "", "", "", "", "", "", ""], ["Wpawn", "Wpawn", "Wpawn", "", "", "Wpawn", "Wpawn", "Wpawn"], ["Wrook", "", "", "", "Wking", "", "", "Wrook"], "White"]
-
 var piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8
 
-puzzlearray = [array0, array1, array2, array3]
-answerarray = [["b205", "b405"], ["b204", "b404"], ["b202", "b402"], ["b608", "b508"]]
+puzzlearray = [array0, array1, array2]
+answerarray = [["b608", "b508"], ["b601", "b602"], ["b202", "b402"]]
 
 piecearray = [piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8]
 
