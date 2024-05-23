@@ -1,10 +1,10 @@
 chess4all
 
-A website for chess enthusiasts to study and improve their skills, with endgame study files, interactive puzzles, and a collection of masters' games
+A website for chess enthusiasts to study and improve their skills, with endgame study files, interactive puzzles, and a collection of masters' games.
 
 Features
 
-Describe the key features of the program
+The website provides comprehensive files for learning different types of endgames, a collection of puzzles to improve tactical awareness, and famous games from chess masters to improve understanding and full-game awareness.
 
 Installation
 

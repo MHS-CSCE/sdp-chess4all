@@ -126,6 +126,7 @@ function previousMove() {
         document.getElementById("conclusion").innerText = ""
     }
     console.log(capturedPieces)
+    capturedPieces.pop()
 }
 
 function firstMove() {

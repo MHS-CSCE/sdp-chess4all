@@ -52,11 +52,11 @@ coloring()
 
 function reddish() {
     document.querySelectorAll('.box').forEach(i1 => {
-        if (i1.style.backgroundColor == 'pink') {
+        if (i1.style.backgroundColor == 'rgb(155, 222, 237)') {
 
             document.querySelectorAll('.box').forEach(i2 => {
 
-                if (i2.style.backgroundColor == 'green' && i2.innerText.length !== 0) {
+                if (i2.style.backgroundColor == 'rgb(182, 192, 197)' && i2.innerText.length !== 0) {
 
 
                     greenText = i2.innerText
@@ -100,27 +100,27 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
     // PAWN
     if (flip == 0) {
         if (item.innerText == `${toggle}pawn`) {
-            item.style.backgroundColor = 'pink'
+            item.style.backgroundColor = 'rgb(155, 222, 237)'
 
             if (tog % 2 !== 0 && aup < 800) {
 
                 if (aup == 200 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                    document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                    document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                     if (aup == 200 && document.getElementById(`b${a + 200}`).innerText.length == 0) {
-                        document.getElementById(`b${a + 200}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a + 200}`).style.backgroundColor = 'rgb(182, 192, 197)'
                     }
                 }
 
                 if (aup !== 200 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                    document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                    document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 }
 
                 if (aside < 8 && document.getElementById(`b${a + 100 + 1}`).innerText.length !== 0) {
-                    document.getElementById(`b${a + 100 + 1}`).style.backgroundColor = 'green'
+                    document.getElementById(`b${a + 100 + 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 }
 
                 if (aside > 1 && document.getElementById(`b${a + 100 - 1}`).innerText.length !== 0) {
-                    document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'green'
+                    document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
 
                 }
                 // if (aup == 800) {
@@ -129,11 +129,11 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
                 //     insertImage()
                 // }
                 // if (aside < 8 && document.getElementById(`b${a + 100 + 1}`).innerText.length == 0 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 // }
 
                 // if (aside > 1 && document.getElementById(`b${a + 100 - 1}`).innerText.length == 0 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
 
                 // }
             }
@@ -141,20 +141,20 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
             if (tog % 2 == 0 && aup > 100) {
 
                 if (aup == 700 && document.getElementById(`b${a - 100}`).innerText.length == 0) {
-                    document.getElementById(`b${a - 100}`).style.backgroundColor = 'green'
+                    document.getElementById(`b${a - 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                     if (aup == 700 && document.getElementById(`b${a - 200}`).innerText.length == 0) {
-                        document.getElementById(`b${a - 200}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a - 200}`).style.backgroundColor = 'rgb(182, 192, 197)'
                     }
                 }
 
                 if (aup !== 700 && document.getElementById(`b${a - 100}`).innerText.length == 0) {
-                    document.getElementById(`b${a - 100}`).style.backgroundColor = 'green'
+                    document.getElementById(`b${a - 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 }
                 if (aside < 8 && document.getElementById(`b${a - 100 + 1}`).innerText.length !== 0) {
-                    document.getElementById(`b${a - 100 + 1}`).style.backgroundColor = 'green'
+                    document.getElementById(`b${a - 100 + 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 }
                 if (aside > 1 && document.getElementById(`b${a - 100 - 1}`).innerText.length !== 0) {
-                    document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'green'
+                    document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 }
             }
         }
@@ -162,25 +162,25 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
     else {
         console.log("xd")
         if (item.innerText == `${toggle}pawn`) {
-            item.style.backgroundColor = 'pink'
+            item.style.backgroundColor = 'rgb(155, 222, 237)'
 
             if (tog % 2 !== 0 && aup < 800) {
 
                     if (aup == 700 && document.getElementById(`b${a - 100}`).innerText.length == 0) {
-                        document.getElementById(`b${a - 100}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a - 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                         if (aup == 700 && document.getElementById(`b${a - 200}`).innerText.length == 0) {
-                            document.getElementById(`b${a - 200}`).style.backgroundColor = 'green'
+                            document.getElementById(`b${a - 200}`).style.backgroundColor = 'rgb(182, 192, 197)'
                         }
                     }
 
                     if (aup !== 700 && document.getElementById(`b${a - 100}`).innerText.length == 0) {
-                        document.getElementById(`b${a - 100}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a - 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                     }
                     if (aside < 8 && document.getElementById(`b${a - 100 + 1}`).innerText.length !== 0) {
-                        document.getElementById(`b${a - 100 + 1}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a - 100 + 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
                     }
                     if (aside > 1 && document.getElementById(`b${a - 100 - 1}`).innerText.length !== 0) {
-                        document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
 
                 }
                 // if (aup == 800) {
@@ -189,11 +189,11 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
                 //     insertImage()
                 // }
                 // if (aside < 8 && document.getElementById(`b${a + 100 + 1}`).innerText.length == 0 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 // }
 
                 // if (aside > 1 && document.getElementById(`b${a + 100 - 1}`).innerText.length == 0 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
 
                 // }
             }
@@ -201,22 +201,22 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
             if (tog % 2 == 0 && aup > 100) {
 
                     if (aup == 200 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                        document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                         if (aup == 200 && document.getElementById(`b${a + 200}`).innerText.length == 0) {
-                            document.getElementById(`b${a + 200}`).style.backgroundColor = 'green'
+                            document.getElementById(`b${a + 200}`).style.backgroundColor = 'rgb(182, 192, 197)'
                         }
                     }
 
                     if (aup !== 200 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                        document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                     }
 
                     if (aside < 8 && document.getElementById(`b${a + 100 + 1}`).innerText.length !== 0) {
-                        document.getElementById(`b${a + 100 + 1}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a + 100 + 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
                     }
 
                     if (aside > 1 && document.getElementById(`b${a + 100 - 1}`).innerText.length !== 0) {
-                        document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'green'
+                        document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 }
             }
         }
@@ -228,37 +228,37 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
 
         if (aside < 8) {
-            document.getElementById(`b${a + 1}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a + 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
 
         }
         if (aside > 1) {
 
-            document.getElementById(`b${a - 1}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aup < 800) {
 
-            document.getElementById(`b${a + 100}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aup > 100) {
 
-            document.getElementById(`b${a - 100}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a - 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
 
         if (aup > 100 && aside < 8) {
 
-            document.getElementById(`b${a - 100 + 1}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a - 100 + 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aup > 100 && aside > 1) {
 
-            document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aup < 800 && aside < 8) {
 
-            document.getElementById(`b${a + 100 + 1}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a + 100 + 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aup < 800 && aside > 1) {
 
-            document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
 
         if(whiteCastleChance==true && a==105 && document.getElementById('b106').innerText== '' && document.getElementById('b107').innerText== '' && document.getElementById('b108').innerText== 'Wrook'){
@@ -278,7 +278,7 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         }
 
-        item.style.backgroundColor = 'pink'
+        item.style.backgroundColor = 'rgb(155, 222, 237)'
 
     }
 
@@ -290,10 +290,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         for (let i = 1; i < 9; i++) {
 
             if ((a + i * 100) < 900 && document.getElementById(`b${a + i * 100}`).innerText == 0) {
-                document.getElementById(`b${a + i * 100}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if ((a + i * 100) < 900 && document.getElementById(`b${a + i * 100}`).innerText !== 0) {
-                document.getElementById(`b${a + i * 100}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -301,10 +301,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         for (let i = 1; i < 9; i++) {
 
             if ((a - i * 100) > 100 && document.getElementById(`b${a - i * 100}`).innerText == 0) {
-                document.getElementById(`b${a - i * 100}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if ((a - i * 100) > 100 && document.getElementById(`b${a - i * 100}`).innerText !== 0) {
-                document.getElementById(`b${a - i * 100}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -312,10 +312,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         for (let i = 1; i < 9; i++) {
 
             if ((a + i) < (aup + 9) && document.getElementById(`b${a + i}`).innerText == 0) {
-                document.getElementById(`b${a + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if ((a + i) < (aup + 9) && document.getElementById(`b${a + i}`).innerText !== 0) {
-                document.getElementById(`b${a + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -323,15 +323,15 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         for (let i = 1; i < 9; i++) {
 
             if ((a - i) > (aup) && document.getElementById(`b${a - i}`).innerText == 0) {
-                document.getElementById(`b${a - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if ((a - i) > (aup) && document.getElementById(`b${a - i}`).innerText !== 0) {
-                document.getElementById(`b${a - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
 
-        item.style.backgroundColor = 'pink'
+        item.style.backgroundColor = 'rgb(155, 222, 237)'
     }
 
 
@@ -343,10 +343,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         for (let i = 1; i < 9; i++) {
             if (i < (900 - aup) / 100 && i < 9 - aside && document.getElementById(`b${a + i * 100 + i}`).innerText.length == 0) {
-                document.getElementById(`b${a + i * 100 + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if (i < (900 - aup) / 100 && i < 9 - aside && document.getElementById(`b${a + i * 100 + i}`).innerText.length !== 0) {
-                document.getElementById(`b${a + i * 100 + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -354,10 +354,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         for (let i = 1; i < 9; i++) {
             if (i < aup / 100 && i < 9 - aside && document.getElementById(`b${a - i * 100 + i}`).innerText.length == 0) {
-                document.getElementById(`b${a - i * 100 + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if (i < aup / 100 && i < 9 - aside && document.getElementById(`b${a - i * 100 + i}`).innerText.length !== 0) {
-                document.getElementById(`b${a - i * 100 + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -365,10 +365,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         for (let i = 1; i < 9; i++) {
             if (i < (900 - aup) / 100 && i < aside && document.getElementById(`b${a + i * 100 - i}`).innerText.length == 0) {
-                document.getElementById(`b${a + i * 100 - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100 - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if (i < (900 - aup) / 100 && i < aside && document.getElementById(`b${a + i * 100 - i}`).innerText.length !== 0) {
-                document.getElementById(`b${a + i * 100 - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100 - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
 
@@ -377,17 +377,17 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         for (let i = 1; i < 9; i++) {
             if (i < aup / 100 && i < aside && document.getElementById(`b${a - i * 100 - i}`).innerText.length == 0) {
-                document.getElementById(`b${a - i * 100 - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100 - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if (i < aup / 100 && i < aside && document.getElementById(`b${a - i * 100 - i}`).innerText.length !== 0) {
-                document.getElementById(`b${a - i * 100 - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100 - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
 
 
 
-        item.style.backgroundColor = 'pink'
+        item.style.backgroundColor = 'rgb(155, 222, 237)'
 
     }
 
@@ -401,10 +401,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         for (let i = 1; i < 9; i++) {
 
             if ((a + i * 100) < 900 && document.getElementById(`b${a + i * 100}`).innerText == 0) {
-                document.getElementById(`b${a + i * 100}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if ((a + i * 100) < 900 && document.getElementById(`b${a + i * 100}`).innerText !== 0) {
-                document.getElementById(`b${a + i * 100}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -412,10 +412,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         for (let i = 1; i < 9; i++) {
 
             if ((a - i * 100) > 100 && document.getElementById(`b${a - i * 100}`).innerText == 0) {
-                document.getElementById(`b${a - i * 100}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if ((a - i * 100) > 100 && document.getElementById(`b${a - i * 100}`).innerText !== 0) {
-                document.getElementById(`b${a - i * 100}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -423,10 +423,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         for (let i = 1; i < 9; i++) {
 
             if ((a + i) < (aup + 9) && document.getElementById(`b${a + i}`).innerText == 0) {
-                document.getElementById(`b${a + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if ((a + i) < (aup + 9) && document.getElementById(`b${a + i}`).innerText !== 0) {
-                document.getElementById(`b${a + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -434,10 +434,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         for (let i = 1; i < 9; i++) {
 
             if ((a - i) > (aup) && document.getElementById(`b${a - i}`).innerText == 0) {
-                document.getElementById(`b${a - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if ((a - i) > (aup) && document.getElementById(`b${a - i}`).innerText !== 0) {
-                document.getElementById(`b${a - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -446,10 +446,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         for (let i = 1; i < 9; i++) {
             if (i < (900 - aup) / 100 && i < 9 - aside && document.getElementById(`b${a + i * 100 + i}`).innerText.length == 0) {
-                document.getElementById(`b${a + i * 100 + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if (i < (900 - aup) / 100 && i < 9 - aside && document.getElementById(`b${a + i * 100 + i}`).innerText.length !== 0) {
-                document.getElementById(`b${a + i * 100 + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -457,10 +457,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         for (let i = 1; i < 9; i++) {
             if (i < aup / 100 && i < 9 - aside && document.getElementById(`b${a - i * 100 + i}`).innerText.length == 0) {
-                document.getElementById(`b${a - i * 100 + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if (i < aup / 100 && i < 9 - aside && document.getElementById(`b${a - i * 100 + i}`).innerText.length !== 0) {
-                document.getElementById(`b${a - i * 100 + i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
@@ -468,10 +468,10 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         for (let i = 1; i < 9; i++) {
             if (i < (900 - aup) / 100 && i < aside && document.getElementById(`b${a + i * 100 - i}`).innerText.length == 0) {
-                document.getElementById(`b${a + i * 100 - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100 - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if (i < (900 - aup) / 100 && i < aside && document.getElementById(`b${a + i * 100 - i}`).innerText.length !== 0) {
-                document.getElementById(`b${a + i * 100 - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a + i * 100 - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
 
@@ -480,15 +480,15 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         for (let i = 1; i < 9; i++) {
             if (i < aup / 100 && i < aside && document.getElementById(`b${a - i * 100 - i}`).innerText.length == 0) {
-                document.getElementById(`b${a - i * 100 - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100 - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
             }
             else if (i < aup / 100 && i < aside && document.getElementById(`b${a - i * 100 - i}`).innerText.length !== 0) {
-                document.getElementById(`b${a - i * 100 - i}`).style.backgroundColor = 'green'
+                document.getElementById(`b${a - i * 100 - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
                 break
             }
         }
 
-        item.style.backgroundColor = 'pink'
+        item.style.backgroundColor = 'rgb(155, 222, 237)'
 
     }
 
@@ -497,31 +497,31 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
     if (item.innerText == `${toggle}knight`) {
 
         if (aside < 7 && aup < 800) {
-            document.getElementById(`b${a + 100 + 2}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a + 100 + 2}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aside < 7 && aup > 200) {
-            document.getElementById(`b${a - 100 + 2}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a - 100 + 2}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aside < 8 && aup < 700) {
-            document.getElementById(`b${a + 200 + 1}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a + 200 + 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aside > 1 && aup < 700) {
-            document.getElementById(`b${a + 200 - 1}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a + 200 - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aside > 2 && aup < 800) {
-            document.getElementById(`b${a - 2 + 100}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a - 2 + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aside > 2 && aup > 100) {
-            document.getElementById(`b${a - 2 - 100}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a - 2 - 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aside < 8 && aup > 200) {
-            document.getElementById(`b${a - 200 + 1}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a - 200 + 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
         if (aside > 1 && aup > 200) {
-            document.getElementById(`b${a - 200 - 1}`).style.backgroundColor = 'green'
+            document.getElementById(`b${a - 200 - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
         }
 
-        item.style.backgroundColor = 'pink'
+        item.style.backgroundColor = 'rgb(155, 222, 237)'
 
     }
 }
@@ -541,17 +541,17 @@ document.querySelectorAll('.box').forEach(item => {
         unfreeze()
         // To delete the opposite element
 
-        if (item.style.backgroundColor == 'green' && item.innerText.length == 0) {
+        if (item.style.backgroundColor == 'rgb(182, 192, 197)' && item.innerText.length == 0) {
             tog = tog + 1
         }
         else if (item.style.backgroundColor == 'aqua' && item.innerText.length == 0) {
             tog = tog + 1
         }
 
-        else if (item.style.backgroundColor == 'green' && item.innerText.length !== 0) {
+        else if (item.style.backgroundColor == 'rgb(182, 192, 197)' && item.innerText.length !== 0) {
 
             document.querySelectorAll('.box').forEach(i => {
-                if (i.style.backgroundColor == 'pink') {
+                if (i.style.backgroundColor == 'rgb(155, 222, 237)') {
                     pinkId = i.id
                     pinkText = i.innerText
 
@@ -622,7 +622,7 @@ document.querySelectorAll('.box').forEach(item => {
 
     item.addEventListener('click', function () {
 
-        if (item.style.backgroundColor == 'pink') {
+        if (item.style.backgroundColor == 'rgb(155, 222, 237)') {
             turn = document.getElementById("tog").innerText
             //console.log(turn)
 
@@ -642,7 +642,7 @@ document.querySelectorAll('.box').forEach(item => {
                 //console.log(aup, value)
                 //console.log(item2.style.backgroundColor, item2.innerText.length)
 
-                    if (item2.style.backgroundColor == "green") {
+                    if (item2.style.backgroundColor == 'rgb(182, 192, 197)') {
                         if (pinkText == `Wpawn` && aup == 800) {
                             document.getElementById("b" + String(value)).innerText = 'Wqueen'
                             document.getElementById(pinkId).innerText = ''
@@ -728,7 +728,7 @@ z = 0
 document.querySelectorAll('.box').forEach(ee => {
     ee.addEventListener('click', function () {
         z = z + 1
-        if (z % 2 == 0 && ee.style.backgroundColor !== 'green' && ee.style.backgroundColor !== 'aqua') {
+        if (z % 2 == 0 && ee.style.backgroundColor !== 'rgb(182, 192, 197)' && ee.style.backgroundColor !== 'aqua') {
             coloring()
         }
     })
