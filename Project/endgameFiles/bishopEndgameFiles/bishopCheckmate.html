@@ -1,9 +1,11 @@
+<!-- Hopefully navbar appears on all pages !-->
+
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>2 Bishops Checkmate</title>
-    <link rel="stylesheet" href="/cssFiles/style.css">
+    <title>Endgames</title>
+    <link rel="stylesheet" href="/cssFiles/endGameSubPage.css">
     <link rel="stylesheet" href="/cssFiles/nav.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -21,86 +23,105 @@
 </body>
 
 <body>
-    <h1>Endgame Study Database</h1>
-    <h2>
-        <center>2 Bishops Checkmate</center>
-    </h2>
+    <br>
+    <header>
+        <h1>Endgame Study Database</h1>
+        <h2>2 Bishops Checkmate</h2>
+    </header>
 
-    <p>The 2 Bishops Checkmate, different from the Queen and Rook Checkmate, requires more elegance to execute. Although
-        the bishop is not as powerful as the rook or queen, two bishops together are a force to be reckoned with. This
-        section will teach the most simple way to achieve a quick and easy checkmate with the bishop pair.</p>
-    <br>
-    <p>The 2 bishops checkmate takes the most effort to execute when the opponent's king is in the middle of the board,
-        so we will consider that situation.</p>
-    <br>
-    <p>To accomplish this checkmate, we will wish to achieve the following steps:</p>
-    <ol>
-        <li>Place the two bishops in a line so that they form a "V-cage" to trap the opponent's king (see Figure 1.0).
-            Move the king onto this line as well</li><br>
-        <li>Use the king and the bishop to "drive" the opponent's king backwards towards the edge of the board. By this
-            point, your king should be opposing the opponent's king and preventing them from escaping</li><br>
-        <li>Use the two bishops to slowly take away the king's squares one at a time, and use your king to prevent the
-            opponent's king from escaping the cage</li><br>
-        <li>When the king is trapped in the two squares in the corner, use your two bishops to perform a "rolling"
-            checkmate</li><br>
-    </ol>
-    <br>
-    <p>To understand the strong collaboration between the two bishops to perform a checkmate, let us practice these
-        steps in a real position:</p>
-    <br>
-    <center><img src="/images/endgamePageIcons/bishopPageIcons/bishopCheckmate1.png" height=300 width=300></center>
-    <p><b>
-            <center>Figure 1.0: White to Move</center>
-        </b></p>
-    <br>
-    <p>We have a very typical position for the 2 bishops checkmate. First, we should line up the bishops on the same
-        line right beside each other to form a "V-cage", and we can do so in this position by playing <b>1.Bd3</b>.
-        Black has no good move to make with the king, so <b>1...Ke5 </b> would be a natural move. White should follow up
-        by placing the king on the same line as the bishops, so we should proceed with <b>2.Kc3</b>, and a crucial
-        position arises after <b>2...Kd5</b>:</p>
-    <br>
-    <center><img src="/images/endgamePageIcons/bishopPageIcons/bishopCheckmate2.png" height=300 width=300></center>
-    <p><b>
-            <center>Figure 1.1: Position after 2...Kd5</center>
-        </b></p>
-    <br>
-    <p>This position is crucial to the 2 bishops checkmate, and is also step 2 of the checkmating process. We realize
-        that our king cannot move forward anymore due to the strong position of the Black king, so we need to "drive"
-        the king backwards. To do this, White should play <b>3.Bd4!</b>, forcing the Black king back to the 6th rank
-        with <b>3...Kc6 4.Kc4 Kd6 5.Be4</b>, and we get a similar position once again except with the Black king being
-        further back.</p>
-    <p>We will continue driving the Black king back with our bishops and our king, and a sample line would be <b>5...Ke6
-            6.Kc5! Kd7 7.Be5 Ke7 8.Bd5 Kd7 9.Bd6! Ke8 10.Be6 Kd8</b>, resulting in the following position:</p>
-    <br>
-    <center><img src="/images/endgamePageIcons/bishopPageIcons/bishopCheckmate3.png" height=300 width=300></center>
-    <p><b>
-            <center>Figure 1.2: Position after 10...Kd8</center>
-        </b></p>
-    <br>
-    <p>Notice that as we slowly push the king backwards, the cage gets more and more limited although our bishops are
-        staying on the same files. In this position, Black's king can only move back and forth between d8-e8. Now, we
-        must follow through with the 3rd step, and slowly drive the Black king towards the corner of choice. Since our
-        king is currently on the left side of the bishops, it would be easier to force the king to a8, although forcing
-        it to h8 would also be possible after Kd5-Ke5-Kf6.</p>
-    <p>The fastest way to force the king to the corner, however, would to play <b>11.Kc6 Ke8 12.Bc5!</b> (a waiting
-        move) <b>Kd8 13.Bf7!</b> (taking away the e8 square) <b>Kc8 14.Be7!</b> (taking away the d8 square) <b>Kb8
-            15.Kb6!</b> (preventing the king from leaving the cage through a7) <b>Ka8 16.Be6! </b> (taking away the c6
-        square):</p>
-    <br>
-    <center><img src="/images/endgamePageIcons/bishopPageIcons/bishopCheckmate4.png" height=300 width=300></center>
-    <p><b>
-            <center>Figure 1.2: Position after 16.Be6!</center>
-        </b></p>
-    <br>
-    <p>By "rolling" the bishops, White is able to take away Black's squares one by one and force the king into the
-        corner with only the a8-b8 squares to move between. This position is lucky since we don't need to make any
-        waiting moves, but we wish to obtain this position as Black to move. If not, we can simply make a waiting move
-        with one of our bishops such that the same c8-d8 squares are covered.</p>
-    <p>It is easier in this situation however, because after <b>16...Kb8 17.Bd6+ Ka8 18.Bd5#</b>, White traps the Black
-        king on a8 and checkmates!</p>
-    <p>That will be all on the 2 Bishops Checkmate. In the following section, we will consider more complex bishop
-        endgames.</p>
-    <br>
-    <button onclick="window.location.href='/endgameFiles/bishopEndgameFiles/bishopEndgames.html';">Return to Endgames Menu</button>
-    <button onclick="window.location.href='/endgameFiles/bishopEndgameFiles/bishop+pawn.html';">Next page</button>
+    <div class="container">
+        <div class="content">
+            <p>The 2 Bishops Checkmate, different from the Queen and Rook Checkmate, requires more elegance to execute.
+                Although the bishop is not as powerful as the rook or queen, two bishops together are a force to be
+                reckoned with. This section will teach the most simple way to achieve a quick and easy checkmate with
+                the bishop pair.</p>
+
+            <p>The 2 bishops checkmate takes the most effort to execute when the opponent's king is in the middle of the
+                board, so we will consider that situation.</p>
+
+            <p>To accomplish this checkmate, we will wish to achieve the following steps:</p>
+            <div class="instructions">
+                <ol>
+                    <li>Place the two bishops in a line so that they form a "V-cage" to trap the opponent's king (see
+                        Figure 1.0). Move the king onto this line as well.</li>
+                    <li>Use the king and the bishop to "drive" the opponent's king backwards towards the edge of the
+                        board. By this point, your king should be opposing the opponent's king and preventing them from
+                        escaping.</li>
+                    <li>Use the two bishops to slowly take away the king's squares one at a time, and use your king to
+                        prevent the opponent's king from escaping the cage.</li>
+                    <li>When the king is trapped in the two squares in the corner, use your two bishops to perform a
+                        "rolling" checkmate.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>To understand the strong collaboration between the two bishops to perform a checkmate, let us practice
+                these steps in a real position:</p>
+
+            <div class="images">
+                <img src="/images/endgamePageIcons/bishopPageIcons/bishopCheckmate1.png"
+                    alt="2 Bishops Checkmate Initial Position">
+                <p class="caption">Figure 1.0: White to Move</p>
+            </div>
+
+            <p>We have a very typical position for the 2 bishops checkmate. First, we should line up the bishops on the
+                same line right beside each other to form a "V-cage", and we can do so in this position by playing
+                <b>1.Bd3</b>. Black has no good move to make with the king, so <b>1...Ke5</b> would be a natural move.
+                White should follow up by placing the king on the same line as the bishops, so we should proceed with
+                <b>2.Kc3</b>, and a crucial position arises after <b>2...Kd5</b>:</p>
+
+            <div class="images">
+                <img src="/images/endgamePageIcons/bishopPageIcons/bishopCheckmate2.png" alt="Position after 2...Kd5">
+                <p class="caption">Figure 1.1: Position after 2...Kd5</p>
+            </div>
+
+            <p>This position is crucial to the 2 bishops checkmate, and is also step 2 of the checkmating process. We
+                realize that our king cannot move forward anymore due to the strong position of the Black king, so we
+                need to "drive" the king backwards. To do this, White should play <b>3.Bd4!</b>, forcing the Black king
+                back to the 6th rank with <b>3...Kc6 4.Kc4 Kd6 5.Be4</b>, and we get a similar position once again
+                except with the Black king being further back.</p>
+
+            <p>We will continue driving the Black king back with our bishops and our king, and a sample line would be
+                <b>5...Ke6 6.Kc5! Kd7 7.Be5 Ke7 8.Bd5 Kd7 9.Bd6! Ke8 10.Be6 Kd8</b>, resulting in the following
+                position:</p>
+
+            <div class="images">
+                <img src="/images/endgamePageIcons/bishopPageIcons/bishopCheckmate3.png" alt="Position after 10...Kd8">
+                <p class="caption">Figure 1.2: Position after 10...Kd8</p>
+            </div>
+
+            <p>Notice that as we slowly push the king backwards, the cage gets more and more limited although our
+                bishops are staying on the same files. In this position, Black's king can only move back and forth
+                between d8-e8. Now, we must follow through with the 3rd step, and slowly drive the Black king towards
+                the corner of choice. Since our king is currently on the left side of the bishops, it would be easier to
+                force the king to a8, although forcing it to h8 would also be possible after Kd5-Ke5-Kf6.</p>
+
+            <p>The fastest way to force the king to the corner, however, would to play <b>11.Kc6 Ke8 12.Bc5!</b> (a
+                waiting move) <b>Kd8 13.Bf7!</b> (taking away the e8 square) <b>Kc8 14.Be7!</b> (taking away the d8
+                square) <b>Kb8 15.Kb6!</b> (preventing the king from leaving the cage through a7) <b>Ka8 16.Be6!</b>
+                (taking away the c6 square):</p>
+
+            <div class="images">
+                <img src="/images/endgamePageIcons/bishopPageIcons/bishopCheckmate4.png" alt="Position after 16.Be6!">
+                <p class="caption">Figure 1.3: Position after 16.Be6!</p>
+            </div>
+
+            <p>By "rolling" the bishops, White is able to take away Black's squares one by one and force the king into
+                the corner with only the a8-b8 squares to move between. This position is lucky since we don't need to
+                make any waiting moves, but we wish to obtain this position as Black to move. If not, we can simply make
+                a waiting move with one of our bishops such that the same c8-d8 squares are covered.</p>
+
+            <p>It is easier in this situation however, because after <b>16...Kb8 17.Bd6+ Ka8 18.Bd5#</b>, White traps
+                the Black king on a8 and checkmates!</p>
+
+            <p>That will be all on the 2 Bishops Checkmate. In the following section, we will consider more complex
+                bishop endgames.</p>
+        </div>
+    </div>
+    <div class="center">
+        <button onclick="window.location.href='/endgameFiles/bishopEndgameFiles/bishopEndgames.html';">Bishop
+            Endgames</button>
+        <button onclick="window.location.href='/endgameFiles/bishopEndgameFiles/bishop+pawn.html';">Next page</button>
+    </div>
 </body>
