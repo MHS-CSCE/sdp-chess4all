@@ -13,7 +13,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #cccccc;
+  color: black;
 }
 
 th,
@@ -106,7 +106,7 @@ table {
 
 .description {
   text-align: center;
-  color: #cccccc;
+  color: black;
   padding: 1% 1% 1% 1%;
   margin-top: 1%;
   margin-left: auto;
