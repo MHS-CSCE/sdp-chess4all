@@ -8,17 +8,19 @@ The website provides comprehensive files for learning different types of endgame
 
 Installation
 
-Include a bulleted list of any packages that are required in order for the program to run, and their purpose. Ideally, this should include the command for installation (e.g. for Pygame you’d include: pip install pygame).
-
-A requirements file should be completed if more than 2 installs are required.
+There are no packages needed to install and run the code.
 
 Known Bugs
 
-Provide a list / overview of known bugs.This should include anything quirky that might be confusing for a user, as well as anything that might cause the program to crash.
+The endgame files are currently incomplete, and many of them may not currently be available for use (there is a message saying "Coming Soon")
+The master games page is currently auto-set to the first game, so even when the select menu does not have a game selected, the arrow keys will still work and showcase a game.
 
 Support
 
-Contact information if the user requires help
+If there are any issues or concerns with the program, feel free to contact our team members via email:
+  Matthew: mzhu4@ocdsb.ca
+  Ethan: esun4@ocdsb.ca
+  Ray: rchan1@ocdsb.ca
 
 Sources
 
