@@ -15,8 +15,8 @@ const game3 = [["b205", "b405"], ["b705", "b505"], ["b107", "b306"], ["b704", "b
 const information3 = [["Morphy, Paul - Duke Carl / Count Isouard"], ["1858, Paris / France"], ["1-0"], ["White Won by Checkmate"]]
 
 moveCounter = 0
-//gameCounter set at 1 for now to test buttons with an actual game
-gameCounter = 0
+//gameCounter set at -1 to disable buttons at the start (before a game is selected)
+gameCounter = -1
 var piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8
 
 const gameArray = [game1, game2, game3]
@@ -130,8 +130,10 @@ function previousMove() {
 }
 
 function firstMove() {
-    for (i = moveCounter; i > -1; i--) {
-        previousMove()
+    if (moveCounter !== 0) {
+        for (i = moveCounter; i > -1; i--) {
+            previousMove()
+        }
     }
     document.getElementById("conclusion").innerText = ""
 }
