@@ -13,14 +13,19 @@ There are no packages needed to install and run the code.
 Known Bugs
 
 The endgame files are currently incomplete, and many of them may not currently be available for use (there is a message saying "Coming Soon")
+
 The master games page is currently auto-set to the first game, so even when the select menu does not have a game selected, the arrow keys will still work and showcase a game.
 
 Support
 
 If there are any issues or concerns with the program, feel free to contact our team members via email:
+
   Matthew: mzhu4@ocdsb.ca
+  
   Ethan: esun4@ocdsb.ca
+  
   Ray: rchan1@ocdsb.ca
+
 
 Sources
 
