@@ -1,4 +1,6 @@
-// Inserting the Images
+/**
+ * this function comes from https://github.com/jahid28/Games/tree/main/CHESS and displays the pieces on the board
+ */
 function insertImage() {
 
     document.querySelectorAll('.box').forEach(image => {
@@ -11,9 +13,9 @@ function insertImage() {
 }
 insertImage()
 
-
-//Coloring
-
+/**
+ * this function comes from https://github.com/jahid28/Games/tree/main/CHESS and colors each square in the background on the chess board
+ */
 function coloring() {
     const color = document.querySelectorAll('.box')
 
@@ -27,29 +29,20 @@ function coloring() {
         a = aside + aup
 
         if (a % 2 == 0) {
+            //modified colors to suit our website styling (and throughout this js file)
             color.style.backgroundColor = 'rgb(122, 157, 178)';
-            //color.style.backgroundImage = "url(blue.png)";
         }
         if (a % 2 !== 0) {
+            //modified colors to suit our website styling (and throughout this js file)
             color.style.backgroundColor = 'rgb(217, 228, 232)';
-            //color.style.backgroundImage = "url(white.png)";
         }
-        // if (a % 2 == 0) {
-        //     color.style.backgroundColor = 'seagreen'
-        // }
-        // if (a % 2 !== 0) {
-        //     color.style.backgroundColor = 'lime'
-        // }
-
     })
 }
 coloring()
 
-
-
-
-//function to not remove the same team element
-
+/**
+ * this function comes from https://github.com/jahid28/Games/tree/main/CHESS and prevents one side to capture their own pieces
+ */
 function reddish() {
     document.querySelectorAll('.box').forEach(i1 => {
         if (i1.style.backgroundColor == 'rgb(155, 222, 237)') {
@@ -79,26 +72,31 @@ function reddish() {
                     if (a % 2 !== 0 && pinkColor == greenColor) {
                         i2.style.backgroundColor = 'rgb(240, 201, 150)'
                     }
-
-                    // if (pinkColor == greenColor) {
-                    //     i2.style.backgroundColor = 'rgb(253, 60, 60)'
-                    // }
                 }
             })
         }
     })
 }
 
+//setting original side to move
 tog = 1
-whiteCastleChance=true
-blackCastleChance=true
+//setting value of flip for puzzle function
 flip = false
 
-// Function to display the available paths for all pieces
+/**
+ * a large part of this function comes from https://github.com/jahid28/Games/tree/main/CHESS (aside from the extra conditions, modified colors, flip variable, and additional code for flipping the board) and is used to highlight the paths for all the pieces
+ * @param {string} toggle either W or B, representing White or Black to move
+ * @param {integer} a location of the piece
+ * @param {integer} aup row number of the piece multiplied by 100
+ * @param {integer} aside column number of the piece
+ * @param {object} item clicked piece
+ * @param {integer} flip either 0 or 1 depending on if it is from White or Black's perspective
+ */
 function whosTurn(toggle, a, aup, aside, item, flip) {
 
-    // PAWN
+    //setting paths for the pawn
     if (flip == 0) {
+        //setting possible paths for White to move
         if (item.innerText == `${toggle}pawn`) {
             item.style.backgroundColor = 'rgb(155, 222, 237)'
 
@@ -123,19 +121,6 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
                     document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
 
                 }
-                // if (aup == 800) {
-                //     document.getElementById(`b${a}`).innerText = 'Wqueen'
-                //     coloring()
-                //     insertImage()
-                // }
-                // if (aside < 8 && document.getElementById(`b${a + 100 + 1}`).innerText.length == 0 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
-                // }
-
-                // if (aside > 1 && document.getElementById(`b${a + 100 - 1}`).innerText.length == 0 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
-
-                // }
             }
 
             if (tog % 2 == 0 && aup > 100) {
@@ -160,7 +145,7 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         }
     }
     else {
-        console.log("xd")
+        //setting possible paths for Black to move
         if (item.innerText == `${toggle}pawn`) {
             item.style.backgroundColor = 'rgb(155, 222, 237)'
 
@@ -183,19 +168,6 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
                         document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
 
                 }
-                // if (aup == 800) {
-                //     document.getElementById(`b${a}`).innerText = 'Wqueen'
-                //     coloring()
-                //     insertImage()
-                // }
-                // if (aside < 8 && document.getElementById(`b${a + 100 + 1}`).innerText.length == 0 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
-                // }
-
-                // if (aside > 1 && document.getElementById(`b${a + 100 - 1}`).innerText.length == 0 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
-                //     document.getElementById(`b${a + 100}`).style.backgroundColor = 'rgb(182, 192, 197)'
-
-                // }
             }
 
             if (tog % 2 == 0 && aup > 100) {
@@ -222,10 +194,9 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         }
     }
 
-    // KING
+    //setting paths for the king
 
     if (item.innerText == `${toggle}king`) {
-
 
         if (aside < 8) {
             document.getElementById(`b${a + 1}`).style.backgroundColor = 'rgb(182, 192, 197)'
@@ -279,11 +250,9 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         }
 
         item.style.backgroundColor = 'rgb(155, 222, 237)'
-
     }
 
-
-    // ROOK
+    //setting paths for the rook
 
     if (item.innerText == `${toggle}rook`) {
 
@@ -334,12 +303,9 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         item.style.backgroundColor = 'rgb(155, 222, 237)'
     }
 
-
-
-    // BISHOP
+    //setting paths for the bishop
 
     if (item.innerText == `${toggle}bishop`) {
-
 
         for (let i = 1; i < 9; i++) {
             if (i < (900 - aup) / 100 && i < 9 - aside && document.getElementById(`b${a + i * 100 + i}`).innerText.length == 0) {
@@ -351,7 +317,6 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
             }
         }
 
-
         for (let i = 1; i < 9; i++) {
             if (i < aup / 100 && i < 9 - aside && document.getElementById(`b${a - i * 100 + i}`).innerText.length == 0) {
                 document.getElementById(`b${a - i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
@@ -361,7 +326,6 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
                 break
             }
         }
-
 
         for (let i = 1; i < 9; i++) {
             if (i < (900 - aup) / 100 && i < aside && document.getElementById(`b${a + i * 100 - i}`).innerText.length == 0) {
@@ -374,7 +338,6 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         }
 
-
         for (let i = 1; i < 9; i++) {
             if (i < aup / 100 && i < aside && document.getElementById(`b${a - i * 100 - i}`).innerText.length == 0) {
                 document.getElementById(`b${a - i * 100 - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
@@ -385,18 +348,12 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
             }
         }
 
-
-
         item.style.backgroundColor = 'rgb(155, 222, 237)'
-
     }
 
-
-
-    // QUEEN
+    //setting paths for the queen
 
     if (item.innerText == `${toggle}queen`) {
-
 
         for (let i = 1; i < 9; i++) {
 
@@ -442,8 +399,6 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
             }
         }
 
-
-
         for (let i = 1; i < 9; i++) {
             if (i < (900 - aup) / 100 && i < 9 - aside && document.getElementById(`b${a + i * 100 + i}`).innerText.length == 0) {
                 document.getElementById(`b${a + i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
@@ -454,7 +409,6 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
             }
         }
 
-
         for (let i = 1; i < 9; i++) {
             if (i < aup / 100 && i < 9 - aside && document.getElementById(`b${a - i * 100 + i}`).innerText.length == 0) {
                 document.getElementById(`b${a - i * 100 + i}`).style.backgroundColor = 'rgb(182, 192, 197)'
@@ -464,7 +418,6 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
                 break
             }
         }
-
 
         for (let i = 1; i < 9; i++) {
             if (i < (900 - aup) / 100 && i < aside && document.getElementById(`b${a + i * 100 - i}`).innerText.length == 0) {
@@ -477,7 +430,6 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
 
         }
 
-
         for (let i = 1; i < 9; i++) {
             if (i < aup / 100 && i < aside && document.getElementById(`b${a - i * 100 - i}`).innerText.length == 0) {
                 document.getElementById(`b${a - i * 100 - i}`).style.backgroundColor = 'rgb(182, 192, 197)'
@@ -489,10 +441,9 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         }
 
         item.style.backgroundColor = 'rgb(155, 222, 237)'
-
     }
 
-    // KNIGHT
+    //setting paths for the knight
 
     if (item.innerText == `${toggle}knight`) {
 
@@ -522,10 +473,12 @@ function whosTurn(toggle, a, aup, aside, item, flip) {
         }
 
         item.style.backgroundColor = 'rgb(155, 222, 237)'
-
     }
 }
 
+/**
+ * sets the board to be White or Black to move depending on the text on the screen
+ */
 function setMove() {
     if (document.getElementById("tog").innerText == "White to Move") {
         tog = 1
@@ -535,12 +488,16 @@ function setMove() {
     }
 }
 
+/**
+ * this query selector comes from https://github.com/jahid28/Games/tree/main/CHESS and colors the potential squares for the piece
+ */
 document.querySelectorAll('.box').forEach(item => {
 
     item.addEventListener('click', function () {
+        //allow the pieces to move to a location
         unfreeze()
-        // To delete the opposite element
-
+    
+        //to delete the opposite element
         if (item.style.backgroundColor == 'rgb(182, 192, 197)' && item.innerText.length == 0) {
             tog = tog + 1
         }
@@ -573,9 +530,8 @@ document.querySelectorAll('.box').forEach(item => {
         aup = eval(arr.join(''))
         a = aside + aup
         turn = flipBoard(flip)
-        console.log(turn)
-        // Toggling the turn
 
+        //setting whose turn it is
         if (tog % 2 !== 0) {
             document.getElementById('tog').innerText = "White to Move"
             whosTurn("W", a, aup, aside, item, turn)
@@ -585,46 +541,20 @@ document.querySelectorAll('.box').forEach(item => {
             whosTurn("B", a, aup, aside, item, turn)
         }
 
-        setMove()    
+        setMove()
         reddish()
-
-        /* winning()
-
-        numOfKings = 0
-
-        document.querySelectorAll('.box').forEach(win => {
-            if (win.innerText == 'Wking' || win.innerText == 'Bking') {
-                numOfKings += 1
-            }
-
-        })
-
-        if (numOfKings == 1) {
-            setTimeout(() => {
-                // console.log(`${toggle}`) 
-                if (tog % 2 == 0) {
-                    alert('White Wins !!')
-                    location.reload()
-                }
-                else if (tog % 2 !== 0) {
-                    alert('Black Wins !!')
-                    location.reload()
-                }
-            }, 100)
-        }
-        */
     })
 })
 
-// Moving the element
-
+/**
+ * this query selector comes from https://github.com/jahid28/Games/tree/main/CHESS and moves the pieces from one square to another
+ */
 document.querySelectorAll('.box').forEach(item => {
 
     item.addEventListener('click', function () {
 
         if (item.style.backgroundColor == 'rgb(155, 222, 237)') {
             turn = document.getElementById("tog").innerText
-            //console.log(turn)
 
             pinkId = item.id
             pinkText = item.innerText
@@ -639,92 +569,89 @@ document.querySelectorAll('.box').forEach(item => {
                 column = aside
                 aup = eval(arr.join(''))
                 value = aup + column
-                //console.log(aup, value)
-                //console.log(item2.style.backgroundColor, item2.innerText.length)
 
-                    if (item2.style.backgroundColor == 'rgb(182, 192, 197)') {
-                        if (pinkText == `Wpawn` && aup == 800) {
-                            document.getElementById("b" + String(value)).innerText = 'Wqueen'
-                            document.getElementById(pinkId).innerText = ''
-                            coloring()
-                            insertImage()
-                        }
-                        else if (pinkText == `Bpawn` && aup == 100) {
+                if (item2.style.backgroundColor == 'rgb(182, 192, 197)') {
+                    if (pinkText == `Wpawn` && aup == 800) {
+                        document.getElementById("b" + String(value)).innerText = 'Wqueen'
+                        document.getElementById(pinkId).innerText = ''
+                        coloring()
+                        insertImage()
+                    }
+                    else if (pinkText == `Bpawn` && aup == 100) {
 
-                            document.getElementById(`b${a}`).innerText = 'Bqueen'
-                            document.getElementById(pinkId).innerText = ''
-                            coloring()
-                            insertImage()
-                        }
-                        else {
-                            document.getElementById(pinkId).innerText = ''
-                            item2.innerText = pinkText
-                            coloring()
-                            insertImage()
-                        }
-
+                        document.getElementById(`b${a}`).innerText = 'Bqueen'
+                        document.getElementById(pinkId).innerText = ''
+                        coloring()
+                        insertImage()
+                    }
+                    else {
+                        document.getElementById(pinkId).innerText = ''
+                        item2.innerText = pinkText
+                        coloring()
+                        insertImage()
                     }
 
-                    else if (item2.style.backgroundColor == 'aqua') {
-                        if(item2.id=='b103'){
-                            document.getElementById('b101').innerText = ''
-                            document.getElementById('b102').innerText = ''
-                            document.getElementById('b103').innerText = 'Wking'
-                            document.getElementById('b104').innerText = 'Wrook'
-                            document.getElementById('b105').innerText = ''
-                            document.getElementById(pinkId).innerText = ''
-                            whiteCastleChance=false
-                            coloring()
-                            insertImage()
-                        }
-                        else if(item2.id=='b107'){
-                            document.getElementById('b105').innerText = ''
-                            document.getElementById('b106').innerText = 'Wrook'
-                            document.getElementById('b107').innerText = 'Wking'
-                            document.getElementById('b108').innerText = ''
-                            document.getElementById(pinkId).innerText = ''
-                            whiteCastleChance=false
-                            coloring()
-                            insertImage()
-                        }
-                        else if(item2.id=='b803'){
-                            document.getElementById('b801').innerText = ''
-                            document.getElementById('b802').innerText = ''
-                            document.getElementById('b803').innerText = 'Bking'
-                            document.getElementById('b804').innerText = 'Brook'
-                            document.getElementById('b805').innerText = ''
-                            document.getElementById(pinkId).innerText = ''
-                            blackCastleChance=false
-                            coloring()
-                            insertImage()
-                        }
-                        else if(item2.id=='b807'){
-                            document.getElementById('b805').innerText = ''
-                            document.getElementById('b806').innerText = 'Brook'
-                            document.getElementById('b807').innerText = 'Bking'
-                            document.getElementById('b808').innerText = ''
-                            document.getElementById(pinkId).innerText = ''
-                            blackCastleChance=false
-                            coloring()
-                            insertImage()
-                        }
+                }
 
+                else if (item2.style.backgroundColor == 'aqua') {
+                    if(item2.id=='b103'){
+                        document.getElementById('b101').innerText = ''
+                        document.getElementById('b102').innerText = ''
+                        document.getElementById('b103').innerText = 'Wking'
+                        document.getElementById('b104').innerText = 'Wrook'
+                        document.getElementById('b105').innerText = ''
+                        document.getElementById(pinkId).innerText = ''
+                        whiteCastleChance=false
+                        coloring()
+                        insertImage()
                     }
-                    if (turn != document.getElementById("tog").innerText) {
-                        checkAnswer()
+                    else if(item2.id=='b107'){
+                        document.getElementById('b105').innerText = ''
+                        document.getElementById('b106').innerText = 'Wrook'
+                        document.getElementById('b107').innerText = 'Wking'
+                        document.getElementById('b108').innerText = ''
+                        document.getElementById(pinkId).innerText = ''
+                        whiteCastleChance=false
+                        coloring()
+                        insertImage()
                     }
+                    else if(item2.id=='b803'){
+                        document.getElementById('b801').innerText = ''
+                        document.getElementById('b802').innerText = ''
+                        document.getElementById('b803').innerText = 'Bking'
+                        document.getElementById('b804').innerText = 'Brook'
+                        document.getElementById('b805').innerText = ''
+                        document.getElementById(pinkId).innerText = ''
+                        blackCastleChance=false
+                        coloring()
+                        insertImage()
+                    }
+                    else if(item2.id=='b807'){
+                        document.getElementById('b805').innerText = ''
+                        document.getElementById('b806').innerText = 'Brook'
+                        document.getElementById('b807').innerText = 'Bking'
+                        document.getElementById('b808').innerText = ''
+                        document.getElementById(pinkId).innerText = ''
+                        blackCastleChance=false
+                        coloring()
+                        insertImage()
+                    }
+                }
+
+                if (turn != document.getElementById("tog").innerText) {
+                    checkAnswer()
+                }
+
                 })
-
             })
-
         }
-
     })
-
 })
 
-// Prevents from selecting multiple elements
 z = 0
+/**
+ * this query selector comes from https://github.com/jahid28/Games/tree/main/CHESS and prevents the user from selecting multiple pieces
+ */
 document.querySelectorAll('.box').forEach(ee => {
     ee.addEventListener('click', function () {
         z = z + 1
