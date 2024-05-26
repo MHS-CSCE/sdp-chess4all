@@ -15,7 +15,12 @@ const auth = firebase.auth()
 
 //runs function when the submit button is clicked on the login page
 document.getElementById("user_login").addEventListener("submit", submitForm);
-
+/**
+ * when the login button is clicked on the form, the data will be validated using firebase's authentiucation system.
+ * if the user exists they will be redirected to the main page, however if they are not an alert will tell them they entered an incorrect email or password.
+ * if it is a valid user they will be redirected to the main page.
+ * @param {event} e event object for the form submission
+ */
 function submitForm(e) {
     //prevents the default submitting of the form
     e.preventDefault();
@@ -32,9 +37,11 @@ function submitForm(e) {
     auth.signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
         var user = userCredential.user;
+        //redirects to main page if valid
         window.location.href = "/html/main.html";
     })
     .catch((error) => {
+        //alert if invalid user
         document.querySelector(".alert").innerHTML = "Incorrect email or password";
         document.querySelector(".alert").style.display = "block";
     });

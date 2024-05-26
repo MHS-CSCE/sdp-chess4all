@@ -14,6 +14,11 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth()
 //event listener to know when form is submitted and runs submitForm function
 document.getElementById("chess4all").addEventListener("submit", submitForm);
+/**
+ * when the submit button is clicked on the form the data will be validated, then it will be sent to Firebase's authentication to create the user
+ * once the account has been created the user will be redirected to the main page
+ * @param {event} e event object for the form submission
+ */
 function submitForm(e) {
     //prevents the default submitting of the form
     e.preventDefault();
@@ -50,7 +55,7 @@ function submitForm(e) {
     }, 3000);
     //resets the form
     document.getElementById("chess4all").reset()
-    //brings to home page
+    //redirects to home page
     window.location.href = "/html/main.html";
 
 }
