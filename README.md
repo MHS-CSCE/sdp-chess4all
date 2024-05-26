@@ -14,8 +14,6 @@ Known Bugs
 
 The endgame files are currently incomplete, and many of them may not currently be available for use (there is a message saying "Coming Soon")
 
-The master games page is currently auto-set to the first game, so even when the select menu does not have a game selected, the arrow keys will still work and showcase a game.
-
 Support
 
 If there are any issues or concerns with the program, feel free to contact our team members via email:
