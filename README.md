@@ -32,10 +32,10 @@ A list of all sources consulted in the creation of this program. You should use 
 | Source (link) | Code used / why? |
 |----------|----------|
 | Stack overflow - https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages  | Used the code to display the nav bar on each page without the need to paste the whole table each time. Wanted an efficient way to display the nav bar without having too much code on each page.  |
-| https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css/   | Used to overlay text  |
-| https://www.w3schools.com/howto/howto_css_blurred_background.asp    | Used to learn how to blur the background  |
-| https://stackoverflow.com/questions/64582068/how-to-make-a-image-pop-out-inside-a-div    | Used code for hovering effects   |
-| https://codepen.io/RazorXio/pen/gMaoOW    | Used code for button effects   |
-| https://blog.hubspot.com/website/html-dropdown    | Used code for dropdown menu code   |
-| https://github.com/jahid28/Games/tree/main/CHESS    | Used the chess.css and chess.js files → lines 1-151 for chess.css, used entire chess.js file as a base and edited the colors and added/removed some code to suit our needs  |
+| Bannerbear - https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css/   | Used to overlay text  |
+| w3schools - https://www.w3schools.com/howto/howto_css_blurred_background.asp    | Used to learn how to blur the background  |
+| Stack overflow - https://stackoverflow.com/questions/64582068/how-to-make-a-image-pop-out-inside-a-div    | Used code for hovering effects   |
+| RazorX - https://codepen.io/RazorXio/pen/gMaoOW    | Used code for button effects   |
+| Hubspot - https://blog.hubspot.com/website/html-dropdown    | Used code for dropdown menu code   |
+| github - https://github.com/jahid28/Games/tree/main/CHESS    | Used the chess.css and chess.js files → lines 1-151 for chess.css, used entire chess.js file as a base and edited the colors and added/removed some code to suit our needs  |
 
