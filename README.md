@@ -31,8 +31,11 @@ A list of all sources consulted in the creation of this program. You should use 
 
 | Source (link) | Code used / why? |
 |----------|----------|
-| Stack overflow
-https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages  | Used the code to display the nav bar on each page without the need to paste the whole table each time. Wanted an efficient way to display the nav bar without having too much code on each page.  |
-| Row 2    | Data 2   |
-| Row 2    | Data 3   |
-| Row 2    | Data 3   |
+| Stack overflow - https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages  | Used the code to display the nav bar on each page without the need to paste the whole table each time. Wanted an efficient way to display the nav bar without having too much code on each page.  |
+| https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css/#:~:text=Overlaying%20Text%20on%20an%20Image%20in%20HTML%20and%20CSS,-HTML&text=In%20the%20body%20section%2C%20create,and%20add%20your%20text%20inside.&text=We%20know%20that%20in%20real,to%20contain%20an%20image%20only   | Used to overlay text  |
+| https://www.w3schools.com/howto/howto_css_blurred_background.asp    | Used to learn how to blur the background  |
+| https://stackoverflow.com/questions/64582068/how-to-make-a-image-pop-out-inside-a-div    | Used code for hovering effects   |
+| https://codepen.io/RazorXio/pen/gMaoOW    | Used code for button effects   |
+| https://blog.hubspot.com/website/html-dropdown    | Used code for dropdown menu code   |
+| https://github.com/jahid28/Games/tree/main/CHESS    | Used the chess.css and chess.js files → lines 1-151 for chess.css, used entire chess.js file as a base and edited the colors and added/removed some code to suit our needs  |
+
