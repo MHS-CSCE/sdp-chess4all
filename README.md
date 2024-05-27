@@ -31,7 +31,8 @@ A list of all sources consulted in the creation of this program. You should use 
 
 | Source (link) | Code used / why? |
 |----------|----------|
-| https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages  | Used the code to display the nav bar on each page without the need to paste the whole table each time. Wanted an efficient way to display the nav bar without having too much code on each page.  |
+| Stack overflow
+https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages  | Used the code to display the nav bar on each page without the need to paste the whole table each time. Wanted an efficient way to display the nav bar without having too much code on each page.  |
 | Row 2    | Data 2   |
 | Row 2    | Data 3   |
 | Row 2    | Data 3   |
