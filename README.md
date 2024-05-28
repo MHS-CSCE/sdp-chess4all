@@ -27,7 +27,7 @@ If there are any issues or concerns with the program, feel free to contact our t
 
 Sources
 
-A list of all sources consulted in the creation of this program. You should use your reference tracker to fill in this section. For each source, explain very clearly how those concepts were used within the program.
+Below are a list of sources that were used in the creation of this website, along with how the code was used in our project.
 
 | Source (link) | Code used / why? |
 |----------|----------|
