@@ -8,7 +8,9 @@ The website provides comprehensive files for learning different types of endgame
 
 Installation
 
-There are no packages needed to install and run the code.
+To experience the full program, the user must first install git on VSCode and activate it by creating a git username and password using their GitHub account. This will be linked through the terminal on VSCode.
+
+The VSCode Live Server extension also needs to be downloaded to run the code on browser, and the usage of the local IP addess must be enabled for the extension to work properly.
 
 Known Bugs
 
