@@ -14,9 +14,9 @@ The VSCode Live Server extension also needs to be downloaded to run the code on 
 
 Known Bugs
 
-The endgame files are currently incomplete, and many of them may not currently be available for use (there is a message saying "Coming Soon")
+The endgame files are currently incomplete, and many of them may not currently be available for use (there is a message saying "Coming Soon").
 
-Some of the engame pages, for example the ones that haven't been finished do not have our finalized css, thus there will be no styling done to those pages
+Some of the engame pages, for example the ones that haven't been finished, do not have our finalized css, and the styling is currently not implemented on those pages.
 
 Support
 
