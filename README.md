@@ -16,6 +16,8 @@ Known Bugs
 
 The endgame files are currently incomplete, and many of them may not currently be available for use (there is a message saying "Coming Soon")
 
+Some of the engame pages, for example the ones that haven't been finished do not have our finalized css, thus there will be no styling done to those pages
+
 Support
 
 If there are any issues or concerns with the program, feel free to contact our team members via email:
