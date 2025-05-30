@@ -24,7 +24,7 @@ If there are any issues or concerns with the program, feel free to contact our t
 
   Matthew: mzhu4@ocdsb.ca
   
-  Ethan: esun4@ocdsb.ca
+  Ethan: ethansun44@gmail.com
   
   Ray: rchan1@ocdsb.ca
 
